@@ -1,0 +1,3421 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>prelude – book</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a9a3d9e6092494c7d9ccd71b7d737a7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="book">
+<meta property="og:description" content="Homepage for Stats 140/141 textbook">
+<meta property="og:image" content="https://mvd-textbook.github.io/chapters/&quot;images/0001diagram.png&quot;">
+<meta property="og:site_name" content="book">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02Prelude.html">Chapters</a></li><li class="breadcrumb-item"><a href="../chapters/02Prelude.html">Prelude</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">book</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://bruinlearn.ucla.edu/courses/232665" title="BruinLearn" class="quarto-navigation-tool px-1" aria-label="BruinLearn"><i class="bi bi-person-fill"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Start Here</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02Prelude.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Prelude</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00ActiveListening.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Active Listening</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#prelude" id="toc-prelude" class="nav-link active" data-scroll-target="#prelude">Prelude</a></li>
+  <li><a href="#mahtash-esfandiari" id="toc-mahtash-esfandiari" class="nav-link" data-scroll-target="#mahtash-esfandiari">Mahtash Esfandiari</a>
+  <ul class="collapse">
+  <li><a href="#why-emotional-intelligence-in-data-scienceand-why-now" id="toc-why-emotional-intelligence-in-data-scienceand-why-now" class="nav-link" data-scroll-target="#why-emotional-intelligence-in-data-scienceand-why-now">Why Emotional Intelligence in Data Science—and Why Now</a></li>
+  <li><a href="#lessons-that-made-eq-tangible-in-consulting" id="toc-lessons-that-made-eq-tangible-in-consulting" class="nav-link" data-scroll-target="#lessons-that-made-eq-tangible-in-consulting">Lessons That Made EQ Tangible in Consulting</a>
+  <ul class="collapse">
+  <li><a href="#active-listening-a-most-underrated-tool" id="toc-active-listening-a-most-underrated-tool" class="nav-link" data-scroll-target="#active-listening-a-most-underrated-tool">Active Listening: A Most Underrated Tool</a></li>
+  <li><a href="#context-matters-communication-is-not-an-optional-add-on" id="toc-context-matters-communication-is-not-an-optional-add-on" class="nav-link" data-scroll-target="#context-matters-communication-is-not-an-optional-add-on">Context Matters: Communication Is Not an Optional Add-On</a></li>
+  <li><a href="#teamwork-requires-skill-not-assumption" id="toc-teamwork-requires-skill-not-assumption" class="nav-link" data-scroll-target="#teamwork-requires-skill-not-assumption">Teamwork Requires Skill, Not Assumption</a></li>
+  <li><a href="#locus-of-control-and-construct-validity-when-context-redefines-measurement" id="toc-locus-of-control-and-construct-validity-when-context-redefines-measurement" class="nav-link" data-scroll-target="#locus-of-control-and-construct-validity-when-context-redefines-measurement">Locus of Control and Construct Validity: When Context Redefines Measurement</a></li>
+  </ul></li>
+  <li><a href="#the-industry-message-that-intensified-the-need" id="toc-the-industry-message-that-intensified-the-need" class="nav-link" data-scroll-target="#the-industry-message-that-intensified-the-need">The Industry Message That Intensified the Need</a></li>
+  <li><a href="#ethical-practice-the-missing-course-in-many-data-science-pathways" id="toc-ethical-practice-the-missing-course-in-many-data-science-pathways" class="nav-link" data-scroll-target="#ethical-practice-the-missing-course-in-many-data-science-pathways">Ethical Practice: The Missing Course in Many Data Science Pathways</a></li>
+  <li><a href="#from-consulting-practice-to-a-training-model" id="toc-from-consulting-practice-to-a-training-model" class="nav-link" data-scroll-target="#from-consulting-practice-to-a-training-model">From Consulting Practice to a Training Model</a></li>
+  <li><a href="#the-missing-link-connecting-mathematical-and-applied-statistics" id="toc-the-missing-link-connecting-mathematical-and-applied-statistics" class="nav-link" data-scroll-target="#the-missing-link-connecting-mathematical-and-applied-statistics">The Missing Link: Connecting Mathematical and Applied Statistics</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion:</a></li>
+  <li><a href="#proposed-model-and-roadmap-for-this-book" id="toc-proposed-model-and-roadmap-for-this-book" class="nav-link" data-scroll-target="#proposed-model-and-roadmap-for-this-book">Proposed Model and Roadmap for This Book</a></li>
+  </ul></li>
+  <li><a href="#who-this-book-is-for" id="toc-who-this-book-is-for" class="nav-link" data-scroll-target="#who-this-book-is-for">Who This Book Is For</a>
+  <ul class="collapse">
+  <li><a href="#primary-audiences" id="toc-primary-audiences" class="nav-link" data-scroll-target="#primary-audiences">Primary audiences</a></li>
+  <li><a href="#secondary-audiences" id="toc-secondary-audiences" class="nav-link" data-scroll-target="#secondary-audiences">Secondary audiences</a></li>
+  </ul></li>
+  <li><a href="#how-this-book-can-be-used" id="toc-how-this-book-can-be-used" class="nav-link" data-scroll-target="#how-this-book-can-be-used">How This Book Can Be Used</a>
+  <ul class="collapse">
+  <li><a href="#for-students-and-self-study" id="toc-for-students-and-self-study" class="nav-link" data-scroll-target="#for-students-and-self-study">For students and self-study</a></li>
+  <li><a href="#for-courses-and-workshops" id="toc-for-courses-and-workshops" class="nav-link" data-scroll-target="#for-courses-and-workshops">For courses and workshops</a></li>
+  <li><a href="#for-professional-teams" id="toc-for-professional-teams" class="nav-link" data-scroll-target="#for-professional-teams">For professional teams</a></li>
+  </ul></li>
+  <li><a href="#conclusion-technical-rigor-requires-human-rigor" id="toc-conclusion-technical-rigor-requires-human-rigor" class="nav-link" data-scroll-target="#conclusion-technical-rigor-requires-human-rigor">Conclusion: Technical Rigor Requires Human Rigor</a></li>
+  <li><a href="#capstone-exercises-practicing-the-five-domain-model" id="toc-capstone-exercises-practicing-the-five-domain-model" class="nav-link" data-scroll-target="#capstone-exercises-practicing-the-five-domain-model">Capstone Exercises: Practicing the Five-Domain Model</a>
+  <ul class="collapse">
+  <li><a href="#shared-case-scenario-used-across-all-capstones" id="toc-shared-case-scenario-used-across-all-capstones" class="nav-link" data-scroll-target="#shared-case-scenario-used-across-all-capstones">Shared case scenario (used across all capstones)</a></li>
+  <li><a href="#capstone-1-theoretical-knowledge-of-statistics" id="toc-capstone-1-theoretical-knowledge-of-statistics" class="nav-link" data-scroll-target="#capstone-1-theoretical-knowledge-of-statistics">Capstone 1: Theoretical Knowledge of Statistics</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#estimated-time" id="toc-estimated-time" class="nav-link" data-scroll-target="#estimated-time">Estimated time</a></li>
+  <li><a href="#task" id="toc-task" class="nav-link" data-scroll-target="#task">Task</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
+  <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
+  </ul></li>
+  <li><a href="#capstone-2-programming-skills" id="toc-capstone-2-programming-skills" class="nav-link" data-scroll-target="#capstone-2-programming-skills">Capstone 2: Programming Skills</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-1" id="toc-learning-objectives-1" class="nav-link" data-scroll-target="#learning-objectives-1">Learning objectives</a></li>
+  <li><a href="#estimated-time-1" id="toc-estimated-time-1" class="nav-link" data-scroll-target="#estimated-time-1">Estimated time</a></li>
+  <li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task</a></li>
+  <li><a href="#deliverables-1" id="toc-deliverables-1" class="nav-link" data-scroll-target="#deliverables-1">Deliverables</a></li>
+  <li><a href="#rubric-1" id="toc-rubric-1" class="nav-link" data-scroll-target="#rubric-1">Rubric</a></li>
+  </ul></li>
+  <li><a href="#capstone-3-communication-and-team-building" id="toc-capstone-3-communication-and-team-building" class="nav-link" data-scroll-target="#capstone-3-communication-and-team-building">Capstone 3: Communication and Team-Building</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-2" id="toc-learning-objectives-2" class="nav-link" data-scroll-target="#learning-objectives-2">Learning objectives</a></li>
+  <li><a href="#estimated-time-2" id="toc-estimated-time-2" class="nav-link" data-scroll-target="#estimated-time-2">Estimated time</a></li>
+  <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task</a></li>
+  <li><a href="#deliverables-2" id="toc-deliverables-2" class="nav-link" data-scroll-target="#deliverables-2">Deliverables</a></li>
+  <li><a href="#rubric-2" id="toc-rubric-2" class="nav-link" data-scroll-target="#rubric-2">Rubric</a></li>
+  </ul></li>
+  <li><a href="#capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences" id="toc-capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences" class="nav-link" data-scroll-target="#capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences">Capstone 4: Statistical Literacy (Meaning-Making for Non-Technical Audiences)</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-3" id="toc-learning-objectives-3" class="nav-link" data-scroll-target="#learning-objectives-3">Learning objectives</a></li>
+  <li><a href="#estimated-time-3" id="toc-estimated-time-3" class="nav-link" data-scroll-target="#estimated-time-3">Estimated time</a></li>
+  <li><a href="#task-3" id="toc-task-3" class="nav-link" data-scroll-target="#task-3">Task</a></li>
+  <li><a href="#deliverables-3" id="toc-deliverables-3" class="nav-link" data-scroll-target="#deliverables-3">Deliverables</a></li>
+  <li><a href="#rubric-3" id="toc-rubric-3" class="nav-link" data-scroll-target="#rubric-3">Rubric</a></li>
+  </ul></li>
+  <li><a href="#capstone-5-ethical-practice-of-data-science" id="toc-capstone-5-ethical-practice-of-data-science" class="nav-link" data-scroll-target="#capstone-5-ethical-practice-of-data-science">Capstone 5: Ethical Practice of Data Science</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-4" id="toc-learning-objectives-4" class="nav-link" data-scroll-target="#learning-objectives-4">Learning objectives</a></li>
+  <li><a href="#estimated-time-4" id="toc-estimated-time-4" class="nav-link" data-scroll-target="#estimated-time-4">Estimated time</a></li>
+  <li><a href="#task-4" id="toc-task-4" class="nav-link" data-scroll-target="#task-4">Task</a></li>
+  <li><a href="#deliverables-4" id="toc-deliverables-4" class="nav-link" data-scroll-target="#deliverables-4">Deliverables</a></li>
+  <li><a href="#rubric-4" id="toc-rubric-4" class="nav-link" data-scroll-target="#rubric-4">Rubric</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#how-to-use-these-templates" id="toc-how-to-use-these-templates" class="nav-link" data-scroll-target="#how-to-use-these-templates">How to Use These Templates</a></li>
+  <li><a href="#template-1-problem-restatement-memo" id="toc-template-1-problem-restatement-memo" class="nav-link" data-scroll-target="#template-1-problem-restatement-memo">Template 1: Problem Restatement Memo</a>
+  <ul class="collapse">
+  <li><a href="#decision-context" id="toc-decision-context" class="nav-link" data-scroll-target="#decision-context">1. Decision Context</a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">2. Problem Statement</a></li>
+  <li><a href="#definitions-and-success-criteria" id="toc-definitions-and-success-criteria" class="nav-link" data-scroll-target="#definitions-and-success-criteria">3. Definitions and Success Criteria</a></li>
+  <li><a href="#data-reality-check" id="toc-data-reality-check" class="nav-link" data-scroll-target="#data-reality-check">4. Data Reality Check</a></li>
+  <li><a href="#constraints-and-risks" id="toc-constraints-and-risks" class="nav-link" data-scroll-target="#constraints-and-risks">5. Constraints and Risks</a></li>
+  <li><a href="#deliverables-and-communication-plan" id="toc-deliverables-and-communication-plan" class="nav-link" data-scroll-target="#deliverables-and-communication-plan">6. Deliverables and Communication Plan</a></li>
+  <li><a href="#what-would-change-our-mind" id="toc-what-would-change-our-mind" class="nav-link" data-scroll-target="#what-would-change-our-mind">7. What Would Change Our Mind?</a></li>
+  </ul></li>
+  <li><a href="#template-2-definitions-assumptions-log" id="toc-template-2-definitions-assumptions-log" class="nav-link" data-scroll-target="#template-2-definitions-assumptions-log">Template 2: Definitions &amp; Assumptions Log</a></li>
+  <li><a href="#template-3-meeting-notes-active-listening-loops" id="toc-template-3-meeting-notes-active-listening-loops" class="nav-link" data-scroll-target="#template-3-meeting-notes-active-listening-loops">Template 3: Meeting Notes (Active Listening Loops)</a>
+  <ul class="collapse">
+  <li><a href="#listening-loop-log" id="toc-listening-loop-log" class="nav-link" data-scroll-target="#listening-loop-log">Listening Loop Log</a></li>
+  <li><a href="#decisions-made" id="toc-decisions-made" class="nav-link" data-scroll-target="#decisions-made">Decisions Made</a></li>
+  <li><a href="#risks-blockers" id="toc-risks-blockers" class="nav-link" data-scroll-target="#risks-blockers">Risks / Blockers</a></li>
+  </ul></li>
+  <li><a href="#template-4-stakeholder-map" id="toc-template-4-stakeholder-map" class="nav-link" data-scroll-target="#template-4-stakeholder-map">Template 4: Stakeholder Map</a></li>
+  <li><a href="#template-5-team-charter" id="toc-template-5-team-charter" class="nav-link" data-scroll-target="#template-5-team-charter">Template 5: Team Charter</a>
+  <ul class="collapse">
+  <li><a href="#team-purpose" id="toc-team-purpose" class="nav-link" data-scroll-target="#team-purpose">Team purpose</a></li>
+  <li><a href="#roles-and-responsibilities" id="toc-roles-and-responsibilities" class="nav-link" data-scroll-target="#roles-and-responsibilities">Roles and responsibilities</a></li>
+  <li><a href="#working-agreements" id="toc-working-agreements" class="nav-link" data-scroll-target="#working-agreements">Working agreements</a></li>
+  <li><a href="#conflict-protocol" id="toc-conflict-protocol" class="nav-link" data-scroll-target="#conflict-protocol">Conflict protocol</a></li>
+  <li><a href="#shared-accountability" id="toc-shared-accountability" class="nav-link" data-scroll-target="#shared-accountability">Shared accountability</a></li>
+  </ul></li>
+  <li><a href="#template-6-decision-log" id="toc-template-6-decision-log" class="nav-link" data-scroll-target="#template-6-decision-log">Template 6: Decision Log</a></li>
+  <li><a href="#template-7-decision-brief" id="toc-template-7-decision-brief" class="nav-link" data-scroll-target="#template-7-decision-brief">Template 7: Decision Brief</a>
+  <ul class="collapse">
+  <li><a href="#required-structure-1-page-or-5-slides" id="toc-required-structure-1-page-or-5-slides" class="nav-link" data-scroll-target="#required-structure-1-page-or-5-slides">Required structure (1 page or 5 slides)</a></li>
+  <li><a href="#decision-brief-draft" id="toc-decision-brief-draft" class="nav-link" data-scroll-target="#decision-brief-draft">Decision Brief Draft</a></li>
+  </ul></li>
+  <li><a href="#template-8-impact-table" id="toc-template-8-impact-table" class="nav-link" data-scroll-target="#template-8-impact-table">Template 8: Impact Table</a></li>
+  <li><a href="#template-9-analysis-plan" id="toc-template-9-analysis-plan" class="nav-link" data-scroll-target="#template-9-analysis-plan">Template 9: Analysis Plan</a>
+  <ul class="collapse">
+  <li><a href="#objective-and-decision-context" id="toc-objective-and-decision-context" class="nav-link" data-scroll-target="#objective-and-decision-context">1. Objective and decision context</a></li>
+  <li><a href="#data-and-measurement" id="toc-data-and-measurement" class="nav-link" data-scroll-target="#data-and-measurement">2. Data and measurement</a></li>
+  <li><a href="#primary-analysis-approach" id="toc-primary-analysis-approach" class="nav-link" data-scroll-target="#primary-analysis-approach">3. Primary analysis approach</a></li>
+  <li><a href="#validation-and-robustness-plan" id="toc-validation-and-robustness-plan" class="nav-link" data-scroll-target="#validation-and-robustness-plan">4. Validation and robustness plan</a></li>
+  <li><a href="#threats-to-validity-and-mitigations" id="toc-threats-to-validity-and-mitigations" class="nav-link" data-scroll-target="#threats-to-validity-and-mitigations">5. Threats to validity and mitigations</a></li>
+  <li><a href="#deliverables-5" id="toc-deliverables-5" class="nav-link" data-scroll-target="#deliverables-5">6. Deliverables</a></li>
+  </ul></li>
+  <li><a href="#template-10-model-selection-memo" id="toc-template-10-model-selection-memo" class="nav-link" data-scroll-target="#template-10-model-selection-memo">Template 10: Model Selection Memo</a>
+  <ul class="collapse">
+  <li><a href="#why-this-model" id="toc-why-this-model" class="nav-link" data-scroll-target="#why-this-model">Why this model</a></li>
+  <li><a href="#what-could-break-it-failure-modes" id="toc-what-could-break-it-failure-modes" class="nav-link" data-scroll-target="#what-could-break-it-failure-modes">What could break it? (Failure modes)</a></li>
+  <li><a href="#limitations-and-appropriate-claims" id="toc-limitations-and-appropriate-claims" class="nav-link" data-scroll-target="#limitations-and-appropriate-claims">Limitations and appropriate claims</a></li>
+  </ul></li>
+  <li><a href="#template-11-diagnostics-minimum-set" id="toc-template-11-diagnostics-minimum-set" class="nav-link" data-scroll-target="#template-11-diagnostics-minimum-set">Template 11: Diagnostics Minimum Set</a>
+  <ul class="collapse">
+  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a></li>
+  <li><a href="#notes-on-findings-and-actions" id="toc-notes-on-findings-and-actions" class="nav-link" data-scroll-target="#notes-on-findings-and-actions">Notes on findings and actions</a></li>
+  </ul></li>
+  <li><a href="#template-12-reproducibility-bundle-readme-skeleton" id="toc-template-12-reproducibility-bundle-readme-skeleton" class="nav-link" data-scroll-target="#template-12-reproducibility-bundle-readme-skeleton">Template 12: Reproducibility Bundle (README Skeleton)</a>
+  <ul class="collapse">
+  <li><a href="#readme-sections-copypaste" id="toc-readme-sections-copypaste" class="nav-link" data-scroll-target="#readme-sections-copypaste">README sections (copy/paste)</a></li>
+  </ul></li>
+  <li><a href="#template-13-ethics-pre-mortem" id="toc-template-13-ethics-pre-mortem" class="nav-link" data-scroll-target="#template-13-ethics-pre-mortem">Template 13: Ethics Pre-Mortem</a>
+  <ul class="collapse">
+  <li><a href="#how-could-this-work-mislead" id="toc-how-could-this-work-mislead" class="nav-link" data-scroll-target="#how-could-this-work-mislead">How could this work mislead?</a></li>
+  <li><a href="#boundary-statements-what-we-should-not-claim" id="toc-boundary-statements-what-we-should-not-claim" class="nav-link" data-scroll-target="#boundary-statements-what-we-should-not-claim">Boundary statements (what we should NOT claim)</a></li>
+  <li><a href="#disclosure-plan" id="toc-disclosure-plan" class="nav-link" data-scroll-target="#disclosure-plan">Disclosure plan</a></li>
+  </ul></li>
+  <li><a href="#template-14-integrity-memo" id="toc-template-14-integrity-memo" class="nav-link" data-scroll-target="#template-14-integrity-memo">Template 14: Integrity Memo</a>
+  <ul class="collapse">
+  <li><a href="#what-is-defensible-to-claim" id="toc-what-is-defensible-to-claim" class="nav-link" data-scroll-target="#what-is-defensible-to-claim">What is defensible to claim</a></li>
+  <li><a href="#what-is-not-defensible-to-claim-and-why" id="toc-what-is-not-defensible-to-claim-and-why" class="nav-link" data-scroll-target="#what-is-not-defensible-to-claim-and-why">What is NOT defensible to claim (and why)</a></li>
+  <li><a href="#recommended-path-forward" id="toc-recommended-path-forward" class="nav-link" data-scroll-target="#recommended-path-forward">Recommended path forward</a></li>
+  </ul></li>
+  <li><a href="#template-15-pushback-scripts-firm-and-helpful" id="toc-template-15-pushback-scripts-firm-and-helpful" class="nav-link" data-scroll-target="#template-15-pushback-scripts-firm-and-helpful">Template 15: Pushback Scripts (Firm-and-Helpful)</a></li>
+  <li><a href="#template-16-documentation-escalation-checklist" id="toc-template-16-documentation-escalation-checklist" class="nav-link" data-scroll-target="#template-16-documentation-escalation-checklist">Template 16: Documentation &amp; Escalation Checklist</a>
+  <ul class="collapse">
+  <li><a href="#documentation-what-to-record" id="toc-documentation-what-to-record" class="nav-link" data-scroll-target="#documentation-what-to-record">Documentation (what to record)</a></li>
+  <li><a href="#escalation-when-and-to-whom" id="toc-escalation-when-and-to-whom" class="nav-link" data-scroll-target="#escalation-when-and-to-whom">Escalation (when and to whom)</a></li>
+  <li><a href="#post-meeting-follow-up-email-skeleton" id="toc-post-meeting-follow-up-email-skeleton" class="nav-link" data-scroll-target="#post-meeting-follow-up-email-skeleton">Post-meeting follow-up email (skeleton)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02Prelude.html">Chapters</a></li><li class="breadcrumb-item"><a href="../chapters/02Prelude.html">Prelude</a></li></ol></nav></header>
+
+
+
+
+<section id="prelude" class="level1">
+<h1>Prelude</h1>
+</section>
+<section id="mahtash-esfandiari" class="level1">
+<h1>Mahtash Esfandiari</h1>
+<section id="why-emotional-intelligence-in-data-scienceand-why-now" class="level2">
+<h2 class="anchored" data-anchor-id="why-emotional-intelligence-in-data-scienceand-why-now">Why Emotional Intelligence in Data Science—and Why Now</h2>
+<p>After years of academic work in statistics, measurement, and cognitive science—particularly in learning, development, assessment, and standardized testing—I transitioned into statistical consulting. This shift was not merely a change in professional setting; it was a change in what effective practice required.</p>
+<p>My training in statistical theory and methodological rigor provided a strong foundation for consulting across diverse domains, including medicine, education, entrepreneurship, public health, and industry. Yet, as my consulting work expanded, a consistent pattern became increasingly clear: technical expertise alone was not sufficient. A data scientist or statistical consultant may be highly skilled in modeling, inference, and computation, but still fail to produce real-world impact—especially when navigating real clients, real constraints, and high-stakes decisions.</p>
+<p>Over time, I came to understand that effective applied work requires a broader set of competencies. Beyond theoretical knowledge and programming proficiency, success depends on interpersonal and interpretive capacities: listening carefully, communicating clearly, managing conflict, and explaining statistical findings in ways that are meaningful to non-technical stakeholders. Equally essential is the ability to recognize ethical dilemmas, resist inappropriate pressures, and uphold integrity when results are inconvenient, misunderstood, or contested.</p>
+<p>This book grew out of that realization. It is grounded in lived experience—both successes and difficult lessons—that made the role of emotional intelligence in data science concrete and unavoidable.</p>
+</section>
+<section id="lessons-that-made-eq-tangible-in-consulting" class="level2">
+<h2 class="anchored" data-anchor-id="lessons-that-made-eq-tangible-in-consulting">Lessons That Made EQ Tangible in Consulting</h2>
+<section id="active-listening-a-most-underrated-tool" class="level3">
+<h3 class="anchored" data-anchor-id="active-listening-a-most-underrated-tool">Active Listening: A Most Underrated Tool</h3>
+<p>Early in my consulting work, I often approached client meetings with a familiar academic mindset: define the problem quickly, identify an appropriate method, and move toward a solution. I soon learned that this impulse—however well-intentioned—was frequently counterproductive.</p>
+<p>In consulting, the central task is not simply selecting a technique; it is correctly understanding the problem. Consultants often work outside their subject-matter expertise. When collaborating with surgeons, entrepreneurs, educators, or industry professionals, I had to devote substantial time to learning domain language and practical constraints shaping the research question. I learned that a consultant cannot assume shared terminology, shared assumptions, or shared definitions of success.</p>
+<p>One practice became essential: after listening carefully and clarifying key terms and relationships, I would restate the problem in writing and return it to the client for confirmation before any analysis began. This habit—simple in appearance—often determined whether a project proceeded productively or became misdirected.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Lesson Learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A successful data scientist is not only a technical solver but also a translator of human questions into statistical questions—and that translation begins with active listening.</p>
+</div>
+</div>
+</section>
+<section id="context-matters-communication-is-not-an-optional-add-on" class="level3">
+<h3 class="anchored" data-anchor-id="context-matters-communication-is-not-an-optional-add-on">Context Matters: Communication Is Not an Optional Add-On</h3>
+<p>A second lesson emerged while evaluating a life-skills program in a large high school serving approximately 4,000 students. One program objective was to teach ninth graders “conflict resolution.” The curriculum consisted of a pamphlet outlining steps and strategies for managing conflict, which instructors were expected to teach.</p>
+<p>Classroom observations revealed that identical content produced markedly different outcomes depending on how it was delivered. In one classroom, the teacher reviewed the steps in a procedural manner while students remained disengaged or disruptive. In another classroom, a teacher introduced conflict resolution through historical contexts and reflective journaling, asking students to connect the steps to conflicts in their own lives. The contrast was striking: when instruction was embedded in meaning and context, students engaged; when presented abstractly, the concept remained detached and ineffective.</p>
+<p>This reinforced a principle that applies directly to data science: findings and recommendations must be communicated in context to be understood and used. An analysis that is technically correct but not interpretable or actionable for stakeholders is functionally incomplete.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lesson Learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Data science is not only computation; it is meaning-making. Statistical conclusions must be communicated in accessible language and grounded in the realities of the decision environment.</p>
+</div>
+</div>
+</section>
+<section id="teamwork-requires-skill-not-assumption" class="level3">
+<h3 class="anchored" data-anchor-id="teamwork-requires-skill-not-assumption">Teamwork Requires Skill, Not Assumption</h3>
+<p>As teamwork became increasingly emphasized across educational levels—shaped in part by research on cooperative learning—I observed a recurring misconception: many students interpret “teamwork” as dividing tasks, working independently, and assembling results at the end. This approach often produces fragmentation rather than collaboration.</p>
+<p>Research on cooperative learning highlights the importance of shared understanding, mutual accountability, and structured coordination. Effective teams require communication norms, conflict-resolution strategies, and collaborative leadership—not simply division of labor.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lesson Learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Collaboration is not automatic. Team success requires interpersonal competence, particularly under ambiguity and pressure, which are characteristic of real-world analytics.</p>
+</div>
+</div>
+</section>
+<section id="locus-of-control-and-construct-validity-when-context-redefines-measurement" class="level3">
+<h3 class="anchored" data-anchor-id="locus-of-control-and-construct-validity-when-context-redefines-measurement">Locus of Control and Construct Validity: When Context Redefines Measurement</h3>
+<p>Another formative example occurred while evaluating a program in communities affected by substantial gang activity. The program aimed to strengthen students’ internal locus of control and to develop conflict-resolution skills. I was asked to develop a survey to measure these constructs.</p>
+<p>After reviewing the literature (in an era prior to tools such as ChatGPT), I drafted items aligned with theory and prepared a scoring key. Before administration, I shared the instrument with teachers who understood the students’ lived context. One item read:</p>
+<p>“If I get into a conflict with somebody, I pretend like nothing happened.”</p>
+<p>In classic conflict-resolution frameworks, endorsement might be interpreted as avoidance and scored as undesirable. However, teachers immediately challenged this interpretation. In their setting, students were often advised to avoid confrontation for safety—to walk away and “pretend nothing happened.” The theoretically “correct” scoring did not map cleanly onto practical reality.</p>
+<p>This moment underscored a central principle: measurement is not merely technical; it is contextual. Without genuine dialogue with practitioners—and humility about one’s own content knowledge—an evaluator can produce an instrument that is theoretically coherent yet practically invalid.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lesson Learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Strong practice requires continuous communication with clients and serious attention to context, culture, and meaning. Valid measurement depends on shared interpretation.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-industry-message-that-intensified-the-need" class="level2">
+<h2 class="anchored" data-anchor-id="the-industry-message-that-intensified-the-need">The Industry Message That Intensified the Need</h2>
+<p>Over the years, I repeatedly heard a striking comment from industry professionals:</p>
+<p>“Universities don’t train students to operate in the real world. We have to send them to workshops to learn communication, collaboration, and leadership.”</p>
+<p>This concern is not universally true, but it reflects a persistent gap that emerges when technical training is treated as complete preparation. Students deserve more than learning essential workplace competencies through trial-and-error, anxiety, and avoidable setbacks.</p>
+<p>This book is therefore also a response to professional responsibility. We train students to participate in consequential decisions across medicine, law, education, finance, and public policy. Technical proficiency is necessary—but not sufficient—for confident, ethical, and effective practice.</p>
+</section>
+<section id="ethical-practice-the-missing-course-in-many-data-science-pathways" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-practice-the-missing-course-in-many-data-science-pathways">Ethical Practice: The Missing Course in Many Data Science Pathways</h2>
+<p>Consulting made the centrality of ethics impossible to ignore. In my own graduate training in statistics, formal education in professional ethics was limited—despite the fact that fields such as medicine and law treat ethics as foundational.</p>
+<p>In contemporary practice, data-based decisions shape high-stakes outcomes. Ethical reasoning is not an optional add-on; it is part of competent professional practice. Consulting also exposes analysts to pressures—sometimes subtle, sometimes explicit—to distort interpretations, privilege statistical significance over substantive meaning, or frame results to support predetermined agendas.</p>
+<p>One experience from approximately twenty-five years ago remains vivid. I was evaluating a large-scale program with thousands of student participants. Program leadership was focused on achieving statistical significance because funding decisions depended on it. With a large sample, nearly all results reached statistical significance. However, when it became clear that observed changes were not practically meaningful, the response shifted from celebration to frustration.</p>
+<p>When I raised concerns about ceiling effects, social desirability bias, and measurement limitations, the conversation became difficult. In effect, the desire for “significant results” had become stronger than the desire to understand reality. I ultimately stepped away from the project. That experience reinforced the importance of preparing students not only to “do the right thing,” but also to anticipate ethical pressure and navigate the professional consequences of maintaining integrity.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lesson Learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ethical competence is part of technical competence. A well-rounded data scientist must be prepared to recognize pressure, defend integrity, and communicate truth responsibly.</p>
+</div>
+</div>
+</section>
+<section id="from-consulting-practice-to-a-training-model" class="level2">
+<h2 class="anchored" data-anchor-id="from-consulting-practice-to-a-training-model">From Consulting Practice to a Training Model</h2>
+<p>These experiences—combined with my background in cognitive science, learning, and measurement—led me to propose a model for preparing data scientists for real-world success. The model emphasizes five domains:</p>
+<ol type="1">
+<li><p><strong>Theoretical Knowledge of Statistics</strong></p></li>
+<li><p><strong>Programming Skills</strong></p></li>
+<li><p><strong>Communication and Team-Building</strong></p>
+<ul>
+<li><p>active listening</p></li>
+<li><p>empathy</p></li>
+<li><p>conflict resolution</p></li>
+<li><p>shared accountability in collaboration</p></li>
+</ul></li>
+<li><p><strong>Statistical Literacy</strong></p>
+<ul>
+<li>explaining statistical findings in context for non-technical audiences</li>
+</ul></li>
+<li><p><strong>Ethical Practice of Data Science</strong></p></li>
+</ol>
+<p>This framework has shaped my teaching as well. More than a decade ago, we began offering a four-unit undergraduate course at UCLA titled <em>The Practice of Statistical Consulting</em>. Over time, enrollment grew substantially (recently exceeding 300 students in a single academic year), and the course was revised repeatedly to reflect what students need when they move from classroom exercises to authentic client-based work. Eventually, the course evolved into a two-course sequence: one emphasizing foundational interpersonal and professional competencies, and a second emphasizing the theoretical and practical demands of real consulting projects.</p>
+<p>This book extends that work. Its purpose is to make explicit what is often left implicit: the strongest data scientists integrate intellectual rigor with interpersonal intelligence, contextual understanding, and ethical judgment.</p>
+</section>
+<section id="the-missing-link-connecting-mathematical-and-applied-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="the-missing-link-connecting-mathematical-and-applied-statistics">The Missing Link: Connecting Mathematical and Applied Statistics</h2>
+<p>One of the most persistent challenges I have observed in teaching is that many students do not perceive the conceptual continuity between mathematical statistics and applied statistics. A familiar example is analysis of variance (ANOVA). Students often experience ANOVA as a collection of formulas rather than as a coherent framework for modeling variation. As a result, they may not recognize that ANOVA and multiple linear regression are instances of the same general linear model, differing primarily in how predictors are encoded—ANOVA emphasizing categorical predictors (and their interactions), and regression accommodating continuous predictors as well.</p>
+<p>This disconnect becomes especially apparent when students are asked to interpret variance decomposition. For example, when asked to quantify the proportion of variance attributable to a factor, many do not immediately recognize the conceptual simplicity of the ratio <span class="math inline">\(`SS_{\text{factor}}/SS_{\text{total}}`\)</span>. The mathematical objects are present in their coursework, but the interpretive bridge to meaning, inference, and decision-making is often underdeveloped.</p>
+<p>From the perspective of cognitive science, this gap is unsurprising. Knowledge becomes durable and transferable when it is meaningfully connected to prior knowledge. Without explicit opportunities for synthesis—linking established theoretical structures to new applications—students may learn procedures in isolation and struggle to generalize their understanding to unfamiliar contexts.</p>
+<p>In my experience, the consulting classroom is one of the most effective environments for cultivating this synthesis because it requires students to solve authentic problems for real stakeholders. In that setting, concepts that were previously compartmentalized across courses must be integrated into a coherent analytic strategy.</p>
+<p>Consider a common modeling scenario: a student includes a categorical predictor with sixteen levels (e.g., ethnic background) in a regression model predicting perceived academic success. The model produces fifteen coefficients, several with large standard errors due to small subgroup sample sizes. Yet students may not begin with a simple frequency table or ask whether the data support such a complex parameterization. Despite prior instruction in exploratory analysis and modeling, they do not always apply those habits under real constraints such as sparse data.</p>
+<p>More broadly, many students have limited experience reasoning through questions such as:</p>
+<ul>
+<li><p>What happens to the stability and interpretability of estimates when sample size is small relative to model complexity?</p></li>
+<li><p>How should modeling strategies change under rare events or severe class imbalance?</p></li>
+<li><p>Should an interaction term remain if it explains only a marginal proportion of variance?</p></li>
+<li><p>What constitutes a “good” <span class="math inline">\(`R^{2}`\)</span>in the social sciences, and why does it differ across domains?</p></li>
+<li><p>Why is <span class="math inline">\(`R^{2}`\)</span>not an appropriate measure of accuracy in classification problems?</p></li>
+</ul>
+<p>Without authentic practice, students can default to pattern-matching—replicating code, following cookbook rules, and producing output without developing an integrated analytic approach. Consulting disrupts this tendency by requiring students to unify theoretical knowledge, applied reasoning, communication, collaboration, and ethical judgment.</p>
+<p>Finally, I have observed an important assessment-related pattern. Team projects often receive high scores, and appropriately so: effective teamwork can yield strong deliverables. However, one-on-one meetings sometimes reveal substantial variation in statistical understanding across team members. With the growing availability of automated code generation and online tools, students can assemble analyses that appear sophisticated without fully understanding the underlying theory.</p>
+<p>This observation has shaped my own teaching practices. After years of assigning take-home exams, I returned to closed-book examinations with a single student-prepared reference sheet. This approach better distinguishes group performance from individual mastery, makes conceptual gaps visible, and helps students identify specific areas requiring deeper development.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lesson Learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Durable statistical understanding requires explicit, repeated opportunities to synthesize theory with application in authentic, constraint-driven contexts.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lesson Learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Assessment should separate polished collaborative outputs from individual conceptual mastery to reveal—and remediate—hidden gaps in understanding.</p>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion:</h2>
+<p>Taken together, these observations point to a central premise of this book: technical competence is necessary, but often insufficient for effective practice. What students frequently lack is not exposure to additional methods, but sustained opportunities to integrate statistical theory with applied reasoning, professional judgment, and clear communication under real-world constraints. The consulting classroom makes that integration unavoidable. It requires students to articulate assumptions, evaluate tradeoffs, confront uncertainty, and translate results into decisions that matter to stakeholders who may not share the language of statistical formalism.</p>
+<p>For this reason, I treat emotional intelligence not as an accessory to data science, but as part of its professional infrastructure. The ability to listen carefully, ask precise questions, navigate disagreement, communicate limitations, and act ethically strengthens analytic rigor and increases the likelihood that statistical work leads to sound decisions. The chapters that follow are organized around this integrative view—developing the competencies that connect mathematical foundations to applied impact, and preparing readers to practice data science in a manner that is technically sound, contextually grounded, and broadly intelligible.</p>
+</section>
+<section id="proposed-model-and-roadmap-for-this-book" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-model-and-roadmap-for-this-book">Proposed Model and Roadmap for This Book</h2>
+<p>Based on the experiences and lessons described in this prelude, I propose the following model of the core attributes required of a well-rounded data scientist. The model is intentionally integrative: it recognizes that technical excellence becomes impactful only when coupled with communication competence, statistical literacy, and principled ethical practice.</p>
+<p>In the chapters that follow, I will develop each component of this framework in depth—connecting key ideas to concrete practices, instructional approaches, and real-world examples. In collaboration with my co-authors, Vivian Lew and Dave Zes we will describe how these competencies can be cultivated systematically in academic training and strengthened throughout professional development. Our aim is to provide a practical roadmap for students, educators, and practitioners who seek not only to produce technically correct analyses, but also to operate effectively, responsibly, and confidently in high-stakes environments.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="&quot;images/0001diagram.png&quot;" class="img-fluid figure-img"></p>
+<figcaption>Attributes of a Well-Rounded Data Scientist</figcaption>
+</figure>
+</div>
+<p><strong>Prelude Additions<br>
+Audience, Use, Conclusion, and Capstone Exercises</strong></p>
+<p><em>Book-ready subsections with consistent headers, learning objectives, estimated time, and rubrics.</em></p>
+</section>
+</section>
+<section id="who-this-book-is-for" class="level1">
+<h1>Who This Book Is For</h1>
+<p>This book is written for readers who already understand (or are learning) the technical foundations of data science and want to become effective, trusted professionals in real-world settings.</p>
+<section id="primary-audiences" class="level2">
+<h2 class="anchored" data-anchor-id="primary-audiences">Primary audiences</h2>
+<ul>
+<li><p>Undergraduate and graduate students in statistics, data science, biostatistics, and related fields</p></li>
+<li><p>Early-career data scientists, analysts, and statisticians transitioning from coursework to stakeholder-driven work</p></li>
+<li><p>Experienced practitioners who want to strengthen communication, collaboration, and ethical judgment in high-stakes environments</p></li>
+<li><p>Instructors designing consulting courses, practicum experiences, capstone courses, or professional-skills modules</p></li>
+</ul>
+</section>
+<section id="secondary-audiences" class="level2">
+<h2 class="anchored" data-anchor-id="secondary-audiences">Secondary audiences</h2>
+<ul>
+<li><p>Project leads, managers, and principal investigators supervising analytics teams</p></li>
+<li><p>Domain experts (e.g., clinicians, educators, policy staff, product leaders) who collaborate with data scientists and want a shared language for good practice</p></li>
+</ul>
+</section>
+</section>
+<section id="how-this-book-can-be-used" class="level1">
+<h1>How This Book Can Be Used</h1>
+<section id="for-students-and-self-study" class="level2">
+<h2 class="anchored" data-anchor-id="for-students-and-self-study">For students and self-study</h2>
+<ul>
+<li><p>Read each chapter with a “practice lens”: extract one skill, apply it in a real or simulated project, and reflect on what changed.</p></li>
+<li><p>Build a portfolio: keep your memos, decision briefs, and ethical pre-mortems as evidence of professional readiness.</p></li>
+</ul>
+</section>
+<section id="for-courses-and-workshops" class="level2">
+<h2 class="anchored" data-anchor-id="for-courses-and-workshops">For courses and workshops</h2>
+<ul>
+<li><p>Use the end-of-part capstones as graded deliverables. Each capstone can be completed independently or combined into a single integrated portfolio.</p></li>
+<li><p>Run short in-class role-plays using the scripts and meeting-note templates to practice conflict resolution and pushback.</p></li>
+</ul>
+</section>
+<section id="for-professional-teams" class="level2">
+<h2 class="anchored" data-anchor-id="for-professional-teams">For professional teams</h2>
+<ul>
+<li><p>Adopt the templates as standard operating practice: problem restatement memo, decision log, decision brief, and documentation checklist.</p></li>
+<li><p>Use the ethical tools proactively (ethics pre-mortem) and defensively (integrity memo) to protect validity and prevent harm.</p></li>
+</ul>
+<p><em>Optional implementation: instructors can require a “deliverable bundle” per project milestone (kickoff, midstream findings, final recommendation).</em></p>
+</section>
+</section>
+<section id="conclusion-technical-rigor-requires-human-rigor" class="level1">
+<h1>Conclusion: Technical Rigor Requires Human Rigor</h1>
+<p>The central claim of this prelude is straightforward: technical competence is necessary, but often insufficient for effective practice. In real settings, data scientists must translate human questions into statistical questions, communicate results in context, collaborate under ambiguity, and uphold integrity when incentives reward convenience over truth. These capabilities are not accessories to data science; they are part of its professional infrastructure. The chapters that follow therefore treat emotional intelligence, statistical literacy, and ethical judgment as competencies that strengthen analytic rigor—not as “soft” add-ons. A well-rounded data scientist is defined by what their work enables: sound decisions, clear understanding of uncertainty, and responsible action under real constraints.</p>
+</section>
+<section id="capstone-exercises-practicing-the-five-domain-model" class="level1">
+<h1>Capstone Exercises: Practicing the Five-Domain Model</h1>
+<p>The capstones below are designed to be completed as a sequence using a single case scenario. Each capstone emphasizes one domain while reinforcing the others. Instructors may assign them separately or bundle them into a single portfolio.</p>
+<section id="shared-case-scenario-used-across-all-capstones" class="level2">
+<h2 class="anchored" data-anchor-id="shared-case-scenario-used-across-all-capstones">Shared case scenario (used across all capstones)</h2>
+<p>A school district is piloting a new STEM-focused mathematics program for eighth graders across multiple schools. Students are taught in intact classrooms (random assignment is not feasible). Leadership wants evidence to decide whether to scale the program district-wide next year. You are the data scientist/statistical consultant supporting the evaluation. You have a tight timeline, multiple stakeholder groups, and nontrivial measurement and fairness concerns.</p>
+</section>
+<section id="capstone-1-theoretical-knowledge-of-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="capstone-1-theoretical-knowledge-of-statistics">Capstone 1: Theoretical Knowledge of Statistics</h2>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
+<ul>
+<li><p>Select an appropriate evaluation design given nonrandom assignment and articulate its assumptions.</p></li>
+<li><p>Define estimands (what effect is being estimated) and justify unit of analysis and inference strategy.</p></li>
+<li><p>Identify major threats to validity and propose robustness checks.</p></li>
+</ul>
+</section>
+<section id="estimated-time" class="level3">
+<h3 class="anchored" data-anchor-id="estimated-time">Estimated time</h3>
+<p>90–120 minutes (individual) or 60–90 minutes (team)</p>
+</section>
+<section id="task" class="level3">
+<h3 class="anchored" data-anchor-id="task">Task</h3>
+<ul>
+<li><p>Write a 1–2 page Analysis Plan: problem statement, estimand(s), proposed model/design, and key assumptions.</p></li>
+<li><p>Include at least two validity threats and at least two robustness checks (e.g., sensitivity analysis, subgroup stability, alternative specifications).</p></li>
+</ul>
+</section>
+<section id="deliverables" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables">Deliverables</h3>
+<ul>
+<li><p>Analysis Plan (1–2 pages)</p></li>
+<li><p>Assumptions and Definitions Log (living table, one page minimum)</p></li>
+</ul>
+</section>
+<section id="rubric" class="level3">
+<h3 class="anchored" data-anchor-id="rubric">Rubric</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Criteria</strong></th>
+<th><strong>Exemplary (3)</strong></th>
+<th><strong>Proficient (2)</strong></th>
+<th><strong>Developing (1)</strong></th>
+<th><strong>Needs work (0)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Design choice and justification</td>
+<td>Design fits constraints; assumptions are explicit and aligned to the decision context.</td>
+<td>Design is reasonable; assumptions are mostly stated but may lack precision.</td>
+<td>Design is partially mismatched or weakly justified; assumptions are vague.</td>
+<td>Design is inappropriate or unjustified; assumptions missing.</td>
+</tr>
+<tr class="even">
+<td>Validity threats and robustness plan</td>
+<td>Identifies key threats; proposes concrete, feasible checks that address them.</td>
+<td>Identifies major threats; checks are plausible but incomplete.</td>
+<td>Mentions threats; checks are generic or weakly connected.</td>
+<td>Threats/checks largely absent or irrelevant.</td>
+</tr>
+<tr class="odd">
+<td>Clarity of estimand and interpretation</td>
+<td>Clearly defines what effect is estimated and what it means in practice.</td>
+<td>Defines effect with minor ambiguities; interpretation mostly clear.</td>
+<td>Effect definition is unclear; interpretation is confusing.</td>
+<td>No clear estimand; interpretation not defensible.</td>
+</tr>
+<tr class="even">
+<td>Professional structure and readability</td>
+<td>Well organized; decision-ready language; concise and coherent.</td>
+<td>Generally organized; minor clarity issues.</td>
+<td>Hard to follow; excessive jargon or missing structure.</td>
+<td>Disorganized; not usable by stakeholders.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="capstone-2-programming-skills" class="level2">
+<h2 class="anchored" data-anchor-id="capstone-2-programming-skills">Capstone 2: Programming Skills</h2>
+<section id="learning-objectives-1" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-1">Learning objectives</h3>
+<ul>
+<li><p>Build a reproducible analysis pipeline with clear data checks and versioning.</p></li>
+<li><p>Implement diagnostics and produce outputs that can be regenerated end-to-end.</p></li>
+<li><p>Document decisions in code and README so a peer can rerun the work.</p></li>
+</ul>
+</section>
+<section id="estimated-time-1" class="level3">
+<h3 class="anchored" data-anchor-id="estimated-time-1">Estimated time</h3>
+<p>90–150 minutes</p>
+</section>
+<section id="task-1" class="level3">
+<h3 class="anchored" data-anchor-id="task-1">Task</h3>
+<ul>
+<li><p>Create a minimal, reproducible project structure (folders, scripts/notebooks).</p></li>
+<li><p>Implement data validation (missingness, ranges, duplicates), a baseline model, and at least one robustness check.</p></li>
+<li><p>Write a README with exact steps to reproduce results.</p></li>
+</ul>
+</section>
+<section id="deliverables-1" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables-1">Deliverables</h3>
+<ul>
+<li><p>Repository or folder with code/notebook + outputs</p></li>
+<li><p>README (repro steps + dependencies)</p></li>
+<li><p>Diagnostics checklist (completed)</p></li>
+</ul>
+</section>
+<section id="rubric-1" class="level3">
+<h3 class="anchored" data-anchor-id="rubric-1">Rubric</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Criteria</strong></th>
+<th><strong>Exemplary (3)</strong></th>
+<th><strong>Proficient (2)</strong></th>
+<th><strong>Developing (1)</strong></th>
+<th><strong>Needs work (0)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reproducibility</td>
+<td>Peer can rerun from scratch with no gaps; versions and dependencies are explicit.</td>
+<td>Mostly reproducible; minor missing steps or dependencies.</td>
+<td>Partially reproducible; key steps unclear.</td>
+<td>Not reproducible; missing files/steps.</td>
+</tr>
+<tr class="even">
+<td>Data checks and QA</td>
+<td>Comprehensive sanity checks; issues are logged and addressed.</td>
+<td>Checks present; some issues not handled or documented.</td>
+<td>Minimal checks; likely to miss major issues.</td>
+<td>Checks absent.</td>
+</tr>
+<tr class="odd">
+<td>Code quality and organization</td>
+<td>Clear structure; readable functions; comments explain decisions.</td>
+<td>Generally readable; some clutter or inconsistent structure.</td>
+<td>Difficult to read or navigate; limited documentation.</td>
+<td>Unstructured; hard to interpret or reuse.</td>
+</tr>
+<tr class="even">
+<td>Diagnostics and robustness</td>
+<td>Includes baseline + diagnostics + at least one meaningful robustness check.</td>
+<td>Includes baseline and some diagnostics; robustness is limited.</td>
+<td>Diagnostics superficial; robustness unclear.</td>
+<td>No diagnostics/robustness.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="capstone-3-communication-and-team-building" class="level2">
+<h2 class="anchored" data-anchor-id="capstone-3-communication-and-team-building">Capstone 3: Communication and Team-Building</h2>
+<section id="learning-objectives-2" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-2">Learning objectives</h3>
+<ul>
+<li><p>Demonstrate active listening through accurate paraphrase and confirmation.</p></li>
+<li><p>Create shared accountability via roles, norms, and conflict protocol.</p></li>
+<li><p>Document decisions and follow-ups to prevent misalignment.</p></li>
+</ul>
+</section>
+<section id="estimated-time-2" class="level3">
+<h3 class="anchored" data-anchor-id="estimated-time-2">Estimated time</h3>
+<p>60–90 minutes (team recommended)</p>
+</section>
+<section id="task-2" class="level3">
+<h3 class="anchored" data-anchor-id="task-2">Task</h3>
+<ul>
+<li><p>Draft a Problem Restatement Memo to confirm scope, definitions, and success criteria.</p></li>
+<li><p>Create a Team Charter and a one-page Meeting Notes log using listening loops.</p></li>
+<li><p>Populate a Decision Log with at least five decisions made during the exercise.</p></li>
+</ul>
+</section>
+<section id="deliverables-2" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables-2">Deliverables</h3>
+<ul>
+<li><p>Problem Restatement Memo</p></li>
+<li><p>Team Charter + Meeting Notes (listening loops)</p></li>
+<li><p>Decision Log (minimum five entries)</p></li>
+</ul>
+</section>
+<section id="rubric-2" class="level3">
+<h3 class="anchored" data-anchor-id="rubric-2">Rubric</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Criteria</strong></th>
+<th><strong>Exemplary (3)</strong></th>
+<th><strong>Proficient (2)</strong></th>
+<th><strong>Developing (1)</strong></th>
+<th><strong>Needs work (0)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Active listening and problem translation</td>
+<td>Paraphrases are precise; definitions clarified; alignment achieved before analysis.</td>
+<td>Paraphrases mostly accurate; some definitions remain vague.</td>
+<td>Limited confirmation; translation is incomplete or ambiguous.</td>
+<td>No evidence of listening loop or alignment.</td>
+</tr>
+<tr class="even">
+<td>Team norms and accountability</td>
+<td>Clear roles, cadence, review process, and conflict protocol; shared accountability is operationalized.</td>
+<td>Most norms present; accountability plan is reasonable.</td>
+<td>Norms incomplete; accountability is assumed rather than designed.</td>
+<td>No clear norms or accountability.</td>
+</tr>
+<tr class="odd">
+<td>Documentation quality</td>
+<td>Decisions, owners, and dates are clearly recorded; follow-ups are actionable.</td>
+<td>Documentation present with minor gaps.</td>
+<td>Documentation inconsistent; owners/dates often missing.</td>
+<td>Little to no documentation.</td>
+</tr>
+<tr class="even">
+<td>Professional tone and usability</td>
+<td>Artifacts are stakeholder-ready and easy to use.</td>
+<td>Mostly usable; minor clarity issues.</td>
+<td>Hard to use; excessive jargon or missing structure.</td>
+<td>Not usable in practice.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences" class="level2">
+<h2 class="anchored" data-anchor-id="capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences">Capstone 4: Statistical Literacy (Meaning-Making for Non-Technical Audiences)</h2>
+<section id="learning-objectives-3" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-3">Learning objectives</h3>
+<ul>
+<li><p>Translate statistical results into decision-relevant meaning and uncertainty.</p></li>
+<li><p>Distinguish statistical significance from practical significance.</p></li>
+<li><p>Communicate limitations and boundary conditions clearly.</p></li>
+</ul>
+</section>
+<section id="estimated-time-3" class="level3">
+<h3 class="anchored" data-anchor-id="estimated-time-3">Estimated time</h3>
+<p>60–120 minutes</p>
+</section>
+<section id="task-3" class="level3">
+<h3 class="anchored" data-anchor-id="task-3">Task</h3>
+<ul>
+<li><p>Create a 1-page Decision Brief (or 5-slide equivalent) aimed at non-technical leadership.</p></li>
+<li><p>Include an Impact Table translating effects into practical terms (and cost of being wrong).</p></li>
+<li><p>Write boundary statements: what you can and cannot conclude.</p></li>
+</ul>
+</section>
+<section id="deliverables-3" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables-3">Deliverables</h3>
+<ul>
+<li><p>Decision Brief (1 page or 5 slides)</p></li>
+<li><p>Impact Table</p></li>
+</ul>
+</section>
+<section id="rubric-3" class="level3">
+<h3 class="anchored" data-anchor-id="rubric-3">Rubric</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Criteria</strong></th>
+<th><strong>Exemplary (3)</strong></th>
+<th><strong>Proficient (2)</strong></th>
+<th><strong>Developing (1)</strong></th>
+<th><strong>Needs work (0)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interpretation and practical meaning</td>
+<td>Findings translated into clear practical implications; uncertainty is integrated.</td>
+<td>Interpretation mostly clear; some practical implications are underdeveloped.</td>
+<td>Interpretation is overly technical or incomplete.</td>
+<td>Interpretation is misleading or absent.</td>
+</tr>
+<tr class="even">
+<td>Handling of uncertainty and limitations</td>
+<td>Uncertainty and limitations are explicit, honest, and decision-relevant.</td>
+<td>Limitations stated; uncertainty partially integrated.</td>
+<td>Limitations are generic; uncertainty minimized or unclear.</td>
+<td>Limitations/uncertainty omitted.</td>
+</tr>
+<tr class="odd">
+<td>Audience fit and clarity</td>
+<td>Language is accessible; structure supports decision-making.</td>
+<td>Generally accessible; minor jargon persists.</td>
+<td>Too technical or poorly structured for the audience.</td>
+<td>Not audience-appropriate.</td>
+</tr>
+<tr class="even">
+<td>Decision readiness</td>
+<td>Clear recommendation and next steps with tradeoffs.</td>
+<td>Recommendation present; tradeoffs partially addressed.</td>
+<td>Recommendation vague; next steps unclear.</td>
+<td>No actionable recommendation.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="capstone-5-ethical-practice-of-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="capstone-5-ethical-practice-of-data-science">Capstone 5: Ethical Practice of Data Science</h2>
+<section id="learning-objectives-4" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-4">Learning objectives</h3>
+<ul>
+<li><p>Anticipate misuse and harm through an ethics pre-mortem.</p></li>
+<li><p>Respond to pressure ethically and professionally using defensible language.</p></li>
+<li><p>Document concerns and define escalation pathways.</p></li>
+</ul>
+</section>
+<section id="estimated-time-4" class="level3">
+<h3 class="anchored" data-anchor-id="estimated-time-4">Estimated time</h3>
+<p>60–120 minutes</p>
+</section>
+<section id="task-4" class="level3">
+<h3 class="anchored" data-anchor-id="task-4">Task</h3>
+<ul>
+<li><p>Complete an Ethics Pre-Mortem: identify at least five ways results could be misused or misinterpreted and propose mitigations.</p></li>
+<li><p>Write an Integrity Memo responding to a scenario where leadership asks you to ‘emphasize significance’ despite weak practical impact.</p></li>
+<li><p>Draft a Pushback Script and a Documentation &amp; Escalation Checklist for the same scenario.</p></li>
+</ul>
+</section>
+<section id="deliverables-4" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables-4">Deliverables</h3>
+<ul>
+<li><p>Ethics Pre-Mortem</p></li>
+<li><p>Integrity Memo</p></li>
+<li><p>Pushback Script + Documentation &amp; Escalation Checklist</p></li>
+</ul>
+</section>
+<section id="rubric-4" class="level3">
+<h3 class="anchored" data-anchor-id="rubric-4">Rubric</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Criteria</strong></th>
+<th><strong>Exemplary (3)</strong></th>
+<th><strong>Proficient (2)</strong></th>
+<th><strong>Developing (1)</strong></th>
+<th><strong>Needs work (0)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Risk identification and mitigation</td>
+<td>Identifies realistic risks; mitigations are specific and implementable.</td>
+<td>Identifies major risks; mitigations are plausible but not fully developed.</td>
+<td>Risks are generic; mitigations are vague.</td>
+<td>Risks/mitigations absent or superficial.</td>
+</tr>
+<tr class="even">
+<td>Integrity under pressure</td>
+<td>Response is firm, evidence-based, and professionally framed; protects validity and stakeholders.</td>
+<td>Response is principled; may lack clarity or firmness in places.</td>
+<td>Response is hesitant or overly adversarial; defensibility unclear.</td>
+<td>Response compromises integrity or is unprofessional.</td>
+</tr>
+<tr class="odd">
+<td>Documentation and escalation readiness</td>
+<td>Clear documentation plan; escalation pathway is appropriate and actionable.</td>
+<td>Documentation plan present; escalation somewhat unclear.</td>
+<td>Documentation incomplete; escalation plan minimal.</td>
+<td>No documentation/escalation plan.</td>
+</tr>
+<tr class="even">
+<td>Ethical communication</td>
+<td>Boundary statements are clear; avoids misleading claims; communicates uncertainty responsibly.</td>
+<td>Mostly responsible; minor overclaiming risk.</td>
+<td>Mixed messages; boundary statements weak.</td>
+<td>Overclaims or invites misuse.</td>
+</tr>
+</tbody>
+</table>
+<p>New part (part II)</p>
+<p><strong>Capstone Deliverable Templates<br>
+for<br>
+The Well-Rounded Data Scientist</strong></p>
+<p><em>Fillable, plug-and-play templates for courses, workshops, and professional practice.</em></p>
+<p>Version: [v1.0]<br>
+Date: [Month Day, Year]<br>
+Prepared by: [Name]</p>
+</section>
+</section>
+</section>
+<section id="how-to-use-these-templates" class="level1">
+<h1>How to Use These Templates</h1>
+<p>Each template is designed to produce a concrete professional artifact that supports both technical rigor and real-world effectiveness. Use them as: (a) graded deliverables in a course, (b) workshop exercises, or (c) checklists and scripts in professional practice.</p>
+<p><em>Tip: Keep versions. In consulting practice, revision is often where alignment and quality are achieved.</em></p>
+</section>
+<section id="template-1-problem-restatement-memo" class="level1">
+<h1>Template 1: Problem Restatement Memo</h1>
+<p><em>Use after the kickoff conversation to confirm shared understanding before analysis begins.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="decision-context" class="level2">
+<h2 class="anchored" data-anchor-id="decision-context">1. Decision Context</h2>
+<p>Decision to be made: [What decision will this work inform?]</p>
+<p>Decision owner(s): [Who decides?]</p>
+<p>Time horizon / deadline: [By when?]</p>
+<p>Why now: [What triggered this request?]</p>
+</section>
+<section id="problem-statement" class="level2">
+<h2 class="anchored" data-anchor-id="problem-statement">2. Problem Statement</h2>
+<p>Stakeholder question (verbatim): [Paste or paraphrase]</p>
+<p>Translated statistical question: [Outcome, population, comparison, timeframe]</p>
+</section>
+<section id="definitions-and-success-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="definitions-and-success-criteria">3. Definitions and Success Criteria</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Term</strong></th>
+<th><strong>Operational definition</strong></th>
+<th><strong>How measured</strong></th>
+<th><strong>Success threshold / target</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-reality-check" class="level2">
+<h2 class="anchored" data-anchor-id="data-reality-check">4. Data Reality Check</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Data source</strong></th>
+<th><strong>Unit of analysis</strong></th>
+<th><strong>Coverage / timeframe</strong></th>
+<th><strong>Known limitations / missingness</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="constraints-and-risks" class="level2">
+<h2 class="anchored" data-anchor-id="constraints-and-risks">5. Constraints and Risks</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Constraint / risk</strong></th>
+<th><strong>Why it matters</strong></th>
+<th><strong>Mitigation / next step</strong></th>
+<th><strong>Owner</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="deliverables-and-communication-plan" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables-and-communication-plan">6. Deliverables and Communication Plan</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 19%">
+<col style="width: 36%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Deliverable</strong></th>
+<th><strong>Audience</strong></th>
+<th><strong>Format (slides/memo)</strong></th>
+<th><strong>Due date</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-would-change-our-mind" class="level2">
+<h2 class="anchored" data-anchor-id="what-would-change-our-mind">7. What Would Change Our Mind?</h2>
+<p>[Write 5–8 sentences. What evidence would reverse or materially change the recommendation?]</p>
+</section>
+</section>
+<section id="template-2-definitions-assumptions-log" class="level1">
+<h1>Template 2: Definitions &amp; Assumptions Log</h1>
+<p><em>Use as a living document throughout the project. Update whenever scope, data, or interpretation changes.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Item (term/assumption)</strong></th>
+<th><strong>Current definition / assumption</strong></th>
+<th><strong>Why it matters</strong></th>
+<th><strong>How verified / tested</strong></th>
+<th><strong>Status</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="template-3-meeting-notes-active-listening-loops" class="level1">
+<h1>Template 3: Meeting Notes (Active Listening Loops)</h1>
+<p><em>Designed to capture clarifications, confirm meaning, and reduce misalignment.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<p>Meeting objective: [e.g., clarify scope; review findings; resolve conflict]</p>
+<p>Attendees: [Names + roles]</p>
+<p>Agenda (3–5 bullets):</p>
+<ul>
+<li><p>[Fill]</p></li>
+<li><p>[Fill]</p></li>
+<li><p>[Fill]</p></li>
+</ul>
+<section id="listening-loop-log" class="level2">
+<h2 class="anchored" data-anchor-id="listening-loop-log">Listening Loop Log</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Stakeholder statement / request</strong></th>
+<th><strong>Your paraphrase (confirmation)</strong></th>
+<th><strong>Agreed definition / decision</strong></th>
+<th><strong>Open questions</strong></th>
+<th><strong>Follow-up owner</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="decisions-made" class="level2">
+<h2 class="anchored" data-anchor-id="decisions-made">Decisions Made</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Decision</strong></th>
+<th><strong>Rationale</strong></th>
+<th><strong>Owner</strong></th>
+<th><strong>Due date</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="risks-blockers" class="level2">
+<h2 class="anchored" data-anchor-id="risks-blockers">Risks / Blockers</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Risk / blocker</strong></th>
+<th><strong>Impact</strong></th>
+<th><strong>Mitigation</strong></th>
+<th><strong>Owner</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="template-4-stakeholder-map" class="level1">
+<h1>Template 4: Stakeholder Map</h1>
+<p><em>Use to understand incentives, resistance, and what each stakeholder needs to trust the work.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Stakeholder</strong></th>
+<th><strong>Role / influence</strong></th>
+<th><strong>Goals / incentives</strong></th>
+<th><strong>Concerns / risks</strong></th>
+<th><strong>What they need to trust the work</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="template-5-team-charter" class="level1">
+<h1>Template 5: Team Charter</h1>
+<p><em>Use at project start to create shared accountability, coordination norms, and conflict protocols.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="team-purpose" class="level2">
+<h2 class="anchored" data-anchor-id="team-purpose">Team purpose</h2>
+<p>[One paragraph: what we are trying to achieve for whom and by when.]</p>
+</section>
+<section id="roles-and-responsibilities" class="level2">
+<h2 class="anchored" data-anchor-id="roles-and-responsibilities">Roles and responsibilities</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Role</strong></th>
+<th><strong>Person</strong></th>
+<th><strong>Primary responsibilities</strong></th>
+<th><strong>Backup</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="working-agreements" class="level2">
+<h2 class="anchored" data-anchor-id="working-agreements">Working agreements</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Communication channel(s): [e.g., Slack/email]; expected response time: [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Meeting cadence and duration: [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Definition of done for deliverables: [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Review process (peer review / PRs / QA): [Fill]</label></p></li>
+<li><p><label><input type="checkbox">File naming, versioning, and storage: [Fill]</label></p></li>
+</ul>
+</section>
+<section id="conflict-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="conflict-protocol">Conflict protocol</h2>
+<p>1) Surface the issue early (name the disagreement).</p>
+<p>2) Separate facts, interpretations, and values (what is disputed?).</p>
+<p>3) Propose options and tradeoffs (time, risk, rigor).</p>
+<p>4) Decide and document (who decides; by when).</p>
+<p>Escalation path: [When and to whom?]</p>
+</section>
+<section id="shared-accountability" class="level2">
+<h2 class="anchored" data-anchor-id="shared-accountability">Shared accountability</h2>
+<p><em>Use this section to verify individual mastery, not just polished group output.</em></p>
+<p>How we ensure every member understands the core analysis: [Fill]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Core concept / assumption to explain</strong></th>
+<th><strong>Each member can explain (Y/N)</strong></th>
+<th><strong>Notes / remediation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="template-6-decision-log" class="level1">
+<h1>Template 6: Decision Log</h1>
+<p><em>Use throughout the project. A decision log is an accountability and memory tool.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Date</strong></th>
+<th><strong>Decision</strong></th>
+<th><strong>Options considered</strong></th>
+<th><strong>Rationale / evidence</strong></th>
+<th><strong>Decision owner</strong></th>
+<th><strong>Follow-up</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="template-7-decision-brief" class="level1">
+<h1>Template 7: Decision Brief</h1>
+<p><em>Use to communicate results to non-technical decision-makers with honesty about uncertainty and limits.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="required-structure-1-page-or-5-slides" class="level2">
+<h2 class="anchored" data-anchor-id="required-structure-1-page-or-5-slides">Required structure (1 page or 5 slides)</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">What we asked (decision context)</label></p></li>
+<li><p><label><input type="checkbox">What we did (high-level methods, in plain language)</label></p></li>
+<li><p><label><input type="checkbox">What we found (key results + uncertainty)</label></p></li>
+<li><p><label><input type="checkbox">What it means in practice (practical significance; risks)</label></p></li>
+<li><p><label><input type="checkbox">What we cannot conclude (limitations; boundaries)</label></p></li>
+<li><p><label><input type="checkbox">Recommendation and next step (actionable)</label></p></li>
+</ul>
+</section>
+<section id="decision-brief-draft" class="level2">
+<h2 class="anchored" data-anchor-id="decision-brief-draft">Decision Brief Draft</h2>
+<p>What we asked: [Fill]</p>
+<p>What we did: [Fill]</p>
+<p>What we found (with uncertainty): [Fill]</p>
+<p>What it means in practice: [Fill]</p>
+<p>What we cannot conclude: [Fill]</p>
+<p>Recommendation + next step: [Fill]</p>
+</section>
+</section>
+<section id="template-8-impact-table" class="level1">
+<h1>Template 8: Impact Table</h1>
+<p><em>Use alongside the Decision Brief to translate effects into practical meaning and decision risk.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Finding / effect</strong></th>
+<th><strong>Practical meaning</strong></th>
+<th><strong>Confidence / uncertainty</strong></th>
+<th><strong>Cost of being wrong</strong></th>
+<th><strong>Recommended action</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="template-9-analysis-plan" class="level1">
+<h1>Template 9: Analysis Plan</h1>
+<p><em>Use before heavy analysis. The goal is defensibility: clear choices, tradeoffs, and validity threats.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="objective-and-decision-context" class="level2">
+<h2 class="anchored" data-anchor-id="objective-and-decision-context">1. Objective and decision context</h2>
+<p>[Fill]</p>
+</section>
+<section id="data-and-measurement" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-measurement">2. Data and measurement</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Dataset / source</strong></th>
+<th><strong>Key variables</strong></th>
+<th><strong>Unit of analysis</strong></th>
+<th><strong>Known measurement issues</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="primary-analysis-approach" class="level2">
+<h2 class="anchored" data-anchor-id="primary-analysis-approach">3. Primary analysis approach</h2>
+<p>Candidate approaches considered: [Fill]</p>
+<p>Selected approach and justification (tradeoffs): [Fill]</p>
+</section>
+<section id="validation-and-robustness-plan" class="level2">
+<h2 class="anchored" data-anchor-id="validation-and-robustness-plan">4. Validation and robustness plan</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Train/validation strategy (or evaluation design): [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Sensitivity check(s): [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Subgroup stability check (if relevant): [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Error analysis plan: [Fill]</label></p></li>
+</ul>
+</section>
+<section id="threats-to-validity-and-mitigations" class="level2">
+<h2 class="anchored" data-anchor-id="threats-to-validity-and-mitigations">5. Threats to validity and mitigations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Threat (bias/assumption)</strong></th>
+<th><strong>How it could distort results</strong></th>
+<th><strong>Mitigation / check</strong></th>
+<th><strong>Residual risk</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="deliverables-5" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables-5">6. Deliverables</h2>
+<p>[Fill]</p>
+</section>
+</section>
+<section id="template-10-model-selection-memo" class="level1">
+<h1>Template 10: Model Selection Memo</h1>
+<p><em>Use to justify why the chosen model is appropriate and what could break it.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<p>Executive summary (3–5 sentences): [Fill]</p>
+<section id="why-this-model" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-model">Why this model</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Fit to problem and decision context: [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Interpretability needs: [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Data constraints (sparsity/imbalance/missingness): [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Performance tradeoffs: [Fill]</label></p></li>
+</ul>
+</section>
+<section id="what-could-break-it-failure-modes" class="level2">
+<h2 class="anchored" data-anchor-id="what-could-break-it-failure-modes">What could break it? (Failure modes)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Failure mode</strong></th>
+<th><strong>How it would show up</strong></th>
+<th><strong>Monitoring signal / test</strong></th>
+<th><strong>Mitigation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="limitations-and-appropriate-claims" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-appropriate-claims">Limitations and appropriate claims</h2>
+<p>[Fill]</p>
+</section>
+</section>
+<section id="template-11-diagnostics-minimum-set" class="level1">
+<h1>Template 11: Diagnostics Minimum Set</h1>
+<p><em>Use as a checklist to ensure baseline defensibility before sharing results.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="checklist" class="level2">
+<h2 class="anchored" data-anchor-id="checklist">Checklist</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Data sanity checks completed (ranges, missingness, duplicates)</label></p></li>
+<li><p><label><input type="checkbox">Baseline model established for comparison</label></p></li>
+<li><p><label><input type="checkbox">Performance evaluated with appropriate metrics</label></p></li>
+<li><p><label><input type="checkbox">Calibration checked (if probabilistic predictions)</label></p></li>
+<li><p><label><input type="checkbox">Error analysis completed (where does it fail?)</label></p></li>
+<li><p><label><input type="checkbox">Sensitivity check completed (at least one)</label></p></li>
+<li><p><label><input type="checkbox">Subgroup stability considered (if relevant)</label></p></li>
+<li><p><label><input type="checkbox">Assumptions documented and limitations stated</label></p></li>
+<li><p><label><input type="checkbox">Reproducibility verified (rerun from scratch)</label></p></li>
+</ul>
+</section>
+<section id="notes-on-findings-and-actions" class="level2">
+<h2 class="anchored" data-anchor-id="notes-on-findings-and-actions">Notes on findings and actions</h2>
+<p>[Fill]</p>
+</section>
+</section>
+<section id="template-12-reproducibility-bundle-readme-skeleton" class="level1">
+<h1>Template 12: Reproducibility Bundle (README Skeleton)</h1>
+<p><em>Use to make your work rerunnable by a peer or future self.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="readme-sections-copypaste" class="level2">
+<h2 class="anchored" data-anchor-id="readme-sections-copypaste">README sections (copy/paste)</h2>
+<p>Project overview: [Fill]</p>
+<p>How to reproduce (exact steps): [Fill]</p>
+<p>Data sources and access: [Fill]</p>
+<p>Environment / dependencies: [Fill]</p>
+<p>Project structure (folders/files): [Fill]</p>
+<p>How results are generated (pipeline): [Fill]</p>
+<p>Known issues / limitations: [Fill]</p>
+<p>Change log (versions): [Fill]</p>
+</section>
+</section>
+<section id="template-13-ethics-pre-mortem" class="level1">
+<h1>Template 13: Ethics Pre-Mortem</h1>
+<p><em>Use before releasing results. The goal is to anticipate how the work could mislead and prevent harm.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="how-could-this-work-mislead" class="level2">
+<h2 class="anchored" data-anchor-id="how-could-this-work-mislead">How could this work mislead?</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Risk of misuse / misinterpretation</strong></th>
+<th><strong>Why it could happen</strong></th>
+<th><strong>Preventive action (language/check)</strong></th>
+<th><strong>Owner</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="boundary-statements-what-we-should-not-claim" class="level2">
+<h2 class="anchored" data-anchor-id="boundary-statements-what-we-should-not-claim">Boundary statements (what we should NOT claim)</h2>
+<p>[Fill]</p>
+</section>
+<section id="disclosure-plan" class="level2">
+<h2 class="anchored" data-anchor-id="disclosure-plan">Disclosure plan</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Key limitations disclosed in executive summary</label></p></li>
+<li><p><label><input type="checkbox">Uncertainty reported alongside point estimates</label></p></li>
+<li><p><label><input type="checkbox">Practical significance addressed explicitly</label></p></li>
+<li><p><label><input type="checkbox">Subgroup harms considered (if relevant)</label></p></li>
+<li><p><label><input type="checkbox">Documentation stored and accessible</label></p></li>
+</ul>
+</section>
+</section>
+<section id="template-14-integrity-memo" class="level1">
+<h1>Template 14: Integrity Memo</h1>
+<p><em>Use when there is pressure to distort interpretations or selectively report.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="what-is-defensible-to-claim" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-defensible-to-claim">What is defensible to claim</h2>
+<ul>
+<li><p>[Fill]</p></li>
+<li><p>[Fill]</p></li>
+<li><p>[Fill]</p></li>
+</ul>
+</section>
+<section id="what-is-not-defensible-to-claim-and-why" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-not-defensible-to-claim-and-why">What is NOT defensible to claim (and why)</h2>
+<ul>
+<li><p>[Fill]</p></li>
+<li><p>[Fill]</p></li>
+<li><p>[Fill]</p></li>
+</ul>
+</section>
+<section id="recommended-path-forward" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-path-forward">Recommended path forward</h2>
+<p>[Offer defensible alternatives that meet legitimate goals.]</p>
+</section>
+</section>
+<section id="template-15-pushback-scripts-firm-and-helpful" class="level1">
+<h1>Template 15: Pushback Scripts (Firm-and-Helpful)</h1>
+<p><em>Short scripts you can use verbatim in meetings or emails when pressure emerges.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Pressure scenario</strong></th>
+<th><strong>Your response (script)</strong></th>
+<th><strong>Defensible alternative offered</strong></th>
+<th><strong>Follow-up / documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="odd">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+<tr class="even">
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+<td>[Fill]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="template-16-documentation-escalation-checklist" class="level1">
+<h1>Template 16: Documentation &amp; Escalation Checklist</h1>
+<p><em>Use when ethical pressure persists. Documentation protects stakeholders and the analyst.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project / Case</strong></th>
+<th>[Project name]</th>
+<th><strong>Client / Stakeholder</strong></th>
+<th>[Name / org]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prepared by</strong></td>
+<td>[Name]</td>
+<td><strong>Role</strong></td>
+<td>[Student / Analyst]</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>[Month Day, Year]</td>
+<td><strong>Version</strong></td>
+<td>[v#]</td>
+</tr>
+<tr class="odd">
+<td><strong>Reviewed by</strong></td>
+<td>[Name]</td>
+<td><strong>Status</strong></td>
+<td>[Draft / Final]</td>
+</tr>
+</tbody>
+</table>
+<section id="documentation-what-to-record" class="level2">
+<h2 class="anchored" data-anchor-id="documentation-what-to-record">Documentation (what to record)</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Who requested the change (name/role)</label></p></li>
+<li><p><label><input type="checkbox">Exact request (quote if possible)</label></p></li>
+<li><p><label><input type="checkbox">Your response and reasoning</label></p></li>
+<li><p><label><input type="checkbox">What evidence supports your position</label></p></li>
+<li><p><label><input type="checkbox">What you offered instead</label></p></li>
+<li><p><label><input type="checkbox">What was decided, by whom, and when</label></p></li>
+<li><p><label><input type="checkbox">Where the documentation is stored</label></p></li>
+</ul>
+</section>
+<section id="escalation-when-and-to-whom" class="level2">
+<h2 class="anchored" data-anchor-id="escalation-when-and-to-whom">Escalation (when and to whom)</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">When to escalate: [Fill]</label></p></li>
+<li><p><label><input type="checkbox">Escalation path: [Manager / PI / Compliance / Ethics board / Client lead]</label></p></li>
+<li><p><label><input type="checkbox">What you will share (memo, decision log, evidence)</label></p></li>
+<li><p><label><input type="checkbox">How you will frame the concern (risk to validity, risk of harm, misinterpretation risk)</label></p></li>
+</ul>
+</section>
+<section id="post-meeting-follow-up-email-skeleton" class="level2">
+<h2 class="anchored" data-anchor-id="post-meeting-follow-up-email-skeleton">Post-meeting follow-up email (skeleton)</h2>
+<p>Subject: Summary of [Topic] and next steps</p>
+<p>Thank you for today’s discussion. To confirm our shared understanding:</p>
+<p>• [Decision made]</p>
+<p>• [Rationale]</p>
+<p>• [Next steps + owners + dates]</p>
+<p>For transparency, the key limitations/assumptions are: [Fill]</p>
+<p>Best,</p>
+<p>[Name]</p>
+<p><strong>Is it “complete enough,” or should you add more stories?</strong></p>
+<p>This is complete enough as a strong prelude/preface. You already have a coherent arc: <strong>why the book exists → what consulting taught → why ethics matters → how education must change → the proposed model → diagram</strong>.</p>
+<p>If you add anything, I would keep it to <strong>one short paragraph</strong> (not a full story) titled <strong>“Who this book is for”</strong> (students / educators / practitioners) and <strong>“How to use this book”</strong> (chapters + exercises + reflections). That’s the only “missing” front-matter element that sometimes helps readers orient quickly.</p>
+<p>If you want, paste your co-authors’ names and your preferred term (<strong>“data scientist”</strong> vs <strong>“statistician/data scientist”</strong>), and I’ll do a final pass to standardize <em>every instance</em> (including figure caption wording) so the entire chapter reads like a finished, typeset book section.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/mvd-textbook\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
