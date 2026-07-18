@@ -100,7 +100,7 @@ window.Quarto = {
 
 <meta property="og:title" content="book">
 <meta property="og:description" content="Homepage for Stats 140/141 textbook">
-<meta property="og:image" content="https://mvd-textbook.github.io/chapters/&quot;images/0001diagram.png&quot;">
+<meta property="og:image" content="https://mvd-textbook.github.io/chapters/&quot;0001diagram.png&quot;">
 <meta property="og:site_name" content="book">
 </head>
 
@@ -129,9 +129,14 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">book</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
     <a href="https://bruinlearn.ucla.edu/courses/232665" title="BruinLearn" class="quarto-navigation-tool px-1" aria-label="BruinLearn"><i class="bi bi-person-fill"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
     </div>
       </div>
@@ -144,13 +149,13 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Start Here</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
@@ -188,42 +193,46 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#prelude" id="toc-prelude" class="nav-link active" data-scroll-target="#prelude">Prelude</a></li>
-  <li><a href="#mahtash-esfandiari" id="toc-mahtash-esfandiari" class="nav-link" data-scroll-target="#mahtash-esfandiari">Mahtash Esfandiari</a>
+  <li><a href="#prelude" id="toc-prelude" class="nav-link active" data-scroll-target="#prelude"><span class="header-section-number">1</span> Prelude</a>
+  <ul>
+  <li><a href="#mahtash-esfandiari" id="toc-mahtash-esfandiari" class="nav-link" data-scroll-target="#mahtash-esfandiari">Mahtash Esfandiari</a></li>
+  <li><a href="#why-emotional-intelligence-in-data-scienceand-why-now" id="toc-why-emotional-intelligence-in-data-scienceand-why-now" class="nav-link" data-scroll-target="#why-emotional-intelligence-in-data-scienceand-why-now"><span class="header-section-number">1.1</span> Why Emotional Intelligence in Data Science—and Why Now</a></li>
+  <li><a href="#lessons-that-made-eq-tangible-in-consulting" id="toc-lessons-that-made-eq-tangible-in-consulting" class="nav-link" data-scroll-target="#lessons-that-made-eq-tangible-in-consulting"><span class="header-section-number">1.2</span> Lessons That Made EQ Tangible in Consulting</a>
   <ul class="collapse">
-  <li><a href="#why-emotional-intelligence-in-data-scienceand-why-now" id="toc-why-emotional-intelligence-in-data-scienceand-why-now" class="nav-link" data-scroll-target="#why-emotional-intelligence-in-data-scienceand-why-now">Why Emotional Intelligence in Data Science—and Why Now</a></li>
-  <li><a href="#lessons-that-made-eq-tangible-in-consulting" id="toc-lessons-that-made-eq-tangible-in-consulting" class="nav-link" data-scroll-target="#lessons-that-made-eq-tangible-in-consulting">Lessons That Made EQ Tangible in Consulting</a>
-  <ul class="collapse">
-  <li><a href="#active-listening-a-most-underrated-tool" id="toc-active-listening-a-most-underrated-tool" class="nav-link" data-scroll-target="#active-listening-a-most-underrated-tool">Active Listening: A Most Underrated Tool</a></li>
-  <li><a href="#context-matters-communication-is-not-an-optional-add-on" id="toc-context-matters-communication-is-not-an-optional-add-on" class="nav-link" data-scroll-target="#context-matters-communication-is-not-an-optional-add-on">Context Matters: Communication Is Not an Optional Add-On</a></li>
-  <li><a href="#teamwork-requires-skill-not-assumption" id="toc-teamwork-requires-skill-not-assumption" class="nav-link" data-scroll-target="#teamwork-requires-skill-not-assumption">Teamwork Requires Skill, Not Assumption</a></li>
-  <li><a href="#locus-of-control-and-construct-validity-when-context-redefines-measurement" id="toc-locus-of-control-and-construct-validity-when-context-redefines-measurement" class="nav-link" data-scroll-target="#locus-of-control-and-construct-validity-when-context-redefines-measurement">Locus of Control and Construct Validity: When Context Redefines Measurement</a></li>
+  <li><a href="#active-listening-a-most-underrated-tool" id="toc-active-listening-a-most-underrated-tool" class="nav-link" data-scroll-target="#active-listening-a-most-underrated-tool"><span class="header-section-number">1.2.1</span> Active Listening: A Most Underrated Tool</a></li>
+  <li><a href="#context-matters-communication-is-not-an-optional-add-on" id="toc-context-matters-communication-is-not-an-optional-add-on" class="nav-link" data-scroll-target="#context-matters-communication-is-not-an-optional-add-on"><span class="header-section-number">1.2.2</span> Context Matters: Communication Is Not an Optional Add-On</a></li>
+  <li><a href="#teamwork-requires-skill-not-assumption" id="toc-teamwork-requires-skill-not-assumption" class="nav-link" data-scroll-target="#teamwork-requires-skill-not-assumption"><span class="header-section-number">1.2.3</span> Teamwork Requires Skill, Not Assumption</a></li>
+  <li><a href="#locus-of-control-and-construct-validity-when-context-redefines-measurement" id="toc-locus-of-control-and-construct-validity-when-context-redefines-measurement" class="nav-link" data-scroll-target="#locus-of-control-and-construct-validity-when-context-redefines-measurement"><span class="header-section-number">1.2.4</span> Locus of Control and Construct Validity: When Context Redefines Measurement</a></li>
   </ul></li>
-  <li><a href="#the-industry-message-that-intensified-the-need" id="toc-the-industry-message-that-intensified-the-need" class="nav-link" data-scroll-target="#the-industry-message-that-intensified-the-need">The Industry Message That Intensified the Need</a></li>
-  <li><a href="#ethical-practice-the-missing-course-in-many-data-science-pathways" id="toc-ethical-practice-the-missing-course-in-many-data-science-pathways" class="nav-link" data-scroll-target="#ethical-practice-the-missing-course-in-many-data-science-pathways">Ethical Practice: The Missing Course in Many Data Science Pathways</a></li>
-  <li><a href="#from-consulting-practice-to-a-training-model" id="toc-from-consulting-practice-to-a-training-model" class="nav-link" data-scroll-target="#from-consulting-practice-to-a-training-model">From Consulting Practice to a Training Model</a></li>
-  <li><a href="#the-missing-link-connecting-mathematical-and-applied-statistics" id="toc-the-missing-link-connecting-mathematical-and-applied-statistics" class="nav-link" data-scroll-target="#the-missing-link-connecting-mathematical-and-applied-statistics">The Missing Link: Connecting Mathematical and Applied Statistics</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion:</a></li>
-  <li><a href="#proposed-model-and-roadmap-for-this-book" id="toc-proposed-model-and-roadmap-for-this-book" class="nav-link" data-scroll-target="#proposed-model-and-roadmap-for-this-book">Proposed Model and Roadmap for This Book</a></li>
+  <li><a href="#the-industry-message-that-intensified-the-need" id="toc-the-industry-message-that-intensified-the-need" class="nav-link" data-scroll-target="#the-industry-message-that-intensified-the-need"><span class="header-section-number">1.3</span> The Industry Message That Intensified the Need</a></li>
+  <li><a href="#ethical-practice-the-missing-course-in-many-data-science-pathways" id="toc-ethical-practice-the-missing-course-in-many-data-science-pathways" class="nav-link" data-scroll-target="#ethical-practice-the-missing-course-in-many-data-science-pathways"><span class="header-section-number">1.4</span> Ethical Practice: The Missing Course in Many Data Science Pathways</a></li>
+  <li><a href="#from-consulting-practice-to-a-training-model" id="toc-from-consulting-practice-to-a-training-model" class="nav-link" data-scroll-target="#from-consulting-practice-to-a-training-model"><span class="header-section-number">1.5</span> From Consulting Practice to a Training Model</a></li>
+  <li><a href="#the-missing-link-connecting-mathematical-and-applied-statistics" id="toc-the-missing-link-connecting-mathematical-and-applied-statistics" class="nav-link" data-scroll-target="#the-missing-link-connecting-mathematical-and-applied-statistics"><span class="header-section-number">1.6</span> The Missing Link: Connecting Mathematical and Applied Statistics</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.7</span> Conclusion</a></li>
   </ul></li>
-  <li><a href="#who-this-book-is-for" id="toc-who-this-book-is-for" class="nav-link" data-scroll-target="#who-this-book-is-for">Who This Book Is For</a>
+  <li><a href="#proposed-model-and-roadmap-for-this-book" id="toc-proposed-model-and-roadmap-for-this-book" class="nav-link" data-scroll-target="#proposed-model-and-roadmap-for-this-book"><span class="header-section-number">2</span> Proposed Model and Roadmap for This Book</a>
+  <ul>
+  <li><a href="#prelude-additions" id="toc-prelude-additions" class="nav-link" data-scroll-target="#prelude-additions"><span class="header-section-number">2.1</span> Prelude Additions<br>
+  </a></li>
+  <li><a href="#who-this-book-is-for" id="toc-who-this-book-is-for" class="nav-link" data-scroll-target="#who-this-book-is-for"><span class="header-section-number">2.2</span> Who This Book Is For</a>
   <ul class="collapse">
-  <li><a href="#primary-audiences" id="toc-primary-audiences" class="nav-link" data-scroll-target="#primary-audiences">Primary audiences</a></li>
-  <li><a href="#secondary-audiences" id="toc-secondary-audiences" class="nav-link" data-scroll-target="#secondary-audiences">Secondary audiences</a></li>
+  <li><a href="#primary-audiences" id="toc-primary-audiences" class="nav-link" data-scroll-target="#primary-audiences"><span class="header-section-number">2.2.1</span> Primary audiences</a></li>
+  <li><a href="#secondary-audiences" id="toc-secondary-audiences" class="nav-link" data-scroll-target="#secondary-audiences"><span class="header-section-number">2.2.2</span> Secondary audiences</a></li>
   </ul></li>
-  <li><a href="#how-this-book-can-be-used" id="toc-how-this-book-can-be-used" class="nav-link" data-scroll-target="#how-this-book-can-be-used">How This Book Can Be Used</a>
+  <li><a href="#how-this-book-can-be-used" id="toc-how-this-book-can-be-used" class="nav-link" data-scroll-target="#how-this-book-can-be-used"><span class="header-section-number">2.3</span> How This Book Can Be Used</a>
   <ul class="collapse">
-  <li><a href="#for-students-and-self-study" id="toc-for-students-and-self-study" class="nav-link" data-scroll-target="#for-students-and-self-study">For students and self-study</a></li>
-  <li><a href="#for-courses-and-workshops" id="toc-for-courses-and-workshops" class="nav-link" data-scroll-target="#for-courses-and-workshops">For courses and workshops</a></li>
-  <li><a href="#for-professional-teams" id="toc-for-professional-teams" class="nav-link" data-scroll-target="#for-professional-teams">For professional teams</a></li>
+  <li><a href="#for-students-and-self-study" id="toc-for-students-and-self-study" class="nav-link" data-scroll-target="#for-students-and-self-study"><span class="header-section-number">2.3.1</span> For students and self-study</a></li>
+  <li><a href="#for-courses-and-workshops" id="toc-for-courses-and-workshops" class="nav-link" data-scroll-target="#for-courses-and-workshops"><span class="header-section-number">2.3.2</span> For courses and workshops</a></li>
+  <li><a href="#for-professional-teams" id="toc-for-professional-teams" class="nav-link" data-scroll-target="#for-professional-teams"><span class="header-section-number">2.3.3</span> For professional teams</a></li>
   </ul></li>
-  <li><a href="#conclusion-technical-rigor-requires-human-rigor" id="toc-conclusion-technical-rigor-requires-human-rigor" class="nav-link" data-scroll-target="#conclusion-technical-rigor-requires-human-rigor">Conclusion: Technical Rigor Requires Human Rigor</a></li>
-  <li><a href="#capstone-exercises-practicing-the-five-domain-model" id="toc-capstone-exercises-practicing-the-five-domain-model" class="nav-link" data-scroll-target="#capstone-exercises-practicing-the-five-domain-model">Capstone Exercises: Practicing the Five-Domain Model</a>
-  <ul class="collapse">
+  <li><a href="#conclusion-technical-rigor-requires-human-rigor" id="toc-conclusion-technical-rigor-requires-human-rigor" class="nav-link" data-scroll-target="#conclusion-technical-rigor-requires-human-rigor"><span class="header-section-number">2.4</span> Conclusion: Technical Rigor Requires Human Rigor</a></li>
+  </ul></li>
+  <li><a href="#capstone-exercises-practicing-the-five-domain-model" id="toc-capstone-exercises-practicing-the-five-domain-model" class="nav-link" data-scroll-target="#capstone-exercises-practicing-the-five-domain-model"><span class="header-section-number">3</span> Capstone Exercises: Practicing the Five-Domain Model</a>
+  <ul>
   <li><a href="#shared-case-scenario-used-across-all-capstones" id="toc-shared-case-scenario-used-across-all-capstones" class="nav-link" data-scroll-target="#shared-case-scenario-used-across-all-capstones">Shared case scenario (used across all capstones)</a></li>
   <li><a href="#capstone-1-theoretical-knowledge-of-statistics" id="toc-capstone-1-theoretical-knowledge-of-statistics" class="nav-link" data-scroll-target="#capstone-1-theoretical-knowledge-of-statistics">Capstone 1: Theoretical Knowledge of Statistics</a>
   <ul class="collapse">
@@ -266,7 +275,8 @@ window.Quarto = {
   <li><a href="#rubric-4" id="toc-rubric-4" class="nav-link" data-scroll-target="#rubric-4">Rubric</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#how-to-use-these-templates" id="toc-how-to-use-these-templates" class="nav-link" data-scroll-target="#how-to-use-these-templates">How to Use These Templates</a></li>
+  <li><a href="#how-to-use-these-templates" id="toc-how-to-use-these-templates" class="nav-link" data-scroll-target="#how-to-use-these-templates"><span class="header-section-number">4</span> How to Use These Templates</a>
+  <ul>
   <li><a href="#template-1-problem-restatement-memo" id="toc-template-1-problem-restatement-memo" class="nav-link" data-scroll-target="#template-1-problem-restatement-memo">Template 1: Problem Restatement Memo</a>
   <ul class="collapse">
   <li><a href="#decision-context" id="toc-decision-context" class="nav-link" data-scroll-target="#decision-context">1. Decision Context</a></li>
@@ -278,70 +288,71 @@ window.Quarto = {
   <li><a href="#what-would-change-our-mind" id="toc-what-would-change-our-mind" class="nav-link" data-scroll-target="#what-would-change-our-mind">7. What Would Change Our Mind?</a></li>
   </ul></li>
   <li><a href="#template-2-definitions-assumptions-log" id="toc-template-2-definitions-assumptions-log" class="nav-link" data-scroll-target="#template-2-definitions-assumptions-log">Template 2: Definitions &amp; Assumptions Log</a></li>
-  <li><a href="#template-3-meeting-notes-active-listening-loops" id="toc-template-3-meeting-notes-active-listening-loops" class="nav-link" data-scroll-target="#template-3-meeting-notes-active-listening-loops">Template 3: Meeting Notes (Active Listening Loops)</a>
+  <li><a href="#template-3-meeting-notes-active-listening-loops" id="toc-template-3-meeting-notes-active-listening-loops" class="nav-link" data-scroll-target="#template-3-meeting-notes-active-listening-loops"><span class="header-section-number">4.1</span> Template 3: Meeting Notes (Active Listening Loops)</a>
   <ul class="collapse">
-  <li><a href="#listening-loop-log" id="toc-listening-loop-log" class="nav-link" data-scroll-target="#listening-loop-log">Listening Loop Log</a></li>
-  <li><a href="#decisions-made" id="toc-decisions-made" class="nav-link" data-scroll-target="#decisions-made">Decisions Made</a></li>
-  <li><a href="#risks-blockers" id="toc-risks-blockers" class="nav-link" data-scroll-target="#risks-blockers">Risks / Blockers</a></li>
+  <li><a href="#listening-loop-log" id="toc-listening-loop-log" class="nav-link" data-scroll-target="#listening-loop-log"><span class="header-section-number">4.1.1</span> Listening Loop Log</a></li>
+  <li><a href="#decisions-made" id="toc-decisions-made" class="nav-link" data-scroll-target="#decisions-made"><span class="header-section-number">4.1.2</span> Decisions Made</a></li>
+  <li><a href="#risks-blockers" id="toc-risks-blockers" class="nav-link" data-scroll-target="#risks-blockers"><span class="header-section-number">4.1.3</span> Risks / Blockers</a></li>
   </ul></li>
-  <li><a href="#template-4-stakeholder-map" id="toc-template-4-stakeholder-map" class="nav-link" data-scroll-target="#template-4-stakeholder-map">Template 4: Stakeholder Map</a></li>
-  <li><a href="#template-5-team-charter" id="toc-template-5-team-charter" class="nav-link" data-scroll-target="#template-5-team-charter">Template 5: Team Charter</a>
+  <li><a href="#template-4-stakeholder-map" id="toc-template-4-stakeholder-map" class="nav-link" data-scroll-target="#template-4-stakeholder-map"><span class="header-section-number">4.2</span> Template 4: Stakeholder Map</a></li>
+  <li><a href="#template-5-team-charter" id="toc-template-5-team-charter" class="nav-link" data-scroll-target="#template-5-team-charter"><span class="header-section-number">4.3</span> Template 5: Team Charter</a>
   <ul class="collapse">
-  <li><a href="#team-purpose" id="toc-team-purpose" class="nav-link" data-scroll-target="#team-purpose">Team purpose</a></li>
-  <li><a href="#roles-and-responsibilities" id="toc-roles-and-responsibilities" class="nav-link" data-scroll-target="#roles-and-responsibilities">Roles and responsibilities</a></li>
-  <li><a href="#working-agreements" id="toc-working-agreements" class="nav-link" data-scroll-target="#working-agreements">Working agreements</a></li>
-  <li><a href="#conflict-protocol" id="toc-conflict-protocol" class="nav-link" data-scroll-target="#conflict-protocol">Conflict protocol</a></li>
-  <li><a href="#shared-accountability" id="toc-shared-accountability" class="nav-link" data-scroll-target="#shared-accountability">Shared accountability</a></li>
+  <li><a href="#team-purpose" id="toc-team-purpose" class="nav-link" data-scroll-target="#team-purpose"><span class="header-section-number">4.3.1</span> Team purpose</a></li>
+  <li><a href="#roles-and-responsibilities" id="toc-roles-and-responsibilities" class="nav-link" data-scroll-target="#roles-and-responsibilities"><span class="header-section-number">4.3.2</span> Roles and responsibilities</a></li>
+  <li><a href="#working-agreements" id="toc-working-agreements" class="nav-link" data-scroll-target="#working-agreements"><span class="header-section-number">4.3.3</span> Working agreements</a></li>
+  <li><a href="#conflict-protocol" id="toc-conflict-protocol" class="nav-link" data-scroll-target="#conflict-protocol"><span class="header-section-number">4.3.4</span> Conflict protocol</a></li>
+  <li><a href="#shared-accountability" id="toc-shared-accountability" class="nav-link" data-scroll-target="#shared-accountability"><span class="header-section-number">4.3.5</span> Shared accountability</a></li>
   </ul></li>
-  <li><a href="#template-6-decision-log" id="toc-template-6-decision-log" class="nav-link" data-scroll-target="#template-6-decision-log">Template 6: Decision Log</a></li>
-  <li><a href="#template-7-decision-brief" id="toc-template-7-decision-brief" class="nav-link" data-scroll-target="#template-7-decision-brief">Template 7: Decision Brief</a>
+  <li><a href="#template-6-decision-log" id="toc-template-6-decision-log" class="nav-link" data-scroll-target="#template-6-decision-log"><span class="header-section-number">4.4</span> Template 6: Decision Log</a></li>
+  <li><a href="#template-7-decision-brief" id="toc-template-7-decision-brief" class="nav-link" data-scroll-target="#template-7-decision-brief"><span class="header-section-number">4.5</span> Template 7: Decision Brief</a>
   <ul class="collapse">
-  <li><a href="#required-structure-1-page-or-5-slides" id="toc-required-structure-1-page-or-5-slides" class="nav-link" data-scroll-target="#required-structure-1-page-or-5-slides">Required structure (1 page or 5 slides)</a></li>
-  <li><a href="#decision-brief-draft" id="toc-decision-brief-draft" class="nav-link" data-scroll-target="#decision-brief-draft">Decision Brief Draft</a></li>
+  <li><a href="#required-structure-1-page-or-5-slides" id="toc-required-structure-1-page-or-5-slides" class="nav-link" data-scroll-target="#required-structure-1-page-or-5-slides"><span class="header-section-number">4.5.1</span> Required structure (1 page or 5 slides)</a></li>
+  <li><a href="#decision-brief-draft" id="toc-decision-brief-draft" class="nav-link" data-scroll-target="#decision-brief-draft"><span class="header-section-number">4.5.2</span> Decision Brief Draft</a></li>
   </ul></li>
-  <li><a href="#template-8-impact-table" id="toc-template-8-impact-table" class="nav-link" data-scroll-target="#template-8-impact-table">Template 8: Impact Table</a></li>
-  <li><a href="#template-9-analysis-plan" id="toc-template-9-analysis-plan" class="nav-link" data-scroll-target="#template-9-analysis-plan">Template 9: Analysis Plan</a>
+  <li><a href="#template-8-impact-table" id="toc-template-8-impact-table" class="nav-link" data-scroll-target="#template-8-impact-table"><span class="header-section-number">4.6</span> Template 8: Impact Table</a></li>
+  <li><a href="#template-9-analysis-plan" id="toc-template-9-analysis-plan" class="nav-link" data-scroll-target="#template-9-analysis-plan"><span class="header-section-number">4.7</span> Template 9: Analysis Plan</a>
   <ul class="collapse">
-  <li><a href="#objective-and-decision-context" id="toc-objective-and-decision-context" class="nav-link" data-scroll-target="#objective-and-decision-context">1. Objective and decision context</a></li>
-  <li><a href="#data-and-measurement" id="toc-data-and-measurement" class="nav-link" data-scroll-target="#data-and-measurement">2. Data and measurement</a></li>
-  <li><a href="#primary-analysis-approach" id="toc-primary-analysis-approach" class="nav-link" data-scroll-target="#primary-analysis-approach">3. Primary analysis approach</a></li>
-  <li><a href="#validation-and-robustness-plan" id="toc-validation-and-robustness-plan" class="nav-link" data-scroll-target="#validation-and-robustness-plan">4. Validation and robustness plan</a></li>
-  <li><a href="#threats-to-validity-and-mitigations" id="toc-threats-to-validity-and-mitigations" class="nav-link" data-scroll-target="#threats-to-validity-and-mitigations">5. Threats to validity and mitigations</a></li>
-  <li><a href="#deliverables-5" id="toc-deliverables-5" class="nav-link" data-scroll-target="#deliverables-5">6. Deliverables</a></li>
+  <li><a href="#objective-and-decision-context" id="toc-objective-and-decision-context" class="nav-link" data-scroll-target="#objective-and-decision-context"><span class="header-section-number">4.7.1</span> 1. Objective and decision context</a></li>
+  <li><a href="#data-and-measurement" id="toc-data-and-measurement" class="nav-link" data-scroll-target="#data-and-measurement"><span class="header-section-number">4.7.2</span> 2. Data and measurement</a></li>
+  <li><a href="#primary-analysis-approach" id="toc-primary-analysis-approach" class="nav-link" data-scroll-target="#primary-analysis-approach"><span class="header-section-number">4.7.3</span> 3. Primary analysis approach</a></li>
+  <li><a href="#validation-and-robustness-plan" id="toc-validation-and-robustness-plan" class="nav-link" data-scroll-target="#validation-and-robustness-plan"><span class="header-section-number">4.7.4</span> 4. Validation and robustness plan</a></li>
+  <li><a href="#threats-to-validity-and-mitigations" id="toc-threats-to-validity-and-mitigations" class="nav-link" data-scroll-target="#threats-to-validity-and-mitigations"><span class="header-section-number">4.7.5</span> 5. Threats to validity and mitigations</a></li>
+  <li><a href="#deliverables-5" id="toc-deliverables-5" class="nav-link" data-scroll-target="#deliverables-5"><span class="header-section-number">4.7.6</span> 6. Deliverables</a></li>
   </ul></li>
-  <li><a href="#template-10-model-selection-memo" id="toc-template-10-model-selection-memo" class="nav-link" data-scroll-target="#template-10-model-selection-memo">Template 10: Model Selection Memo</a>
+  <li><a href="#template-10-model-selection-memo" id="toc-template-10-model-selection-memo" class="nav-link" data-scroll-target="#template-10-model-selection-memo"><span class="header-section-number">4.8</span> Template 10: Model Selection Memo</a>
   <ul class="collapse">
-  <li><a href="#why-this-model" id="toc-why-this-model" class="nav-link" data-scroll-target="#why-this-model">Why this model</a></li>
-  <li><a href="#what-could-break-it-failure-modes" id="toc-what-could-break-it-failure-modes" class="nav-link" data-scroll-target="#what-could-break-it-failure-modes">What could break it? (Failure modes)</a></li>
-  <li><a href="#limitations-and-appropriate-claims" id="toc-limitations-and-appropriate-claims" class="nav-link" data-scroll-target="#limitations-and-appropriate-claims">Limitations and appropriate claims</a></li>
+  <li><a href="#why-this-model" id="toc-why-this-model" class="nav-link" data-scroll-target="#why-this-model"><span class="header-section-number">4.8.1</span> Why this model</a></li>
+  <li><a href="#what-could-break-it-failure-modes" id="toc-what-could-break-it-failure-modes" class="nav-link" data-scroll-target="#what-could-break-it-failure-modes"><span class="header-section-number">4.8.2</span> What could break it? (Failure modes)</a></li>
+  <li><a href="#limitations-and-appropriate-claims" id="toc-limitations-and-appropriate-claims" class="nav-link" data-scroll-target="#limitations-and-appropriate-claims"><span class="header-section-number">4.8.3</span> Limitations and appropriate claims</a></li>
   </ul></li>
-  <li><a href="#template-11-diagnostics-minimum-set" id="toc-template-11-diagnostics-minimum-set" class="nav-link" data-scroll-target="#template-11-diagnostics-minimum-set">Template 11: Diagnostics Minimum Set</a>
+  <li><a href="#template-11-diagnostics-minimum-set" id="toc-template-11-diagnostics-minimum-set" class="nav-link" data-scroll-target="#template-11-diagnostics-minimum-set"><span class="header-section-number">4.9</span> Template 11: Diagnostics Minimum Set</a>
   <ul class="collapse">
-  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a></li>
-  <li><a href="#notes-on-findings-and-actions" id="toc-notes-on-findings-and-actions" class="nav-link" data-scroll-target="#notes-on-findings-and-actions">Notes on findings and actions</a></li>
+  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist"><span class="header-section-number">4.9.1</span> Checklist</a></li>
+  <li><a href="#notes-on-findings-and-actions" id="toc-notes-on-findings-and-actions" class="nav-link" data-scroll-target="#notes-on-findings-and-actions"><span class="header-section-number">4.9.2</span> Notes on findings and actions</a></li>
   </ul></li>
-  <li><a href="#template-12-reproducibility-bundle-readme-skeleton" id="toc-template-12-reproducibility-bundle-readme-skeleton" class="nav-link" data-scroll-target="#template-12-reproducibility-bundle-readme-skeleton">Template 12: Reproducibility Bundle (README Skeleton)</a>
+  <li><a href="#template-12-reproducibility-bundle-readme-skeleton" id="toc-template-12-reproducibility-bundle-readme-skeleton" class="nav-link" data-scroll-target="#template-12-reproducibility-bundle-readme-skeleton"><span class="header-section-number">4.10</span> Template 12: Reproducibility Bundle (README Skeleton)</a>
   <ul class="collapse">
-  <li><a href="#readme-sections-copypaste" id="toc-readme-sections-copypaste" class="nav-link" data-scroll-target="#readme-sections-copypaste">README sections (copy/paste)</a></li>
+  <li><a href="#readme-sections-copypaste" id="toc-readme-sections-copypaste" class="nav-link" data-scroll-target="#readme-sections-copypaste"><span class="header-section-number">4.10.1</span> README sections (copy/paste)</a></li>
   </ul></li>
-  <li><a href="#template-13-ethics-pre-mortem" id="toc-template-13-ethics-pre-mortem" class="nav-link" data-scroll-target="#template-13-ethics-pre-mortem">Template 13: Ethics Pre-Mortem</a>
+  <li><a href="#template-13-ethics-pre-mortem" id="toc-template-13-ethics-pre-mortem" class="nav-link" data-scroll-target="#template-13-ethics-pre-mortem"><span class="header-section-number">4.11</span> Template 13: Ethics Pre-Mortem</a>
   <ul class="collapse">
-  <li><a href="#how-could-this-work-mislead" id="toc-how-could-this-work-mislead" class="nav-link" data-scroll-target="#how-could-this-work-mislead">How could this work mislead?</a></li>
-  <li><a href="#boundary-statements-what-we-should-not-claim" id="toc-boundary-statements-what-we-should-not-claim" class="nav-link" data-scroll-target="#boundary-statements-what-we-should-not-claim">Boundary statements (what we should NOT claim)</a></li>
-  <li><a href="#disclosure-plan" id="toc-disclosure-plan" class="nav-link" data-scroll-target="#disclosure-plan">Disclosure plan</a></li>
+  <li><a href="#how-could-this-work-mislead" id="toc-how-could-this-work-mislead" class="nav-link" data-scroll-target="#how-could-this-work-mislead"><span class="header-section-number">4.11.1</span> How could this work mislead?</a></li>
+  <li><a href="#boundary-statements-what-we-should-not-claim" id="toc-boundary-statements-what-we-should-not-claim" class="nav-link" data-scroll-target="#boundary-statements-what-we-should-not-claim"><span class="header-section-number">4.11.2</span> Boundary statements (what we should NOT claim)</a></li>
+  <li><a href="#disclosure-plan" id="toc-disclosure-plan" class="nav-link" data-scroll-target="#disclosure-plan"><span class="header-section-number">4.11.3</span> Disclosure plan</a></li>
   </ul></li>
-  <li><a href="#template-14-integrity-memo" id="toc-template-14-integrity-memo" class="nav-link" data-scroll-target="#template-14-integrity-memo">Template 14: Integrity Memo</a>
+  <li><a href="#template-14-integrity-memo" id="toc-template-14-integrity-memo" class="nav-link" data-scroll-target="#template-14-integrity-memo"><span class="header-section-number">4.12</span> Template 14: Integrity Memo</a>
   <ul class="collapse">
-  <li><a href="#what-is-defensible-to-claim" id="toc-what-is-defensible-to-claim" class="nav-link" data-scroll-target="#what-is-defensible-to-claim">What is defensible to claim</a></li>
-  <li><a href="#what-is-not-defensible-to-claim-and-why" id="toc-what-is-not-defensible-to-claim-and-why" class="nav-link" data-scroll-target="#what-is-not-defensible-to-claim-and-why">What is NOT defensible to claim (and why)</a></li>
-  <li><a href="#recommended-path-forward" id="toc-recommended-path-forward" class="nav-link" data-scroll-target="#recommended-path-forward">Recommended path forward</a></li>
+  <li><a href="#what-is-defensible-to-claim" id="toc-what-is-defensible-to-claim" class="nav-link" data-scroll-target="#what-is-defensible-to-claim"><span class="header-section-number">4.12.1</span> What is defensible to claim</a></li>
+  <li><a href="#what-is-not-defensible-to-claim-and-why" id="toc-what-is-not-defensible-to-claim-and-why" class="nav-link" data-scroll-target="#what-is-not-defensible-to-claim-and-why"><span class="header-section-number">4.12.2</span> What is NOT defensible to claim (and why)</a></li>
+  <li><a href="#recommended-path-forward" id="toc-recommended-path-forward" class="nav-link" data-scroll-target="#recommended-path-forward"><span class="header-section-number">4.12.3</span> Recommended path forward</a></li>
   </ul></li>
-  <li><a href="#template-15-pushback-scripts-firm-and-helpful" id="toc-template-15-pushback-scripts-firm-and-helpful" class="nav-link" data-scroll-target="#template-15-pushback-scripts-firm-and-helpful">Template 15: Pushback Scripts (Firm-and-Helpful)</a></li>
-  <li><a href="#template-16-documentation-escalation-checklist" id="toc-template-16-documentation-escalation-checklist" class="nav-link" data-scroll-target="#template-16-documentation-escalation-checklist">Template 16: Documentation &amp; Escalation Checklist</a>
+  <li><a href="#template-15-pushback-scripts-firm-and-helpful" id="toc-template-15-pushback-scripts-firm-and-helpful" class="nav-link" data-scroll-target="#template-15-pushback-scripts-firm-and-helpful"><span class="header-section-number">4.13</span> Template 15: Pushback Scripts (Firm-and-Helpful)</a></li>
+  <li><a href="#template-16-documentation-escalation-checklist" id="toc-template-16-documentation-escalation-checklist" class="nav-link" data-scroll-target="#template-16-documentation-escalation-checklist"><span class="header-section-number">4.14</span> Template 16: Documentation &amp; Escalation Checklist</a>
   <ul class="collapse">
-  <li><a href="#documentation-what-to-record" id="toc-documentation-what-to-record" class="nav-link" data-scroll-target="#documentation-what-to-record">Documentation (what to record)</a></li>
-  <li><a href="#escalation-when-and-to-whom" id="toc-escalation-when-and-to-whom" class="nav-link" data-scroll-target="#escalation-when-and-to-whom">Escalation (when and to whom)</a></li>
-  <li><a href="#post-meeting-follow-up-email-skeleton" id="toc-post-meeting-follow-up-email-skeleton" class="nav-link" data-scroll-target="#post-meeting-follow-up-email-skeleton">Post-meeting follow-up email (skeleton)</a></li>
+  <li><a href="#documentation-what-to-record" id="toc-documentation-what-to-record" class="nav-link" data-scroll-target="#documentation-what-to-record"><span class="header-section-number">4.14.1</span> Documentation (what to record)</a></li>
+  <li><a href="#escalation-when-and-to-whom" id="toc-escalation-when-and-to-whom" class="nav-link" data-scroll-target="#escalation-when-and-to-whom"><span class="header-section-number">4.14.2</span> Escalation (when and to whom)</a></li>
+  <li><a href="#post-meeting-follow-up-email-skeleton" id="toc-post-meeting-follow-up-email-skeleton" class="nav-link" data-scroll-target="#post-meeting-follow-up-email-skeleton"><span class="header-section-number">4.14.3</span> Post-meeting follow-up email (skeleton)</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -352,22 +363,22 @@ window.Quarto = {
 
 
 
-<section id="prelude" class="level1">
-<h1>Prelude</h1>
+<section id="prelude" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Prelude</h1>
+<section id="mahtash-esfandiari" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="mahtash-esfandiari">Mahtash Esfandiari</h2>
 </section>
-<section id="mahtash-esfandiari" class="level1">
-<h1>Mahtash Esfandiari</h1>
-<section id="why-emotional-intelligence-in-data-scienceand-why-now" class="level2">
-<h2 class="anchored" data-anchor-id="why-emotional-intelligence-in-data-scienceand-why-now">Why Emotional Intelligence in Data Science—and Why Now</h2>
+<section id="why-emotional-intelligence-in-data-scienceand-why-now" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="why-emotional-intelligence-in-data-scienceand-why-now"><span class="header-section-number">1.1</span> Why Emotional Intelligence in Data Science—and Why Now</h2>
 <p>After years of academic work in statistics, measurement, and cognitive science—particularly in learning, development, assessment, and standardized testing—I transitioned into statistical consulting. This shift was not merely a change in professional setting; it was a change in what effective practice required.</p>
 <p>My training in statistical theory and methodological rigor provided a strong foundation for consulting across diverse domains, including medicine, education, entrepreneurship, public health, and industry. Yet, as my consulting work expanded, a consistent pattern became increasingly clear: technical expertise alone was not sufficient. A data scientist or statistical consultant may be highly skilled in modeling, inference, and computation, but still fail to produce real-world impact—especially when navigating real clients, real constraints, and high-stakes decisions.</p>
 <p>Over time, I came to understand that effective applied work requires a broader set of competencies. Beyond theoretical knowledge and programming proficiency, success depends on interpersonal and interpretive capacities: listening carefully, communicating clearly, managing conflict, and explaining statistical findings in ways that are meaningful to non-technical stakeholders. Equally essential is the ability to recognize ethical dilemmas, resist inappropriate pressures, and uphold integrity when results are inconvenient, misunderstood, or contested.</p>
 <p>This book grew out of that realization. It is grounded in lived experience—both successes and difficult lessons—that made the role of emotional intelligence in data science concrete and unavoidable.</p>
 </section>
-<section id="lessons-that-made-eq-tangible-in-consulting" class="level2">
-<h2 class="anchored" data-anchor-id="lessons-that-made-eq-tangible-in-consulting">Lessons That Made EQ Tangible in Consulting</h2>
-<section id="active-listening-a-most-underrated-tool" class="level3">
-<h3 class="anchored" data-anchor-id="active-listening-a-most-underrated-tool">Active Listening: A Most Underrated Tool</h3>
+<section id="lessons-that-made-eq-tangible-in-consulting" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="lessons-that-made-eq-tangible-in-consulting"><span class="header-section-number">1.2</span> Lessons That Made EQ Tangible in Consulting</h2>
+<section id="active-listening-a-most-underrated-tool" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="active-listening-a-most-underrated-tool"><span class="header-section-number">1.2.1</span> Active Listening: A Most Underrated Tool</h3>
 <p>Early in my consulting work, I often approached client meetings with a familiar academic mindset: define the problem quickly, identify an appropriate method, and move toward a solution. I soon learned that this impulse—however well-intentioned—was frequently counterproductive.</p>
 <p>In consulting, the central task is not simply selecting a technique; it is correctly understanding the problem. Consultants often work outside their subject-matter expertise. When collaborating with surgeons, entrepreneurs, educators, or industry professionals, I had to devote substantial time to learning domain language and practical constraints shaping the research question. I learned that a consultant cannot assume shared terminology, shared assumptions, or shared definitions of success.</p>
 <p>One practice became essential: after listening carefully and clarifying key terms and relationships, I would restate the problem in writing and return it to the client for confirmation before any analysis began. This habit—simple in appearance—often determined whether a project proceeded productively or became misdirected.</p>
@@ -385,8 +396,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="context-matters-communication-is-not-an-optional-add-on" class="level3">
-<h3 class="anchored" data-anchor-id="context-matters-communication-is-not-an-optional-add-on">Context Matters: Communication Is Not an Optional Add-On</h3>
+<section id="context-matters-communication-is-not-an-optional-add-on" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="context-matters-communication-is-not-an-optional-add-on"><span class="header-section-number">1.2.2</span> Context Matters: Communication Is Not an Optional Add-On</h3>
 <p>A second lesson emerged while evaluating a life-skills program in a large high school serving approximately 4,000 students. One program objective was to teach ninth graders “conflict resolution.” The curriculum consisted of a pamphlet outlining steps and strategies for managing conflict, which instructors were expected to teach.</p>
 <p>Classroom observations revealed that identical content produced markedly different outcomes depending on how it was delivered. In one classroom, the teacher reviewed the steps in a procedural manner while students remained disengaged or disruptive. In another classroom, a teacher introduced conflict resolution through historical contexts and reflective journaling, asking students to connect the steps to conflicts in their own lives. The contrast was striking: when instruction was embedded in meaning and context, students engaged; when presented abstractly, the concept remained detached and ineffective.</p>
 <p>This reinforced a principle that applies directly to data science: findings and recommendations must be communicated in context to be understood and used. An analysis that is technically correct but not interpretable or actionable for stakeholders is functionally incomplete.</p>
@@ -404,8 +415,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="teamwork-requires-skill-not-assumption" class="level3">
-<h3 class="anchored" data-anchor-id="teamwork-requires-skill-not-assumption">Teamwork Requires Skill, Not Assumption</h3>
+<section id="teamwork-requires-skill-not-assumption" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="teamwork-requires-skill-not-assumption"><span class="header-section-number">1.2.3</span> Teamwork Requires Skill, Not Assumption</h3>
 <p>As teamwork became increasingly emphasized across educational levels—shaped in part by research on cooperative learning—I observed a recurring misconception: many students interpret “teamwork” as dividing tasks, working independently, and assembling results at the end. This approach often produces fragmentation rather than collaboration.</p>
 <p>Research on cooperative learning highlights the importance of shared understanding, mutual accountability, and structured coordination. Effective teams require communication norms, conflict-resolution strategies, and collaborative leadership—not simply division of labor.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -422,8 +433,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="locus-of-control-and-construct-validity-when-context-redefines-measurement" class="level3">
-<h3 class="anchored" data-anchor-id="locus-of-control-and-construct-validity-when-context-redefines-measurement">Locus of Control and Construct Validity: When Context Redefines Measurement</h3>
+<section id="locus-of-control-and-construct-validity-when-context-redefines-measurement" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="locus-of-control-and-construct-validity-when-context-redefines-measurement"><span class="header-section-number">1.2.4</span> Locus of Control and Construct Validity: When Context Redefines Measurement</h3>
 <p>Another formative example occurred while evaluating a program in communities affected by substantial gang activity. The program aimed to strengthen students’ internal locus of control and to develop conflict-resolution skills. I was asked to develop a survey to measure these constructs.</p>
 <p>After reviewing the literature (in an era prior to tools such as ChatGPT), I drafted items aligned with theory and prepared a scoring key. Before administration, I shared the instrument with teachers who understood the students’ lived context. One item read:</p>
 <p>“If I get into a conflict with somebody, I pretend like nothing happened.”</p>
@@ -444,15 +455,15 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="the-industry-message-that-intensified-the-need" class="level2">
-<h2 class="anchored" data-anchor-id="the-industry-message-that-intensified-the-need">The Industry Message That Intensified the Need</h2>
+<section id="the-industry-message-that-intensified-the-need" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="the-industry-message-that-intensified-the-need"><span class="header-section-number">1.3</span> The Industry Message That Intensified the Need</h2>
 <p>Over the years, I repeatedly heard a striking comment from industry professionals:</p>
 <p>“Universities don’t train students to operate in the real world. We have to send them to workshops to learn communication, collaboration, and leadership.”</p>
 <p>This concern is not universally true, but it reflects a persistent gap that emerges when technical training is treated as complete preparation. Students deserve more than learning essential workplace competencies through trial-and-error, anxiety, and avoidable setbacks.</p>
 <p>This book is therefore also a response to professional responsibility. We train students to participate in consequential decisions across medicine, law, education, finance, and public policy. Technical proficiency is necessary—but not sufficient—for confident, ethical, and effective practice.</p>
 </section>
-<section id="ethical-practice-the-missing-course-in-many-data-science-pathways" class="level2">
-<h2 class="anchored" data-anchor-id="ethical-practice-the-missing-course-in-many-data-science-pathways">Ethical Practice: The Missing Course in Many Data Science Pathways</h2>
+<section id="ethical-practice-the-missing-course-in-many-data-science-pathways" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="ethical-practice-the-missing-course-in-many-data-science-pathways"><span class="header-section-number">1.4</span> Ethical Practice: The Missing Course in Many Data Science Pathways</h2>
 <p>Consulting made the centrality of ethics impossible to ignore. In my own graduate training in statistics, formal education in professional ethics was limited—despite the fact that fields such as medicine and law treat ethics as foundational.</p>
 <p>In contemporary practice, data-based decisions shape high-stakes outcomes. Ethical reasoning is not an optional add-on; it is part of competent professional practice. Consulting also exposes analysts to pressures—sometimes subtle, sometimes explicit—to distort interpretations, privilege statistical significance over substantive meaning, or frame results to support predetermined agendas.</p>
 <p>One experience from approximately twenty-five years ago remains vivid. I was evaluating a large-scale program with thousands of student participants. Program leadership was focused on achieving statistical significance because funding decisions depended on it. With a large sample, nearly all results reached statistical significance. However, when it became clear that observed changes were not practically meaningful, the response shifted from celebration to frustration.</p>
@@ -471,8 +482,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="from-consulting-practice-to-a-training-model" class="level2">
-<h2 class="anchored" data-anchor-id="from-consulting-practice-to-a-training-model">From Consulting Practice to a Training Model</h2>
+<section id="from-consulting-practice-to-a-training-model" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="from-consulting-practice-to-a-training-model"><span class="header-section-number">1.5</span> From Consulting Practice to a Training Model</h2>
 <p>These experiences—combined with my background in cognitive science, learning, and measurement—led me to propose a model for preparing data scientists for real-world success. The model emphasizes five domains:</p>
 <ol type="1">
 <li><p><strong>Theoretical Knowledge of Statistics</strong></p></li>
@@ -493,8 +504,8 @@ window.Quarto = {
 <p>This framework has shaped my teaching as well. More than a decade ago, we began offering a four-unit undergraduate course at UCLA titled <em>The Practice of Statistical Consulting</em>. Over time, enrollment grew substantially (recently exceeding 300 students in a single academic year), and the course was revised repeatedly to reflect what students need when they move from classroom exercises to authentic client-based work. Eventually, the course evolved into a two-course sequence: one emphasizing foundational interpersonal and professional competencies, and a second emphasizing the theoretical and practical demands of real consulting projects.</p>
 <p>This book extends that work. Its purpose is to make explicit what is often left implicit: the strongest data scientists integrate intellectual rigor with interpersonal intelligence, contextual understanding, and ethical judgment.</p>
 </section>
-<section id="the-missing-link-connecting-mathematical-and-applied-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="the-missing-link-connecting-mathematical-and-applied-statistics">The Missing Link: Connecting Mathematical and Applied Statistics</h2>
+<section id="the-missing-link-connecting-mathematical-and-applied-statistics" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="the-missing-link-connecting-mathematical-and-applied-statistics"><span class="header-section-number">1.6</span> The Missing Link: Connecting Mathematical and Applied Statistics</h2>
 <p>One of the most persistent challenges I have observed in teaching is that many students do not perceive the conceptual continuity between mathematical statistics and applied statistics. A familiar example is analysis of variance (ANOVA). Students often experience ANOVA as a collection of formulas rather than as a coherent framework for modeling variation. As a result, they may not recognize that ANOVA and multiple linear regression are instances of the same general linear model, differing primarily in how predictors are encoded—ANOVA emphasizing categorical predictors (and their interactions), and regression accommodating continuous predictors as well.</p>
 <p>This disconnect becomes especially apparent when students are asked to interpret variance decomposition. For example, when asked to quantify the proportion of variance attributable to a factor, many do not immediately recognize the conceptual simplicity of the ratio <span class="math inline">\(`SS_{\text{factor}}/SS_{\text{total}}`\)</span>. The mathematical objects are present in their coursework, but the interpretive bridge to meaning, inference, and decision-making is often underdeveloped.</p>
 <p>From the perspective of cognitive science, this gap is unsurprising. Knowledge becomes durable and transferable when it is meaningfully connected to prior knowledge. Without explicit opportunities for synthesis—linking established theoretical structures to new applications—students may learn procedures in isolation and struggle to generalize their understanding to unfamiliar contexts.</p>
@@ -538,31 +549,33 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion:</h2>
+<section id="conclusion" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.7</span> Conclusion</h2>
 <p>Taken together, these observations point to a central premise of this book: technical competence is necessary, but often insufficient for effective practice. What students frequently lack is not exposure to additional methods, but sustained opportunities to integrate statistical theory with applied reasoning, professional judgment, and clear communication under real-world constraints. The consulting classroom makes that integration unavoidable. It requires students to articulate assumptions, evaluate tradeoffs, confront uncertainty, and translate results into decisions that matter to stakeholders who may not share the language of statistical formalism.</p>
 <p>For this reason, I treat emotional intelligence not as an accessory to data science, but as part of its professional infrastructure. The ability to listen carefully, ask precise questions, navigate disagreement, communicate limitations, and act ethically strengthens analytic rigor and increases the likelihood that statistical work leads to sound decisions. The chapters that follow are organized around this integrative view—developing the competencies that connect mathematical foundations to applied impact, and preparing readers to practice data science in a manner that is technically sound, contextually grounded, and broadly intelligible.</p>
 </section>
-<section id="proposed-model-and-roadmap-for-this-book" class="level2">
-<h2 class="anchored" data-anchor-id="proposed-model-and-roadmap-for-this-book">Proposed Model and Roadmap for This Book</h2>
+</section>
+<section id="proposed-model-and-roadmap-for-this-book" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Proposed Model and Roadmap for This Book</h1>
 <p>Based on the experiences and lessons described in this prelude, I propose the following model of the core attributes required of a well-rounded data scientist. The model is intentionally integrative: it recognizes that technical excellence becomes impactful only when coupled with communication competence, statistical literacy, and principled ethical practice.</p>
 <p>In the chapters that follow, I will develop each component of this framework in depth—connecting key ideas to concrete practices, instructional approaches, and real-world examples. In collaboration with my co-authors, Vivian Lew and Dave Zes we will describe how these competencies can be cultivated systematically in academic training and strengthened throughout professional development. Our aim is to provide a practical roadmap for students, educators, and practitioners who seek not only to produce technically correct analyses, but also to operate effectively, responsibly, and confidently in high-stakes environments.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="&quot;images/0001diagram.png&quot;" class="img-fluid figure-img"></p>
+<p><img src="&quot;0001diagram.png&quot;" class="img-fluid figure-img"></p>
 <figcaption>Attributes of a Well-Rounded Data Scientist</figcaption>
 </figure>
 </div>
-<p><strong>Prelude Additions<br>
-Audience, Use, Conclusion, and Capstone Exercises</strong></p>
+<section id="prelude-additions" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="prelude-additions"><span class="header-section-number">2.1</span> Prelude Additions<br>
+</h2>
+<p>Audience, Use, Conclusion, and Capstone Exercises**</p>
 <p><em>Book-ready subsections with consistent headers, learning objectives, estimated time, and rubrics.</em></p>
 </section>
-</section>
-<section id="who-this-book-is-for" class="level1">
-<h1>Who This Book Is For</h1>
+<section id="who-this-book-is-for" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="who-this-book-is-for"><span class="header-section-number">2.2</span> Who This Book Is For</h2>
 <p>This book is written for readers who already understand (or are learning) the technical foundations of data science and want to become effective, trusted professionals in real-world settings.</p>
-<section id="primary-audiences" class="level2">
-<h2 class="anchored" data-anchor-id="primary-audiences">Primary audiences</h2>
+<section id="primary-audiences" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="primary-audiences"><span class="header-section-number">2.2.1</span> Primary audiences</h3>
 <ul>
 <li><p>Undergraduate and graduate students in statistics, data science, biostatistics, and related fields</p></li>
 <li><p>Early-career data scientists, analysts, and statisticians transitioning from coursework to stakeholder-driven work</p></li>
@@ -570,32 +583,32 @@ Audience, Use, Conclusion, and Capstone Exercises</strong></p>
 <li><p>Instructors designing consulting courses, practicum experiences, capstone courses, or professional-skills modules</p></li>
 </ul>
 </section>
-<section id="secondary-audiences" class="level2">
-<h2 class="anchored" data-anchor-id="secondary-audiences">Secondary audiences</h2>
+<section id="secondary-audiences" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="secondary-audiences"><span class="header-section-number">2.2.2</span> Secondary audiences</h3>
 <ul>
 <li><p>Project leads, managers, and principal investigators supervising analytics teams</p></li>
 <li><p>Domain experts (e.g., clinicians, educators, policy staff, product leaders) who collaborate with data scientists and want a shared language for good practice</p></li>
 </ul>
 </section>
 </section>
-<section id="how-this-book-can-be-used" class="level1">
-<h1>How This Book Can Be Used</h1>
-<section id="for-students-and-self-study" class="level2">
-<h2 class="anchored" data-anchor-id="for-students-and-self-study">For students and self-study</h2>
+<section id="how-this-book-can-be-used" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="how-this-book-can-be-used"><span class="header-section-number">2.3</span> How This Book Can Be Used</h2>
+<section id="for-students-and-self-study" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="for-students-and-self-study"><span class="header-section-number">2.3.1</span> For students and self-study</h3>
 <ul>
 <li><p>Read each chapter with a “practice lens”: extract one skill, apply it in a real or simulated project, and reflect on what changed.</p></li>
 <li><p>Build a portfolio: keep your memos, decision briefs, and ethical pre-mortems as evidence of professional readiness.</p></li>
 </ul>
 </section>
-<section id="for-courses-and-workshops" class="level2">
-<h2 class="anchored" data-anchor-id="for-courses-and-workshops">For courses and workshops</h2>
+<section id="for-courses-and-workshops" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="for-courses-and-workshops"><span class="header-section-number">2.3.2</span> For courses and workshops</h3>
 <ul>
 <li><p>Use the end-of-part capstones as graded deliverables. Each capstone can be completed independently or combined into a single integrated portfolio.</p></li>
 <li><p>Run short in-class role-plays using the scripts and meeting-note templates to practice conflict resolution and pushback.</p></li>
 </ul>
 </section>
-<section id="for-professional-teams" class="level2">
-<h2 class="anchored" data-anchor-id="for-professional-teams">For professional teams</h2>
+<section id="for-professional-teams" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="for-professional-teams"><span class="header-section-number">2.3.3</span> For professional teams</h3>
 <ul>
 <li><p>Adopt the templates as standard operating practice: problem restatement memo, decision log, decision brief, and documentation checklist.</p></li>
 <li><p>Use the ethical tools proactively (ethics pre-mortem) and defensively (integrity memo) to protect validity and prevent harm.</p></li>
@@ -603,47 +616,48 @@ Audience, Use, Conclusion, and Capstone Exercises</strong></p>
 <p><em>Optional implementation: instructors can require a “deliverable bundle” per project milestone (kickoff, midstream findings, final recommendation).</em></p>
 </section>
 </section>
-<section id="conclusion-technical-rigor-requires-human-rigor" class="level1">
-<h1>Conclusion: Technical Rigor Requires Human Rigor</h1>
+<section id="conclusion-technical-rigor-requires-human-rigor" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="conclusion-technical-rigor-requires-human-rigor"><span class="header-section-number">2.4</span> Conclusion: Technical Rigor Requires Human Rigor</h2>
 <p>The central claim of this prelude is straightforward: technical competence is necessary, but often insufficient for effective practice. In real settings, data scientists must translate human questions into statistical questions, communicate results in context, collaborate under ambiguity, and uphold integrity when incentives reward convenience over truth. These capabilities are not accessories to data science; they are part of its professional infrastructure. The chapters that follow therefore treat emotional intelligence, statistical literacy, and ethical judgment as competencies that strengthen analytic rigor—not as “soft” add-ons. A well-rounded data scientist is defined by what their work enables: sound decisions, clear understanding of uncertainty, and responsible action under real constraints.</p>
 </section>
-<section id="capstone-exercises-practicing-the-five-domain-model" class="level1">
-<h1>Capstone Exercises: Practicing the Five-Domain Model</h1>
+</section>
+<section id="capstone-exercises-practicing-the-five-domain-model" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Capstone Exercises: Practicing the Five-Domain Model</h1>
 <p>The capstones below are designed to be completed as a sequence using a single case scenario. Each capstone emphasizes one domain while reinforcing the others. Instructors may assign them separately or bundle them into a single portfolio.</p>
-<section id="shared-case-scenario-used-across-all-capstones" class="level2">
-<h2 class="anchored" data-anchor-id="shared-case-scenario-used-across-all-capstones">Shared case scenario (used across all capstones)</h2>
+<section id="shared-case-scenario-used-across-all-capstones" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="shared-case-scenario-used-across-all-capstones">Shared case scenario (used across all capstones)</h2>
 <p>A school district is piloting a new STEM-focused mathematics program for eighth graders across multiple schools. Students are taught in intact classrooms (random assignment is not feasible). Leadership wants evidence to decide whether to scale the program district-wide next year. You are the data scientist/statistical consultant supporting the evaluation. You have a tight timeline, multiple stakeholder groups, and nontrivial measurement and fairness concerns.</p>
 </section>
-<section id="capstone-1-theoretical-knowledge-of-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="capstone-1-theoretical-knowledge-of-statistics">Capstone 1: Theoretical Knowledge of Statistics</h2>
-<section id="learning-objectives" class="level3">
-<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
+<section id="capstone-1-theoretical-knowledge-of-statistics" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="capstone-1-theoretical-knowledge-of-statistics">Capstone 1: Theoretical Knowledge of Statistics</h2>
+<section id="learning-objectives" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
 <ul>
 <li><p>Select an appropriate evaluation design given nonrandom assignment and articulate its assumptions.</p></li>
 <li><p>Define estimands (what effect is being estimated) and justify unit of analysis and inference strategy.</p></li>
 <li><p>Identify major threats to validity and propose robustness checks.</p></li>
 </ul>
 </section>
-<section id="estimated-time" class="level3">
-<h3 class="anchored" data-anchor-id="estimated-time">Estimated time</h3>
+<section id="estimated-time" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="estimated-time">Estimated time</h3>
 <p>90–120 minutes (individual) or 60–90 minutes (team)</p>
 </section>
-<section id="task" class="level3">
-<h3 class="anchored" data-anchor-id="task">Task</h3>
+<section id="task" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="task">Task</h3>
 <ul>
 <li><p>Write a 1–2 page Analysis Plan: problem statement, estimand(s), proposed model/design, and key assumptions.</p></li>
 <li><p>Include at least two validity threats and at least two robustness checks (e.g., sensitivity analysis, subgroup stability, alternative specifications).</p></li>
 </ul>
 </section>
-<section id="deliverables" class="level3">
-<h3 class="anchored" data-anchor-id="deliverables">Deliverables</h3>
+<section id="deliverables" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="deliverables">Deliverables</h3>
 <ul>
 <li><p>Analysis Plan (1–2 pages)</p></li>
 <li><p>Assumptions and Definitions Log (living table, one page minimum)</p></li>
 </ul>
 </section>
-<section id="rubric" class="level3">
-<h3 class="anchored" data-anchor-id="rubric">Rubric</h3>
+<section id="rubric" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="rubric">Rubric</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -694,38 +708,38 @@ Audience, Use, Conclusion, and Capstone Exercises</strong></p>
 </table>
 </section>
 </section>
-<section id="capstone-2-programming-skills" class="level2">
-<h2 class="anchored" data-anchor-id="capstone-2-programming-skills">Capstone 2: Programming Skills</h2>
-<section id="learning-objectives-1" class="level3">
-<h3 class="anchored" data-anchor-id="learning-objectives-1">Learning objectives</h3>
+<section id="capstone-2-programming-skills" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="capstone-2-programming-skills">Capstone 2: Programming Skills</h2>
+<section id="learning-objectives-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="learning-objectives-1">Learning objectives</h3>
 <ul>
 <li><p>Build a reproducible analysis pipeline with clear data checks and versioning.</p></li>
 <li><p>Implement diagnostics and produce outputs that can be regenerated end-to-end.</p></li>
 <li><p>Document decisions in code and README so a peer can rerun the work.</p></li>
 </ul>
 </section>
-<section id="estimated-time-1" class="level3">
-<h3 class="anchored" data-anchor-id="estimated-time-1">Estimated time</h3>
+<section id="estimated-time-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="estimated-time-1">Estimated time</h3>
 <p>90–150 minutes</p>
 </section>
-<section id="task-1" class="level3">
-<h3 class="anchored" data-anchor-id="task-1">Task</h3>
+<section id="task-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="task-1">Task</h3>
 <ul>
 <li><p>Create a minimal, reproducible project structure (folders, scripts/notebooks).</p></li>
 <li><p>Implement data validation (missingness, ranges, duplicates), a baseline model, and at least one robustness check.</p></li>
 <li><p>Write a README with exact steps to reproduce results.</p></li>
 </ul>
 </section>
-<section id="deliverables-1" class="level3">
-<h3 class="anchored" data-anchor-id="deliverables-1">Deliverables</h3>
+<section id="deliverables-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="deliverables-1">Deliverables</h3>
 <ul>
 <li><p>Repository or folder with code/notebook + outputs</p></li>
 <li><p>README (repro steps + dependencies)</p></li>
 <li><p>Diagnostics checklist (completed)</p></li>
 </ul>
 </section>
-<section id="rubric-1" class="level3">
-<h3 class="anchored" data-anchor-id="rubric-1">Rubric</h3>
+<section id="rubric-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="rubric-1">Rubric</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -776,38 +790,38 @@ Audience, Use, Conclusion, and Capstone Exercises</strong></p>
 </table>
 </section>
 </section>
-<section id="capstone-3-communication-and-team-building" class="level2">
-<h2 class="anchored" data-anchor-id="capstone-3-communication-and-team-building">Capstone 3: Communication and Team-Building</h2>
-<section id="learning-objectives-2" class="level3">
-<h3 class="anchored" data-anchor-id="learning-objectives-2">Learning objectives</h3>
+<section id="capstone-3-communication-and-team-building" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="capstone-3-communication-and-team-building">Capstone 3: Communication and Team-Building</h2>
+<section id="learning-objectives-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="learning-objectives-2">Learning objectives</h3>
 <ul>
 <li><p>Demonstrate active listening through accurate paraphrase and confirmation.</p></li>
 <li><p>Create shared accountability via roles, norms, and conflict protocol.</p></li>
 <li><p>Document decisions and follow-ups to prevent misalignment.</p></li>
 </ul>
 </section>
-<section id="estimated-time-2" class="level3">
-<h3 class="anchored" data-anchor-id="estimated-time-2">Estimated time</h3>
+<section id="estimated-time-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="estimated-time-2">Estimated time</h3>
 <p>60–90 minutes (team recommended)</p>
 </section>
-<section id="task-2" class="level3">
-<h3 class="anchored" data-anchor-id="task-2">Task</h3>
+<section id="task-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="task-2">Task</h3>
 <ul>
 <li><p>Draft a Problem Restatement Memo to confirm scope, definitions, and success criteria.</p></li>
 <li><p>Create a Team Charter and a one-page Meeting Notes log using listening loops.</p></li>
 <li><p>Populate a Decision Log with at least five decisions made during the exercise.</p></li>
 </ul>
 </section>
-<section id="deliverables-2" class="level3">
-<h3 class="anchored" data-anchor-id="deliverables-2">Deliverables</h3>
+<section id="deliverables-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="deliverables-2">Deliverables</h3>
 <ul>
 <li><p>Problem Restatement Memo</p></li>
 <li><p>Team Charter + Meeting Notes (listening loops)</p></li>
 <li><p>Decision Log (minimum five entries)</p></li>
 </ul>
 </section>
-<section id="rubric-2" class="level3">
-<h3 class="anchored" data-anchor-id="rubric-2">Rubric</h3>
+<section id="rubric-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="rubric-2">Rubric</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -858,37 +872,37 @@ Audience, Use, Conclusion, and Capstone Exercises</strong></p>
 </table>
 </section>
 </section>
-<section id="capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences" class="level2">
-<h2 class="anchored" data-anchor-id="capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences">Capstone 4: Statistical Literacy (Meaning-Making for Non-Technical Audiences)</h2>
-<section id="learning-objectives-3" class="level3">
-<h3 class="anchored" data-anchor-id="learning-objectives-3">Learning objectives</h3>
+<section id="capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="capstone-4-statistical-literacy-meaning-making-for-non-technical-audiences">Capstone 4: Statistical Literacy (Meaning-Making for Non-Technical Audiences)</h2>
+<section id="learning-objectives-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="learning-objectives-3">Learning objectives</h3>
 <ul>
 <li><p>Translate statistical results into decision-relevant meaning and uncertainty.</p></li>
 <li><p>Distinguish statistical significance from practical significance.</p></li>
 <li><p>Communicate limitations and boundary conditions clearly.</p></li>
 </ul>
 </section>
-<section id="estimated-time-3" class="level3">
-<h3 class="anchored" data-anchor-id="estimated-time-3">Estimated time</h3>
+<section id="estimated-time-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="estimated-time-3">Estimated time</h3>
 <p>60–120 minutes</p>
 </section>
-<section id="task-3" class="level3">
-<h3 class="anchored" data-anchor-id="task-3">Task</h3>
+<section id="task-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="task-3">Task</h3>
 <ul>
 <li><p>Create a 1-page Decision Brief (or 5-slide equivalent) aimed at non-technical leadership.</p></li>
 <li><p>Include an Impact Table translating effects into practical terms (and cost of being wrong).</p></li>
 <li><p>Write boundary statements: what you can and cannot conclude.</p></li>
 </ul>
 </section>
-<section id="deliverables-3" class="level3">
-<h3 class="anchored" data-anchor-id="deliverables-3">Deliverables</h3>
+<section id="deliverables-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="deliverables-3">Deliverables</h3>
 <ul>
 <li><p>Decision Brief (1 page or 5 slides)</p></li>
 <li><p>Impact Table</p></li>
 </ul>
 </section>
-<section id="rubric-3" class="level3">
-<h3 class="anchored" data-anchor-id="rubric-3">Rubric</h3>
+<section id="rubric-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="rubric-3">Rubric</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -939,38 +953,38 @@ Audience, Use, Conclusion, and Capstone Exercises</strong></p>
 </table>
 </section>
 </section>
-<section id="capstone-5-ethical-practice-of-data-science" class="level2">
-<h2 class="anchored" data-anchor-id="capstone-5-ethical-practice-of-data-science">Capstone 5: Ethical Practice of Data Science</h2>
-<section id="learning-objectives-4" class="level3">
-<h3 class="anchored" data-anchor-id="learning-objectives-4">Learning objectives</h3>
+<section id="capstone-5-ethical-practice-of-data-science" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="capstone-5-ethical-practice-of-data-science">Capstone 5: Ethical Practice of Data Science</h2>
+<section id="learning-objectives-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="learning-objectives-4">Learning objectives</h3>
 <ul>
 <li><p>Anticipate misuse and harm through an ethics pre-mortem.</p></li>
 <li><p>Respond to pressure ethically and professionally using defensible language.</p></li>
 <li><p>Document concerns and define escalation pathways.</p></li>
 </ul>
 </section>
-<section id="estimated-time-4" class="level3">
-<h3 class="anchored" data-anchor-id="estimated-time-4">Estimated time</h3>
+<section id="estimated-time-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="estimated-time-4">Estimated time</h3>
 <p>60–120 minutes</p>
 </section>
-<section id="task-4" class="level3">
-<h3 class="anchored" data-anchor-id="task-4">Task</h3>
+<section id="task-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="task-4">Task</h3>
 <ul>
 <li><p>Complete an Ethics Pre-Mortem: identify at least five ways results could be misused or misinterpreted and propose mitigations.</p></li>
 <li><p>Write an Integrity Memo responding to a scenario where leadership asks you to ‘emphasize significance’ despite weak practical impact.</p></li>
 <li><p>Draft a Pushback Script and a Documentation &amp; Escalation Checklist for the same scenario.</p></li>
 </ul>
 </section>
-<section id="deliverables-4" class="level3">
-<h3 class="anchored" data-anchor-id="deliverables-4">Deliverables</h3>
+<section id="deliverables-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="deliverables-4">Deliverables</h3>
 <ul>
 <li><p>Ethics Pre-Mortem</p></li>
 <li><p>Integrity Memo</p></li>
 <li><p>Pushback Script + Documentation &amp; Escalation Checklist</p></li>
 </ul>
 </section>
-<section id="rubric-4" class="level3">
-<h3 class="anchored" data-anchor-id="rubric-4">Rubric</h3>
+<section id="rubric-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="rubric-4">Rubric</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -1030,13 +1044,12 @@ Prepared by: [Name]</p>
 </section>
 </section>
 </section>
-<section id="how-to-use-these-templates" class="level1">
-<h1>How to Use These Templates</h1>
+<section id="how-to-use-these-templates" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> How to Use These Templates</h1>
 <p>Each template is designed to produce a concrete professional artifact that supports both technical rigor and real-world effectiveness. Use them as: (a) graded deliverables in a course, (b) workshop exercises, or (c) checklists and scripts in professional practice.</p>
 <p><em>Tip: Keep versions. In consulting practice, revision is often where alignment and quality are achieved.</em></p>
-</section>
-<section id="template-1-problem-restatement-memo" class="level1">
-<h1>Template 1: Problem Restatement Memo</h1>
+<section id="template-1-problem-restatement-memo" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="template-1-problem-restatement-memo">Template 1: Problem Restatement Memo</h2>
 <p><em>Use after the kickoff conversation to confirm shared understanding before analysis begins.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -1074,20 +1087,20 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="decision-context" class="level2">
-<h2 class="anchored" data-anchor-id="decision-context">1. Decision Context</h2>
+<section id="decision-context" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="decision-context">1. Decision Context</h3>
 <p>Decision to be made: [What decision will this work inform?]</p>
 <p>Decision owner(s): [Who decides?]</p>
 <p>Time horizon / deadline: [By when?]</p>
 <p>Why now: [What triggered this request?]</p>
 </section>
-<section id="problem-statement" class="level2">
-<h2 class="anchored" data-anchor-id="problem-statement">2. Problem Statement</h2>
+<section id="problem-statement" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="problem-statement">2. Problem Statement</h3>
 <p>Stakeholder question (verbatim): [Paste or paraphrase]</p>
 <p>Translated statistical question: [Outcome, population, comparison, timeframe]</p>
 </section>
-<section id="definitions-and-success-criteria" class="level2">
-<h2 class="anchored" data-anchor-id="definitions-and-success-criteria">3. Definitions and Success Criteria</h2>
+<section id="definitions-and-success-criteria" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="definitions-and-success-criteria">3. Definitions and Success Criteria</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -1137,8 +1150,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="data-reality-check" class="level2">
-<h2 class="anchored" data-anchor-id="data-reality-check">4. Data Reality Check</h2>
+<section id="data-reality-check" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="data-reality-check">4. Data Reality Check</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -1182,8 +1195,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="constraints-and-risks" class="level2">
-<h2 class="anchored" data-anchor-id="constraints-and-risks">5. Constraints and Risks</h2>
+<section id="constraints-and-risks" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="constraints-and-risks">5. Constraints and Risks</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -1239,8 +1252,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="deliverables-and-communication-plan" class="level2">
-<h2 class="anchored" data-anchor-id="deliverables-and-communication-plan">6. Deliverables and Communication Plan</h2>
+<section id="deliverables-and-communication-plan" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="deliverables-and-communication-plan">6. Deliverables and Communication Plan</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 23%">
@@ -1284,13 +1297,13 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="what-would-change-our-mind" class="level2">
-<h2 class="anchored" data-anchor-id="what-would-change-our-mind">7. What Would Change Our Mind?</h2>
+<section id="what-would-change-our-mind" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="what-would-change-our-mind">7. What Would Change Our Mind?</h3>
 <p>[Write 5–8 sentences. What evidence would reverse or materially change the recommendation?]</p>
 </section>
 </section>
-<section id="template-2-definitions-assumptions-log" class="level1">
-<h1>Template 2: Definitions &amp; Assumptions Log</h1>
+<section id="template-2-definitions-assumptions-log" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="template-2-definitions-assumptions-log">Template 2: Definitions &amp; Assumptions Log</h2>
 <p><em>Use as a living document throughout the project. Update whenever scope, data, or interpretation changes.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -1419,8 +1432,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="template-3-meeting-notes-active-listening-loops" class="level1">
-<h1>Template 3: Meeting Notes (Active Listening Loops)</h1>
+<section id="template-3-meeting-notes-active-listening-loops" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="template-3-meeting-notes-active-listening-loops"><span class="header-section-number">4.1</span> Template 3: Meeting Notes (Active Listening Loops)</h2>
 <p><em>Designed to capture clarifications, confirm meaning, and reduce misalignment.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -1466,8 +1479,8 @@ Prepared by: [Name]</p>
 <li><p>[Fill]</p></li>
 <li><p>[Fill]</p></li>
 </ul>
-<section id="listening-loop-log" class="level2">
-<h2 class="anchored" data-anchor-id="listening-loop-log">Listening Loop Log</h2>
+<section id="listening-loop-log" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="listening-loop-log"><span class="header-section-number">4.1.1</span> Listening Loop Log</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -1545,8 +1558,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="decisions-made" class="level2">
-<h2 class="anchored" data-anchor-id="decisions-made">Decisions Made</h2>
+<section id="decisions-made" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="decisions-made"><span class="header-section-number">4.1.2</span> Decisions Made</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1590,8 +1603,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="risks-blockers" class="level2">
-<h2 class="anchored" data-anchor-id="risks-blockers">Risks / Blockers</h2>
+<section id="risks-blockers" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="risks-blockers"><span class="header-section-number">4.1.3</span> Risks / Blockers</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1630,8 +1643,8 @@ Prepared by: [Name]</p>
 </table>
 </section>
 </section>
-<section id="template-4-stakeholder-map" class="level1">
-<h1>Template 4: Stakeholder Map</h1>
+<section id="template-4-stakeholder-map" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="template-4-stakeholder-map"><span class="header-section-number">4.2</span> Template 4: Stakeholder Map</h2>
 <p><em>Use to understand incentives, resistance, and what each stakeholder needs to trust the work.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -1746,8 +1759,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="template-5-team-charter" class="level1">
-<h1>Template 5: Team Charter</h1>
+<section id="template-5-team-charter" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="template-5-team-charter"><span class="header-section-number">4.3</span> Template 5: Team Charter</h2>
 <p><em>Use at project start to create shared accountability, coordination norms, and conflict protocols.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -1785,12 +1798,12 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="team-purpose" class="level2">
-<h2 class="anchored" data-anchor-id="team-purpose">Team purpose</h2>
+<section id="team-purpose" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="team-purpose"><span class="header-section-number">4.3.1</span> Team purpose</h3>
 <p>[One paragraph: what we are trying to achieve for whom and by when.]</p>
 </section>
-<section id="roles-and-responsibilities" class="level2">
-<h2 class="anchored" data-anchor-id="roles-and-responsibilities">Roles and responsibilities</h2>
+<section id="roles-and-responsibilities" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="roles-and-responsibilities"><span class="header-section-number">4.3.2</span> Roles and responsibilities</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1840,8 +1853,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="working-agreements" class="level2">
-<h2 class="anchored" data-anchor-id="working-agreements">Working agreements</h2>
+<section id="working-agreements" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="working-agreements"><span class="header-section-number">4.3.3</span> Working agreements</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Communication channel(s): [e.g., Slack/email]; expected response time: [Fill]</label></p></li>
 <li><p><label><input type="checkbox">Meeting cadence and duration: [Fill]</label></p></li>
@@ -1850,16 +1863,16 @@ Prepared by: [Name]</p>
 <li><p><label><input type="checkbox">File naming, versioning, and storage: [Fill]</label></p></li>
 </ul>
 </section>
-<section id="conflict-protocol" class="level2">
-<h2 class="anchored" data-anchor-id="conflict-protocol">Conflict protocol</h2>
+<section id="conflict-protocol" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="conflict-protocol"><span class="header-section-number">4.3.4</span> Conflict protocol</h3>
 <p>1) Surface the issue early (name the disagreement).</p>
 <p>2) Separate facts, interpretations, and values (what is disputed?).</p>
 <p>3) Propose options and tradeoffs (time, risk, rigor).</p>
 <p>4) Decide and document (who decides; by when).</p>
 <p>Escalation path: [When and to whom?]</p>
 </section>
-<section id="shared-accountability" class="level2">
-<h2 class="anchored" data-anchor-id="shared-accountability">Shared accountability</h2>
+<section id="shared-accountability" class="level3" data-number="4.3.5">
+<h3 data-number="4.3.5" class="anchored" data-anchor-id="shared-accountability"><span class="header-section-number">4.3.5</span> Shared accountability</h3>
 <p><em>Use this section to verify individual mastery, not just polished group output.</em></p>
 <p>How we ensure every member understands the core analysis: [Fill]</p>
 <table class="caption-top table">
@@ -1920,8 +1933,8 @@ Prepared by: [Name]</p>
 </table>
 </section>
 </section>
-<section id="template-6-decision-log" class="level1">
-<h1>Template 6: Decision Log</h1>
+<section id="template-6-decision-log" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="template-6-decision-log"><span class="header-section-number">4.4</span> Template 6: Decision Log</h2>
 <p><em>Use throughout the project. A decision log is an accountability and memory tool.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2078,8 +2091,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="template-7-decision-brief" class="level1">
-<h1>Template 7: Decision Brief</h1>
+<section id="template-7-decision-brief" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="template-7-decision-brief"><span class="header-section-number">4.5</span> Template 7: Decision Brief</h2>
 <p><em>Use to communicate results to non-technical decision-makers with honesty about uncertainty and limits.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2117,8 +2130,8 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="required-structure-1-page-or-5-slides" class="level2">
-<h2 class="anchored" data-anchor-id="required-structure-1-page-or-5-slides">Required structure (1 page or 5 slides)</h2>
+<section id="required-structure-1-page-or-5-slides" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="required-structure-1-page-or-5-slides"><span class="header-section-number">4.5.1</span> Required structure (1 page or 5 slides)</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">What we asked (decision context)</label></p></li>
 <li><p><label><input type="checkbox">What we did (high-level methods, in plain language)</label></p></li>
@@ -2128,8 +2141,8 @@ Prepared by: [Name]</p>
 <li><p><label><input type="checkbox">Recommendation and next step (actionable)</label></p></li>
 </ul>
 </section>
-<section id="decision-brief-draft" class="level2">
-<h2 class="anchored" data-anchor-id="decision-brief-draft">Decision Brief Draft</h2>
+<section id="decision-brief-draft" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="decision-brief-draft"><span class="header-section-number">4.5.2</span> Decision Brief Draft</h3>
 <p>What we asked: [Fill]</p>
 <p>What we did: [Fill]</p>
 <p>What we found (with uncertainty): [Fill]</p>
@@ -2138,8 +2151,8 @@ Prepared by: [Name]</p>
 <p>Recommendation + next step: [Fill]</p>
 </section>
 </section>
-<section id="template-8-impact-table" class="level1">
-<h1>Template 8: Impact Table</h1>
+<section id="template-8-impact-table" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="template-8-impact-table"><span class="header-section-number">4.6</span> Template 8: Impact Table</h2>
 <p><em>Use alongside the Decision Brief to translate effects into practical meaning and decision risk.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2254,8 +2267,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="template-9-analysis-plan" class="level1">
-<h1>Template 9: Analysis Plan</h1>
+<section id="template-9-analysis-plan" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="template-9-analysis-plan"><span class="header-section-number">4.7</span> Template 9: Analysis Plan</h2>
 <p><em>Use before heavy analysis. The goal is defensibility: clear choices, tradeoffs, and validity threats.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2293,12 +2306,12 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="objective-and-decision-context" class="level2">
-<h2 class="anchored" data-anchor-id="objective-and-decision-context">1. Objective and decision context</h2>
+<section id="objective-and-decision-context" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="objective-and-decision-context"><span class="header-section-number">4.7.1</span> 1. Objective and decision context</h3>
 <p>[Fill]</p>
 </section>
-<section id="data-and-measurement" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-measurement">2. Data and measurement</h2>
+<section id="data-and-measurement" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="data-and-measurement"><span class="header-section-number">4.7.2</span> 2. Data and measurement</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -2348,13 +2361,13 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="primary-analysis-approach" class="level2">
-<h2 class="anchored" data-anchor-id="primary-analysis-approach">3. Primary analysis approach</h2>
+<section id="primary-analysis-approach" class="level3" data-number="4.7.3">
+<h3 data-number="4.7.3" class="anchored" data-anchor-id="primary-analysis-approach"><span class="header-section-number">4.7.3</span> 3. Primary analysis approach</h3>
 <p>Candidate approaches considered: [Fill]</p>
 <p>Selected approach and justification (tradeoffs): [Fill]</p>
 </section>
-<section id="validation-and-robustness-plan" class="level2">
-<h2 class="anchored" data-anchor-id="validation-and-robustness-plan">4. Validation and robustness plan</h2>
+<section id="validation-and-robustness-plan" class="level3" data-number="4.7.4">
+<h3 data-number="4.7.4" class="anchored" data-anchor-id="validation-and-robustness-plan"><span class="header-section-number">4.7.4</span> 4. Validation and robustness plan</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Train/validation strategy (or evaluation design): [Fill]</label></p></li>
 <li><p><label><input type="checkbox">Sensitivity check(s): [Fill]</label></p></li>
@@ -2362,8 +2375,8 @@ Prepared by: [Name]</p>
 <li><p><label><input type="checkbox">Error analysis plan: [Fill]</label></p></li>
 </ul>
 </section>
-<section id="threats-to-validity-and-mitigations" class="level2">
-<h2 class="anchored" data-anchor-id="threats-to-validity-and-mitigations">5. Threats to validity and mitigations</h2>
+<section id="threats-to-validity-and-mitigations" class="level3" data-number="4.7.5">
+<h3 data-number="4.7.5" class="anchored" data-anchor-id="threats-to-validity-and-mitigations"><span class="header-section-number">4.7.5</span> 5. Threats to validity and mitigations</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -2419,13 +2432,13 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="deliverables-5" class="level2">
-<h2 class="anchored" data-anchor-id="deliverables-5">6. Deliverables</h2>
+<section id="deliverables-5" class="level3" data-number="4.7.6">
+<h3 data-number="4.7.6" class="anchored" data-anchor-id="deliverables-5"><span class="header-section-number">4.7.6</span> 6. Deliverables</h3>
 <p>[Fill]</p>
 </section>
 </section>
-<section id="template-10-model-selection-memo" class="level1">
-<h1>Template 10: Model Selection Memo</h1>
+<section id="template-10-model-selection-memo" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="template-10-model-selection-memo"><span class="header-section-number">4.8</span> Template 10: Model Selection Memo</h2>
 <p><em>Use to justify why the chosen model is appropriate and what could break it.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2464,8 +2477,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 <p>Executive summary (3–5 sentences): [Fill]</p>
-<section id="why-this-model" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-model">Why this model</h2>
+<section id="why-this-model" class="level3" data-number="4.8.1">
+<h3 data-number="4.8.1" class="anchored" data-anchor-id="why-this-model"><span class="header-section-number">4.8.1</span> Why this model</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Fit to problem and decision context: [Fill]</label></p></li>
 <li><p><label><input type="checkbox">Interpretability needs: [Fill]</label></p></li>
@@ -2473,8 +2486,8 @@ Prepared by: [Name]</p>
 <li><p><label><input type="checkbox">Performance tradeoffs: [Fill]</label></p></li>
 </ul>
 </section>
-<section id="what-could-break-it-failure-modes" class="level2">
-<h2 class="anchored" data-anchor-id="what-could-break-it-failure-modes">What could break it? (Failure modes)</h2>
+<section id="what-could-break-it-failure-modes" class="level3" data-number="4.8.2">
+<h3 data-number="4.8.2" class="anchored" data-anchor-id="what-could-break-it-failure-modes"><span class="header-section-number">4.8.2</span> What could break it? (Failure modes)</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -2530,13 +2543,13 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="limitations-and-appropriate-claims" class="level2">
-<h2 class="anchored" data-anchor-id="limitations-and-appropriate-claims">Limitations and appropriate claims</h2>
+<section id="limitations-and-appropriate-claims" class="level3" data-number="4.8.3">
+<h3 data-number="4.8.3" class="anchored" data-anchor-id="limitations-and-appropriate-claims"><span class="header-section-number">4.8.3</span> Limitations and appropriate claims</h3>
 <p>[Fill]</p>
 </section>
 </section>
-<section id="template-11-diagnostics-minimum-set" class="level1">
-<h1>Template 11: Diagnostics Minimum Set</h1>
+<section id="template-11-diagnostics-minimum-set" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="template-11-diagnostics-minimum-set"><span class="header-section-number">4.9</span> Template 11: Diagnostics Minimum Set</h2>
 <p><em>Use as a checklist to ensure baseline defensibility before sharing results.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2574,8 +2587,8 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="checklist" class="level2">
-<h2 class="anchored" data-anchor-id="checklist">Checklist</h2>
+<section id="checklist" class="level3" data-number="4.9.1">
+<h3 data-number="4.9.1" class="anchored" data-anchor-id="checklist"><span class="header-section-number">4.9.1</span> Checklist</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Data sanity checks completed (ranges, missingness, duplicates)</label></p></li>
 <li><p><label><input type="checkbox">Baseline model established for comparison</label></p></li>
@@ -2588,13 +2601,13 @@ Prepared by: [Name]</p>
 <li><p><label><input type="checkbox">Reproducibility verified (rerun from scratch)</label></p></li>
 </ul>
 </section>
-<section id="notes-on-findings-and-actions" class="level2">
-<h2 class="anchored" data-anchor-id="notes-on-findings-and-actions">Notes on findings and actions</h2>
+<section id="notes-on-findings-and-actions" class="level3" data-number="4.9.2">
+<h3 data-number="4.9.2" class="anchored" data-anchor-id="notes-on-findings-and-actions"><span class="header-section-number">4.9.2</span> Notes on findings and actions</h3>
 <p>[Fill]</p>
 </section>
 </section>
-<section id="template-12-reproducibility-bundle-readme-skeleton" class="level1">
-<h1>Template 12: Reproducibility Bundle (README Skeleton)</h1>
+<section id="template-12-reproducibility-bundle-readme-skeleton" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="template-12-reproducibility-bundle-readme-skeleton"><span class="header-section-number">4.10</span> Template 12: Reproducibility Bundle (README Skeleton)</h2>
 <p><em>Use to make your work rerunnable by a peer or future self.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2632,8 +2645,8 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="readme-sections-copypaste" class="level2">
-<h2 class="anchored" data-anchor-id="readme-sections-copypaste">README sections (copy/paste)</h2>
+<section id="readme-sections-copypaste" class="level3" data-number="4.10.1">
+<h3 data-number="4.10.1" class="anchored" data-anchor-id="readme-sections-copypaste"><span class="header-section-number">4.10.1</span> README sections (copy/paste)</h3>
 <p>Project overview: [Fill]</p>
 <p>How to reproduce (exact steps): [Fill]</p>
 <p>Data sources and access: [Fill]</p>
@@ -2644,8 +2657,8 @@ Prepared by: [Name]</p>
 <p>Change log (versions): [Fill]</p>
 </section>
 </section>
-<section id="template-13-ethics-pre-mortem" class="level1">
-<h1>Template 13: Ethics Pre-Mortem</h1>
+<section id="template-13-ethics-pre-mortem" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="template-13-ethics-pre-mortem"><span class="header-section-number">4.11</span> Template 13: Ethics Pre-Mortem</h2>
 <p><em>Use before releasing results. The goal is to anticipate how the work could mislead and prevent harm.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2683,8 +2696,8 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="how-could-this-work-mislead" class="level2">
-<h2 class="anchored" data-anchor-id="how-could-this-work-mislead">How could this work mislead?</h2>
+<section id="how-could-this-work-mislead" class="level3" data-number="4.11.1">
+<h3 data-number="4.11.1" class="anchored" data-anchor-id="how-could-this-work-mislead"><span class="header-section-number">4.11.1</span> How could this work mislead?</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -2752,12 +2765,12 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="boundary-statements-what-we-should-not-claim" class="level2">
-<h2 class="anchored" data-anchor-id="boundary-statements-what-we-should-not-claim">Boundary statements (what we should NOT claim)</h2>
+<section id="boundary-statements-what-we-should-not-claim" class="level3" data-number="4.11.2">
+<h3 data-number="4.11.2" class="anchored" data-anchor-id="boundary-statements-what-we-should-not-claim"><span class="header-section-number">4.11.2</span> Boundary statements (what we should NOT claim)</h3>
 <p>[Fill]</p>
 </section>
-<section id="disclosure-plan" class="level2">
-<h2 class="anchored" data-anchor-id="disclosure-plan">Disclosure plan</h2>
+<section id="disclosure-plan" class="level3" data-number="4.11.3">
+<h3 data-number="4.11.3" class="anchored" data-anchor-id="disclosure-plan"><span class="header-section-number">4.11.3</span> Disclosure plan</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Key limitations disclosed in executive summary</label></p></li>
 <li><p><label><input type="checkbox">Uncertainty reported alongside point estimates</label></p></li>
@@ -2767,8 +2780,8 @@ Prepared by: [Name]</p>
 </ul>
 </section>
 </section>
-<section id="template-14-integrity-memo" class="level1">
-<h1>Template 14: Integrity Memo</h1>
+<section id="template-14-integrity-memo" class="level2" data-number="4.12">
+<h2 data-number="4.12" class="anchored" data-anchor-id="template-14-integrity-memo"><span class="header-section-number">4.12</span> Template 14: Integrity Memo</h2>
 <p><em>Use when there is pressure to distort interpretations or selectively report.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2806,29 +2819,29 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="what-is-defensible-to-claim" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-defensible-to-claim">What is defensible to claim</h2>
+<section id="what-is-defensible-to-claim" class="level3" data-number="4.12.1">
+<h3 data-number="4.12.1" class="anchored" data-anchor-id="what-is-defensible-to-claim"><span class="header-section-number">4.12.1</span> What is defensible to claim</h3>
 <ul>
 <li><p>[Fill]</p></li>
 <li><p>[Fill]</p></li>
 <li><p>[Fill]</p></li>
 </ul>
 </section>
-<section id="what-is-not-defensible-to-claim-and-why" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-not-defensible-to-claim-and-why">What is NOT defensible to claim (and why)</h2>
+<section id="what-is-not-defensible-to-claim-and-why" class="level3" data-number="4.12.2">
+<h3 data-number="4.12.2" class="anchored" data-anchor-id="what-is-not-defensible-to-claim-and-why"><span class="header-section-number">4.12.2</span> What is NOT defensible to claim (and why)</h3>
 <ul>
 <li><p>[Fill]</p></li>
 <li><p>[Fill]</p></li>
 <li><p>[Fill]</p></li>
 </ul>
 </section>
-<section id="recommended-path-forward" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-path-forward">Recommended path forward</h2>
+<section id="recommended-path-forward" class="level3" data-number="4.12.3">
+<h3 data-number="4.12.3" class="anchored" data-anchor-id="recommended-path-forward"><span class="header-section-number">4.12.3</span> Recommended path forward</h3>
 <p>[Offer defensible alternatives that meet legitimate goals.]</p>
 </section>
 </section>
-<section id="template-15-pushback-scripts-firm-and-helpful" class="level1">
-<h1>Template 15: Pushback Scripts (Firm-and-Helpful)</h1>
+<section id="template-15-pushback-scripts-firm-and-helpful" class="level2" data-number="4.13">
+<h2 data-number="4.13" class="anchored" data-anchor-id="template-15-pushback-scripts-firm-and-helpful"><span class="header-section-number">4.13</span> Template 15: Pushback Scripts (Firm-and-Helpful)</h2>
 <p><em>Short scripts you can use verbatim in meetings or emails when pressure emerges.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2933,8 +2946,8 @@ Prepared by: [Name]</p>
 </tbody>
 </table>
 </section>
-<section id="template-16-documentation-escalation-checklist" class="level1">
-<h1>Template 16: Documentation &amp; Escalation Checklist</h1>
+<section id="template-16-documentation-escalation-checklist" class="level2" data-number="4.14">
+<h2 data-number="4.14" class="anchored" data-anchor-id="template-16-documentation-escalation-checklist"><span class="header-section-number">4.14</span> Template 16: Documentation &amp; Escalation Checklist</h2>
 <p><em>Use when ethical pressure persists. Documentation protects stakeholders and the analyst.</em></p>
 <table class="caption-top table">
 <colgroup>
@@ -2972,8 +2985,8 @@ Prepared by: [Name]</p>
 </tr>
 </tbody>
 </table>
-<section id="documentation-what-to-record" class="level2">
-<h2 class="anchored" data-anchor-id="documentation-what-to-record">Documentation (what to record)</h2>
+<section id="documentation-what-to-record" class="level3" data-number="4.14.1">
+<h3 data-number="4.14.1" class="anchored" data-anchor-id="documentation-what-to-record"><span class="header-section-number">4.14.1</span> Documentation (what to record)</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">Who requested the change (name/role)</label></p></li>
 <li><p><label><input type="checkbox">Exact request (quote if possible)</label></p></li>
@@ -2984,8 +2997,8 @@ Prepared by: [Name]</p>
 <li><p><label><input type="checkbox">Where the documentation is stored</label></p></li>
 </ul>
 </section>
-<section id="escalation-when-and-to-whom" class="level2">
-<h2 class="anchored" data-anchor-id="escalation-when-and-to-whom">Escalation (when and to whom)</h2>
+<section id="escalation-when-and-to-whom" class="level3" data-number="4.14.2">
+<h3 data-number="4.14.2" class="anchored" data-anchor-id="escalation-when-and-to-whom"><span class="header-section-number">4.14.2</span> Escalation (when and to whom)</h3>
 <ul class="task-list">
 <li><p><label><input type="checkbox">When to escalate: [Fill]</label></p></li>
 <li><p><label><input type="checkbox">Escalation path: [Manager / PI / Compliance / Ethics board / Client lead]</label></p></li>
@@ -2993,8 +3006,8 @@ Prepared by: [Name]</p>
 <li><p><label><input type="checkbox">How you will frame the concern (risk to validity, risk of harm, misinterpretation risk)</label></p></li>
 </ul>
 </section>
-<section id="post-meeting-follow-up-email-skeleton" class="level2">
-<h2 class="anchored" data-anchor-id="post-meeting-follow-up-email-skeleton">Post-meeting follow-up email (skeleton)</h2>
+<section id="post-meeting-follow-up-email-skeleton" class="level3" data-number="4.14.3">
+<h3 data-number="4.14.3" class="anchored" data-anchor-id="post-meeting-follow-up-email-skeleton"><span class="header-section-number">4.14.3</span> Post-meeting follow-up email (skeleton)</h3>
 <p>Subject: Summary of [Topic] and next steps</p>
 <p>Thank you for today’s discussion. To confirm our shared understanding:</p>
 <p>• [Decision made]</p>
@@ -3009,6 +3022,7 @@ Prepared by: [Name]</p>
 <p>If you want, paste your co-authors’ names and your preferred term (<strong>“data scientist”</strong> vs <strong>“statistician/data scientist”</strong>), and I’ll do a final pass to standardize <em>every instance</em> (including figure caption wording) so the entire chapter reads like a finished, typeset book section.</p>
 
 
+</section>
 </section>
 </section>
 
