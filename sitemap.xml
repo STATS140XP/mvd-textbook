@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mvd-textbook.github.io/about.html</loc>
-    <lastmod>2026-07-15T09:36:54.588Z</lastmod>
+    <lastmod>2026-07-21T19:11:52.531Z</lastmod>
   </url>
   <url>
-    <loc>https://mvd-textbook.github.io/chapters/00Prelude.html</loc>
-    <lastmod>2026-07-15T11:57:24.104Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mvd-textbook.github.io/chapters/00ActiveListening.html</loc>
-    <lastmod>2026-02-03T21:01:56.237Z</lastmod>
+    <loc>https://mvd-textbook.github.io/chapters/99Ethics.html</loc>
+    <lastmod>2026-07-21T18:58:34.584Z</lastmod>
   </url>
   <url>
     <loc>https://mvd-textbook.github.io/chapters/02Prelude.html</loc>
     <lastmod>2026-07-20T16:48:20.251Z</lastmod>
   </url>
   <url>
+    <loc>https://mvd-textbook.github.io/chapters/00ActiveListening.html</loc>
+    <lastmod>2026-02-03T21:01:56.237Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mvd-textbook.github.io/chapters/00Prelude.html</loc>
+    <lastmod>2026-07-15T11:57:24.104Z</lastmod>
+  </url>
+  <url>
     <loc>https://mvd-textbook.github.io/index.html</loc>
-    <lastmod>2026-07-15T11:06:18.970Z</lastmod>
+    <lastmod>2026-07-21T19:04:46.912Z</lastmod>
   </url>
 </urlset>
