@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mahtash Esfandiari, Vivian Lew and Dave Zes">
+
+<title>Accountability – Statistics 140/141 Consulting Text</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/99Ethics.html" rel="next">
+<link href="../chapters/00Locus_of_Control.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-968d3e63a93d5987d0e6d73d568971dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/00Accountability.html">Accountability</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Statistics 140/141 Consulting Text</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/STATS140XP/mvd-textbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Greetings</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02Prelude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prelude</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00ActiveListening.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Active Listening</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00Communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Communication</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00Conflict_Resolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conflict Resolution</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00Empathy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Empathy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00Locus_of_Control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Locus of Control</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00Accountability.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Accountability</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/99Ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Chapter. Ethics in Statistics and Data Science</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#a-general-definition-of-accountability" id="toc-a-general-definition-of-accountability" class="nav-link active" data-scroll-target="#a-general-definition-of-accountability">A General Definition of Accountability</a>
+  <ul>
+  <li><a href="#what-steps-can-you-take-to-enhance-accountability-in-team-building-and-statistical-consulting" id="toc-what-steps-can-you-take-to-enhance-accountability-in-team-building-and-statistical-consulting" class="nav-link" data-scroll-target="#what-steps-can-you-take-to-enhance-accountability-in-team-building-and-statistical-consulting">What steps can you take to enhance accountability in team building and statistical consulting?</a></li>
+  <li><a href="#characteristics-of-accountable-individuals" id="toc-characteristics-of-accountable-individuals" class="nav-link" data-scroll-target="#characteristics-of-accountable-individuals">Characteristics of accountable individuals</a>
+  <ul class="collapse">
+  <li><a href="#accountable-individuals-behave-more-like-leaders-than-bosses.-they" id="toc-accountable-individuals-behave-more-like-leaders-than-bosses.-they" class="nav-link" data-scroll-target="#accountable-individuals-behave-more-like-leaders-than-bosses.-they">Accountable individuals behave more like leaders than bosses. They…</a></li>
+  </ul></li>
+  <li><a href="#how-does-accountability-overlap-with-other-dimensions-of-team-building" id="toc-how-does-accountability-overlap-with-other-dimensions-of-team-building" class="nav-link" data-scroll-target="#how-does-accountability-overlap-with-other-dimensions-of-team-building">How does accountability overlap with other dimensions of team building?</a>
+  <ul class="collapse">
+  <li><a href="#relationship-of-accountability-with-active-listening" id="toc-relationship-of-accountability-with-active-listening" class="nav-link" data-scroll-target="#relationship-of-accountability-with-active-listening">Relationship of accountability with active listening</a></li>
+  <li><a href="#relationship-of-accountability-with-communication" id="toc-relationship-of-accountability-with-communication" class="nav-link" data-scroll-target="#relationship-of-accountability-with-communication">Relationship of accountability with communication</a></li>
+  <li><a href="#relationship-of-accountability-with-empathy" id="toc-relationship-of-accountability-with-empathy" class="nav-link" data-scroll-target="#relationship-of-accountability-with-empathy">Relationship of accountability with empathy</a></li>
+  <li><a href="#set-clear-expectations" id="toc-set-clear-expectations" class="nav-link" data-scroll-target="#set-clear-expectations">Set Clear expectations</a></li>
+  <li><a href="#pay-attention-to-the-well-being-of-the-team" id="toc-pay-attention-to-the-well-being-of-the-team" class="nav-link" data-scroll-target="#pay-attention-to-the-well-being-of-the-team">Pay attention to the well-being of the team</a></li>
+  <li><a href="#build-trust-a-path-to-combining-empathy-and-accountability" id="toc-build-trust-a-path-to-combining-empathy-and-accountability" class="nav-link" data-scroll-target="#build-trust-a-path-to-combining-empathy-and-accountability">Build Trust: A path to combining empathy and accountability</a></li>
+  <li><a href="#encourage-communication-among-team-members" id="toc-encourage-communication-among-team-members" class="nav-link" data-scroll-target="#encourage-communication-among-team-members">Encourage communication among team members</a></li>
+  <li><a href="#create-an-effective-communication-system-between-team-members" id="toc-create-an-effective-communication-system-between-team-members" class="nav-link" data-scroll-target="#create-an-effective-communication-system-between-team-members">Create an effective communication system between team members</a></li>
+  <li><a href="#use-measurable-objectives-and-flexibility-to-enhance-accountability" id="toc-use-measurable-objectives-and-flexibility-to-enhance-accountability" class="nav-link" data-scroll-target="#use-measurable-objectives-and-flexibility-to-enhance-accountability">Use Measurable objectives and flexibility to enhance accountability</a></li>
+  <li><a href="#create-a-balance-between-empathy-and-accountability" id="toc-create-a-balance-between-empathy-and-accountability" class="nav-link" data-scroll-target="#create-a-balance-between-empathy-and-accountability">Create a balance between empathy and accountability</a></li>
+  <li><a href="#establish-and-define-consistent-accountability" id="toc-establish-and-define-consistent-accountability" class="nav-link" data-scroll-target="#establish-and-define-consistent-accountability">Establish And Define Consistent Accountability</a></li>
+  <li><a href="#create-a-balance-between-firmness-and-team-support" id="toc-create-a-balance-between-firmness-and-team-support" class="nav-link" data-scroll-target="#create-a-balance-between-firmness-and-team-support">Create a balance between firmness and team support</a></li>
+  <li><a href="#focus-on-developing-relationships-with-team-members" id="toc-focus-on-developing-relationships-with-team-members" class="nav-link" data-scroll-target="#focus-on-developing-relationships-with-team-members">Focus on developing relationships with team members</a></li>
+  <li><a href="#help-team-members-assess-themselves-with-respect-to-the-important-constructs-related-to-successful-team-building" id="toc-help-team-members-assess-themselves-with-respect-to-the-important-constructs-related-to-successful-team-building" class="nav-link" data-scroll-target="#help-team-members-assess-themselves-with-respect-to-the-important-constructs-related-to-successful-team-building">Help team members assess themselves with respect to the important constructs related to successful team building</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#relationship-of-accountability-with-flexibility" id="toc-relationship-of-accountability-with-flexibility" class="nav-link" data-scroll-target="#relationship-of-accountability-with-flexibility">Relationship of accountability with flexibility</a></li>
+  <li><a href="#relationship-of-accountability-with-locus-of-control" id="toc-relationship-of-accountability-with-locus-of-control" class="nav-link" data-scroll-target="#relationship-of-accountability-with-locus-of-control">Relationship of accountability with locus of control</a></li>
+  <li><a href="#relationship-of-accountability-with-conflict-resolution" id="toc-relationship-of-accountability-with-conflict-resolution" class="nav-link" data-scroll-target="#relationship-of-accountability-with-conflict-resolution">Relationship of accountability with conflict resolution</a>
+  <ul>
+  <li><a href="#through-conflict-resolution-the-team-members-can" id="toc-through-conflict-resolution-the-team-members-can" class="nav-link" data-scroll-target="#through-conflict-resolution-the-team-members-can">Through conflict resolution, the team members can…</a></li>
+  </ul></li>
+  <li><a href="#how-do-team-members-become-accountable" id="toc-how-do-team-members-become-accountable" class="nav-link" data-scroll-target="#how-do-team-members-become-accountable">How do team members become accountable?</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
+  <ul>
+  <li><a href="#individual-exercise" id="toc-individual-exercise" class="nav-link" data-scroll-target="#individual-exercise">Individual Exercise</a></li>
+  <li><a href="#individualgroup-exercise" id="toc-individualgroup-exercise" class="nav-link" data-scroll-target="#individualgroup-exercise">Individual/Group Exercise</a></li>
+  <li><a href="#group-exercise" id="toc-group-exercise" class="nav-link" data-scroll-target="#group-exercise">Group exercise</a></li>
+  <li><a href="#questions-to-be-answered" id="toc-questions-to-be-answered" class="nav-link" data-scroll-target="#questions-to-be-answered">Questions to be answered</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/STATS140XP/mvd-textbook/edit/main/chapters/00Accountability.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/STATS140XP/mvd-textbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Accountability</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="myQuote">
+<p>2cm3cm <em>“It is not only what we do, but also what we do not do, for which we are accountable."</em><br>
+— Moliere’</p>
+</div>
+<section id="a-general-definition-of-accountability" class="level2">
+<h2 class="anchored" data-anchor-id="a-general-definition-of-accountability">A General Definition of Accountability</h2>
+<p>Accountability is an obligation or willingness to accept responsibility, take responsibility for one’s actions, and not waste time or effort on distracting activities or other unproductive behaviors.</p>
+<section id="what-steps-can-you-take-to-enhance-accountability-in-team-building-and-statistical-consulting" class="level3">
+<h3 class="anchored" data-anchor-id="what-steps-can-you-take-to-enhance-accountability-in-team-building-and-statistical-consulting">What steps can you take to enhance accountability in team building and statistical consulting?</h3>
+<ol type="1">
+<li><p>Set clear expectation that are specific, measurable, attainable, and trackable.</p></li>
+<li><p>Create a detailed project plan that includes timelines, details of deliverables, clarifying who should be responsible for what task, and clearly defining roles so members face ownership and take charge of their work.</p></li>
+<li><p>Have regular conversations, share updates, discuss challenges and what is getting in the way of reaching milestones,</p></li>
+<li><p>Help individual team members align their work with the long-term goal of the project and realize that their work impacts the big picture.</p></li>
+<li><p>Have team members provide short written updates on the progress of the work on the assigned task.</p></li>
+<li><p>Have all team members read the written progress reports and provide their input.</p></li>
+</ol>
+<p>Following the above steps helps to give a structure and a formulation to the project, improves team dynamics and helps members realize that individual work matters and has impact on team success. This way accountability becomes an ongoing process for filling the gaps in the performance of the team members or when things go wrong.</p>
+</section>
+<section id="characteristics-of-accountable-individuals" class="level3">
+<h3 class="anchored" data-anchor-id="characteristics-of-accountable-individuals">Characteristics of accountable individuals</h3>
+<p>Accountable individuals are effective at setting goals and designing multiple strategies to reach them. They categorize their objectives based on urgency and importance and try to meet them within the given time frame. One method would be to categorize the goals of the project into four categories including: “important and urgent task",”important and un-urgent task", “unimportant and urgent task", and”unimportant and unurgent task". Sometimes one needs to prioritize an urgent but unimportant task.</p>
+<p>Accountable individuals do not blame others and circumstances for the outcome of their work, try to meet new challenges that come their way, and are in charge of their actions. They are practical and result- oriented. They focus on their circle of influence and concentrate on working with individuals who are collaborative, productive, and are willing to work toward team goals. They find a way to deal with reactive people, i.e., individuals who respond to stimulus, move by the moment, and are unpredictable; rather than trying to find the appropriate solution to the problem at hand and committing to it.</p>
+<section id="accountable-individuals-behave-more-like-leaders-than-bosses.-they" class="level4">
+<h4 class="anchored" data-anchor-id="accountable-individuals-behave-more-like-leaders-than-bosses.-they">Accountable individuals behave more like leaders than bosses. They…</h4>
+<ol type="1">
+<li><p>Listen carefully to suggestions rather than imposing their viewpoints,</p></li>
+<li><p>Believe in team work and value their team by developing bonds and trust in them,</p></li>
+<li><p>Assign tasks to team members based on their skills and interests; thus helping them feel that they are an integral part of reaching the team’s goal,</p></li>
+<li><p>Help the team members to uncover their hidden abilities and creativity,</p></li>
+<li><p>Feel that they are helping reach the team goal, and</p></li>
+<li><p>Boost their mind and body by engaging in activities such as exercise, healthy eating, listening to music, contributing to other people’s lives, and giving back to the community in one form or another.</p></li>
+</ol>
+</section>
+</section>
+<section id="how-does-accountability-overlap-with-other-dimensions-of-team-building" class="level3">
+<h3 class="anchored" data-anchor-id="how-does-accountability-overlap-with-other-dimensions-of-team-building">How does accountability overlap with other dimensions of team building?</h3>
+<p>In addition to accountability, the other dimensions that we discussed include: 1) active listening, 2) communication, 3) empathy, 4) flexibility, 5) locus of control, and 6) conflict resolution. In the following we will try to elaborate the relationship of accountability with the other six dimensions of effective team building.</p>
+<section id="relationship-of-accountability-with-active-listening" class="level4">
+<h4 class="anchored" data-anchor-id="relationship-of-accountability-with-active-listening">Relationship of accountability with active listening</h4>
+<p>The first step in any consulting project starts with having the client tell the statistical consultant what the problem is all about. In the majority of cases, the statistical consultant is not familiar with the discipline and specialty of the client. Thus, the context of the problem could be related to medicine, engineering, psychology, public health etc. and unfamiliar to the consultant. So, the first step that an accountable statistical consultant needs to follow is to have an accurate and clear understanding of the problem at hand. Thus, the statistical consultant needs to listen carefully, ask for clarification of unfamiliar terms, write the problem down, and read it back to the client to make sure they are in agreement about what the problem to be solved.</p>
+</section>
+<section id="relationship-of-accountability-with-communication" class="level4">
+<h4 class="anchored" data-anchor-id="relationship-of-accountability-with-communication">Relationship of accountability with communication</h4>
+<p>Communication is key from the inception to the completion of any project. As a first steps the objectives of the project need to be communicated clearly both in written and oral format to team members, the client, and the statistical consultant. After the inception of the project, oral and verbal communication need to be an integral part of all milestones of the project including: 1) regular check ins, 2) actual and virtual meetings with the client and team members, 3) progress report, 4) oral presentation of the final findings, and 5) final report.</p>
+</section>
+<section id="relationship-of-accountability-with-empathy" class="level4">
+<h4 class="anchored" data-anchor-id="relationship-of-accountability-with-empathy">Relationship of accountability with empathy</h4>
+<p>Forbes has an interesting article on how one can create a balance between empathy and accountability in the workplace between leaders and employees. In spite of the fact that we are discussing accountability in team work and not in the workplace, yet the ideas are generalizable. In the following, Forbes’ guidelines will be used to illustrate the relationship between empathy and accountability in successful team building.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</section>
+<section id="set-clear-expectations" class="level4">
+<h4 class="anchored" data-anchor-id="set-clear-expectations">Set Clear expectations</h4>
+<p>Setting clear objectives with which all team members agree is the first step to making a balance between empathy and accountability. Team members need to know what they will be held accountable for, have the opportunity to learn the relevant skills, ask questions, receive feedback, and discuss what is working and what is not.</p>
+</section>
+<section id="pay-attention-to-the-well-being-of-the-team" class="level4">
+<h4 class="anchored" data-anchor-id="pay-attention-to-the-well-being-of-the-team">Pay attention to the well-being of the team</h4>
+<p>Pay attention to how your team members are doing and help with their needs. Being aware of teams’ shortcomings, what new things they need to learn and following their growth is an integral part of success. For example, in some consulting projects, it has come to our attention that the team members need to use statistical methods they are not familiar with, an example of which was “logistic regression with rare events". We provided the team with a small data set as well as a short YouTube for running the analysis and interpretation of results and ascertained that they knew how to run the analysis and interpret the findings within context.</p>
+</section>
+<section id="build-trust-a-path-to-combining-empathy-and-accountability" class="level4">
+<h4 class="anchored" data-anchor-id="build-trust-a-path-to-combining-empathy-and-accountability">Build Trust: A path to combining empathy and accountability</h4>
+<p>Individual communication and conversation with team members helps to clarify the role and expectations of each team member and helps to establish trust.</p>
+<p>Consequently the established trust helps to bind empathy and accountability.</p>
+</section>
+<section id="encourage-communication-among-team-members" class="level4">
+<h4 class="anchored" data-anchor-id="encourage-communication-among-team-members">Encourage communication among team members</h4>
+<p>Empathy and accountability go hand-in-hand, and striking a balance between</p>
+<p>the two is crucial for creating a work environment where employees and team members can</p>
+<p>thrive. In order to maintain accountability, clear boundaries need to be set.</p>
+<p>The only way to set clear boundaries that everyone agrees on is to understand</p>
+<p>where your employees and team members are coming from and making sure they can work well</p>
+<p>together.</p>
+</section>
+<section id="create-an-effective-communication-system-between-team-members" class="level4">
+<h4 class="anchored" data-anchor-id="create-an-effective-communication-system-between-team-members">Create an effective communication system between team members</h4>
+<p>We need to ascertain that team members are heard and they feel like an integral part of a community, not an individual trying to complete a piece of the puzzle. There are many ways to do this. An example is setting milestones for the project and having all team members participate in explaining the progress. This is another good strategy for combining empathy and accountability.</p>
+</section>
+<section id="use-measurable-objectives-and-flexibility-to-enhance-accountability" class="level4">
+<h4 class="anchored" data-anchor-id="use-measurable-objectives-and-flexibility-to-enhance-accountability">Use Measurable objectives and flexibility to enhance accountability</h4>
+<p>Since the start of the pandemic, both academic and non-academic institutions have learned to be more flexible in their approach to team work. Having clear and measurable objectives have helped teams to be focused on their work. Flexible team meetings on zoom have also played a key role with reaching the relevant objectives.</p>
+</section>
+<section id="create-a-balance-between-empathy-and-accountability" class="level4">
+<h4 class="anchored" data-anchor-id="create-a-balance-between-empathy-and-accountability">Create a balance between empathy and accountability</h4>
+<p>Team members need to know what parts are non-negotiable ad where are the areas in which they can use their creativity and have control over the methods and resources. For example, in some consulting projects the client insists on having a p-value associated with whatever analysis that is being conducted. This is because the journals in which the clients publish their work requires p-values associated with relevant analysis. Another example are situations in which a power analysis is required and the statistical analysis needs to show that the sample size used in large enough to guarantee the power of interest. These are examples of a non-negotiable situations. Whereas, in some instances, the client is interested in an exploratory data analysis and learning more about the nature of the problem at hand. In these situations, team members are free to use their creativity and employ methods such as creation of relevant visuals, non-parametric statistic, and boot strapping to explain the client’s question of interest.</p>
+</section>
+<section id="establish-and-define-consistent-accountability" class="level4">
+<h4 class="anchored" data-anchor-id="establish-and-define-consistent-accountability">Establish And Define Consistent Accountability</h4>
+<p>Establish accountability clearly at the beginning of the project by clearly assigning tasks to members. Explain that accountability is tied to coming up with a successful solution to problem at hand and thus to productivity. When accountability is established at the beginning of the project, then creating a balance between empathy and accountability does not become a challenge.</p>
+</section>
+<section id="create-a-balance-between-firmness-and-team-support" class="level4">
+<h4 class="anchored" data-anchor-id="create-a-balance-between-firmness-and-team-support">Create a balance between firmness and team support</h4>
+<p>Statistical consultants who work on various projects with multiple teams need to create a healthy balance between firmness and member support. There is so much direct and one-on-one contact that a statistical consultant can have with individual team members. However, through clear objectives, consistent and multiple progress reports through the life of the project, they can communicate the importance of meeting the overall goals of the project with individual members; without ignoring or having special consideration individual employees or team members.</p>
+</section>
+<section id="focus-on-developing-relationships-with-team-members" class="level4">
+<h4 class="anchored" data-anchor-id="focus-on-developing-relationships-with-team-members">Focus on developing relationships with team members</h4>
+<p>In order to promote solving the problem at hand, statistical consultants and managers who work with multiple projects and different members should not suffice with setting clear objectives and expectations. They should also work toward developing relationship with team members, having empathy for their particular circumstances and giving them the message that they care about them. Consequently, team members will have respect for them as well as a sense of responsibility toward meeting the objectives of the project.</p>
+<p>In the statistical consulting classes that we teach, every quarter we have an average of seventy to eighty students in two sections. These students are divided into teams of four to six and work with real clients to solve a real world problem. This means that each quarter we are dealing with 15 to twenty teams of students and this is not very different from a managerial positions. Experience has shown that developing relationship with team members does not happen through simple conversation or small talk. It happens through interaction with team members during the steps outlined above. When members are helped to feel that they have contributed to solving the problem at hand and have been accepted as an integral part of the team, relationships are built.</p>
+<p>Another situation that comes up in working with teams is when a member reaches out and expresses concern. Experience has shown that problems of this nature cannot be solved over email. The best way is to have a one-on-one meeting with this member in person or over zoom and at a time when none of you is in a rush. Then calmly discuss the situation and try to find out what the problem is. Come up with a strategy to solve the problem and make the unhappy member part of the solution and not the problem. Then, in your quick check-ins or meetings with the team, casually mention that you and member X have been talking about solving the problem the team is working on, and member X thinks that s(he) can contribute to solving the problem assigned to the team by performing tasks X, Y, and Z.</p>
+<p>For developing relationship with team members, there are really no fast and hard rules to follow. It depends on what works given the circumstances. It is all about finding and devising strategies that help team members: 1) feel they are accepted and respected by other members, 2) believe they are playing a constructive role in solving the problem, and 3) feel like part of the solution and not the problem.</p>
+</section>
+<section id="help-team-members-assess-themselves-with-respect-to-the-important-constructs-related-to-successful-team-building" class="level4">
+<h4 class="anchored" data-anchor-id="help-team-members-assess-themselves-with-respect-to-the-important-constructs-related-to-successful-team-building">Help team members assess themselves with respect to the important constructs related to successful team building</h4>
+<p>As part of this book we have developed a series of scales for measuring the seven constructs (active listening, communication, empathy, flexibility, locus of control, conflict resolution, and accountability) related to successful team building. We have also included scales from the literature for measuring these constructs. The scales developed can be taken online and they will be automatically scored by the software used. Taking these scales by team members helps the members as well as the team leader understand not only themselves, but the people they work with. The results of these self-assessments can be used to find out where team members struggle and which area they will excel in.</p>
+</section>
+</section>
+</section>
+<section id="relationship-of-accountability-with-flexibility" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-of-accountability-with-flexibility">Relationship of accountability with flexibility</h2>
+<p>The literature pays a lot of attention to the natural tension that could potentially exist between the concept of flexibility with accountability and addresses the need for creating balance between these two constructs.</p>
+<p>Creation of balance between flexibility and accountability in team work has become a key consideration for both academic and non-academic institutions after the pandemic. There are infinite articles on the benefits of flexible and remote working and instruction. It has also been shown that key to successful remote working is flexibility and accountability.</p>
+<p>It has been shown that rather enforcing rigid rules to be followed by team members, we should aspire to instill a strong culture of accountability through strategies that were discussed above including:</p>
+<ul>
+<li><p>Setting clear expectations,</p></li>
+<li><p>Facilitating communication,</p></li>
+<li><p>Aligning the tasks assigned to the individual team members with the overall goal of the project,</p></li>
+<li><p>Regular check-in, and</p></li>
+<li><p>Fostering a sense of belonging.</p></li>
+</ul>
+<p>The first step to creating balance between accountability and flexibility, is to first create accountability. Once accountability is created, flexibility can be even more beneficial. Taking the following steps are useful in creating accountability:</p>
+<p>Measure productivity or value by performance not by hours spent in group meetings or sitting at the desk:</p>
+<ul>
+<li><p>Share concerns,</p></li>
+<li><p>Clarify expectations</p></li>
+<li><p>Clarify consequences if expectations are not met</p></li>
+<li><p>Support members to meet expectations</p></li>
+<li><p>Model accountability</p></li>
+<li><p>Conduct frequent (weekly) anonymous surveys and ask for feedback and clarity</p></li>
+</ul>
+<p>In one of the consulting classes we taught, the students on each team were asked to write the problem they are working on within context. More than half of the students had an incomplete or inaccurate answer. In another study, we compared the percentage of students who picked the right answer to the multiple choice questions regarding the interpretation of the confidence interval for mean vs writing the interpretation of confidence interval within context. The percentage of correct answers to multiple-choice questions and open-ended question were around 80% and 20% respectively.</p>
+</section>
+<section id="relationship-of-accountability-with-locus-of-control" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-of-accountability-with-locus-of-control">Relationship of accountability with locus of control</h2>
+<p>If we look at the definition of locus of control and accountability, this relationship becomes very clear.</p>
+<p>Internal locus of control is defined as attributing one’s success or failure to one’s efforts and determination. Whereas, external locus of control means attributing one’s success or failure to resources outside oneself such as luck, destiny, god, etc.</p>
+<p>Accountability means evaluating individuals or organizations based on their performance of behavior related to something they are responsible for.</p>
+<p>From the above we can conclude individuals with an internal locus of control are much more likely to be accountable. Since they believe that their own effort is key to their success, they are much more likely to believe that successful completion of the task assigned to them will help to reach the goal of the project and the product for which they are responsible. Consequently, they are more open to acknowledging their errors, listening to criticism, and taking the necessary steps to incorporate the suggestions given to them to successfully complete the task for which they are accountable.</p>
+<p>Whereas, individuals with an external locus of control tend to believe that their success at the task assigned to them depends on external circumstances. Thus, they are likely to listen to suggestions for improving their work, acknowledging errors, putting in the time for regular check-ins, etc. Consequently, they leave things to randomness and do not believe that they can play a vital role in the overall success of the project.</p>
+</section>
+<section id="relationship-of-accountability-with-conflict-resolution" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-of-accountability-with-conflict-resolution">Relationship of accountability with conflict resolution</h2>
+<p>Prior to explaining the relationship between accountability and conflict resolutions, we will briefly remind you of the definition of “conflict resolution" and summarize the key steps involved in resolving the conflict.</p>
+<p>Conflict resolution is the process of resolving a dispute between two or more people. Examples are conflict between team members or conflict between the boss and an employee.</p>
+<section id="through-conflict-resolution-the-team-members-can" class="level3">
+<h3 class="anchored" data-anchor-id="through-conflict-resolution-the-team-members-can">Through conflict resolution, the team members can…</h3>
+<ol type="1">
+<li><p>Understand more about the ideas of other team members and gain new perspectives,</p></li>
+<li><p>Learn how to continue and grow constructive relationships,</p></li>
+<li><p>Find peaceful solutions to the challenges the team faces,</p></li>
+<li><p>Make better use of their time, energy, and motivation to solve the problem at hand,</p></li>
+<li><p>Practice “active listening" and rephrase the viewpoints of the other party in their own words to ascertain that they fully understand what the other team member is saying,</p></li>
+<li><p>Allow everyone who wants to contribute to solving the conflict speak,</p></li>
+<li><p>Keep an open mind, ask questions, and make sure that they fully understand each person’s position,</p></li>
+<li><p>Remain calm even when the other party becomes emotional,</p></li>
+<li><p>If need be choose a third neutral party whom everyone understands. This person will ascertain that the conversation and brainstorming sessions stay productive by…</p>
+<ol type="1">
+<li><p>Allowing both sides to explain their position to each other,</p></li>
+<li><p>Finding common interests,</p></li>
+<li><p>Keeping both parties, focused, respectful, and reasonable, and</p></li>
+<li><p>Agree on solutions that would be considered a win-win for both parties.</p></li>
+</ol></li>
+<li><p>Proceed according to the plan agreed upon by both sides.</p></li>
+</ol>
+<p>From the above discussion it can be concluded that conflict resolution is essential to maintaining</p>
+<p>a productive team with high morale. Additionally, we can also conclude that “active listening",</p>
+<p>“communication",”empathy", “flexibility’,”locus of control" are key components in creation of</p>
+<p>an accountable team that is capable of constructive conflict resolution. It is clear that all these</p>
+<p>constructs overlap and the combination of them is key to successful team building. Creation of</p>
+<p>separate chapters for these constructs helps to clarify each concept and yet shed light on how</p>
+<p>they overlap.</p>
+</section>
+</section>
+<section id="how-do-team-members-become-accountable" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-team-members-become-accountable">How do team members become accountable?</h2>
+<p>From the above discussion, one can conclude that the following are some of the major characteristics of accountable team members:</p>
+<ul>
+<li><p>Ask questions and like to understand things in depth</p></li>
+<li><p>Create smart and attainable goals</p></li>
+<li><p>Are goal oriented and good at making things happen</p></li>
+<li><p>Are realistic</p></li>
+<li><p>They are alert and in the moment</p></li>
+<li><p>Know their role and responsibility</p></li>
+<li><p>Listen and learn from feedback</p></li>
+<li><p>Anticipate potential problems and develop solutions in advance</p></li>
+<li><p>Reflect on setbacks</p></li>
+<li><p>Take ownership of their actions and errors</p></li>
+</ul>
+</section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<section id="individual-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="individual-exercise">Individual Exercise</h3>
+<p>Watch the following YouTube video <a href="https://www.youtube.com/watch?v=Kb3h1965i5A" class="uri">https://www.youtube.com/watch?v=Kb3h1965i5A</a> on the accountability ladder developed by the Devry Group and answer the following questions.</p>
+<figure id="fig:Account_2" data-latex-placement="htbp" class="figure">
+<img src="Main06_Accountability/Account_2" class="figure-img">
+<figcaption>
+Accountability Ladder
+</figcaption>
+</figure>
+<ol type="1">
+<li><p>Summarize what you learned from this YouTube in bullet points.</p></li>
+<li><p>While doing team work, where do you see yourself on this ladder?</p></li>
+<li><p>Explain the relationship between the different levels of this ladder and the constructs of</p>
+<p>team building we discussed including ‘active listening’; ‘communication’, ’locus of</p>
+<p>control’ ,‘flexibility’, ‘empathy’, and “conflict resolution".</p></li>
+<li><p>In which of the above five areas of team building do you need to improve to get up in the</p>
+<p>stages of this ladder.</p></li>
+</ol>
+</section>
+<section id="individualgroup-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="individualgroup-exercise">Individual/Group Exercise</h3>
+<ol type="1">
+<li><p>Fill out the following table individually and answer the following question.</p></li>
+<li><p>While doing group work, what is most typical of you with respect to the steps of the accountability ladder?</p></li>
+</ol>
+<figure id="fig:Account_1" data-latex-placement="htbp" class="figure">
+<img src="Main06_Accountability/Account_1" class="figure-img">
+<figcaption>
+Accountability Matrix
+</figcaption>
+</figure>
+<ol start="3" type="1">
+<li><p>Rate each other anonymously using the same table given above. For example, suppose</p>
+<p>you have a team of three members including John, Anne, and Jose. John will get rated</p>
+<p>by Anne and Jose, but does not know which rating belongs to whom.</p></li>
+<li><p>Compare your self-rating with the average of other rating (individual answer).</p></li>
+<li><p>Describe how you see yourself and how others see you (individual answer).</p></li>
+<li><p>Think about what you might do to narrow this gap (individual answer).</p></li>
+<li><p>As a team what are the stages in the accountability ladder that you need to improve on? (group response)</p></li>
+</ol>
+</section>
+<section id="group-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="group-exercise">Group exercise</h3>
+<p>Based on the literature, the following are the major characteristics of accountable people and how they work as a team.</p>
+<p>Accountable people…</p>
+<ol type="1">
+<li><p>Do not blame circumstances for their faults.</p></li>
+<li><p>Are proactive and in charge of their own actions.</p></li>
+<li><p>Find a way to deal with reactive team members, those who respond to the situation rather than controlling it and working toward the main objective .</p></li>
+<li><p>Are effective at setting objectives and strategies for achieving them.</p></li>
+<li><p>Try to meet new challenges.</p></li>
+<li><p>Categorize their objectives to “important and urgent",”important not urgent", “unimportant but urgent", and”unimportant and not urgent ", and focus on the most important ones.</p></li>
+<li><p>Are empathic listeners and listen to suggestions than imposing their viewpoint.</p></li>
+<li><p>Behave more like leaders than bosses.</p></li>
+<li><p>Believe in team work, developing bonds with their members, valuing their team by developing bonds with them, and trusting them.</p></li>
+<li><p>Help uncover the hidden talents and creativity of team members.</p></li>
+<li><p>Assign tasks based on the skills of team members so everyone can feel accomplished.</p></li>
+</ol>
+</section>
+<section id="questions-to-be-answered" class="level3">
+<h3 class="anchored" data-anchor-id="questions-to-be-answered">Questions to be answered</h3>
+<ol type="1">
+<li><p>Discuss the qualities of accountable people listed above and write down the new things that you learned from it.</p></li>
+<li><p>Discuss the three qualities that are challenging for most of the team members.</p></li>
+<li><p>Write three fictitious case studies giving examples of scenarios of poor team work due to the lack of information and experience about effective team building. For example, the scenario could be about one of the team members acting in a “reactive" than”proactive way" or a team member that is confusing “flexibility" with”accountability". What are the suggestions that you have for handling this situation smoothly.</p></li>
+<li><p>Suppose that you are on a job interview and the interviewer asks you, ” What are the areas in which you need to grow?". Look inside and decide which of the 11 qualities of accountable people listed above you lack or are not strong in and how you are going to answer this question at the interview.</p></li>
+<li><p>Do you see any relationship between being proactive or reactive with “locus of control"? Please provide examples and explain.</p></li>
+<li><p>Explain the relationship between being a good listener and empathic with the other characteristics of accountable individuals.</p></li>
+<li><p>After reading this chapter and doing this exercise, how differently might you interact with team members in the future? Please provide an example by…</p>
+<ol type="1">
+<li><p>Describing a problem that you are working on with a team of six at work.</p></li>
+<li><p>How would you have interacted with them prior to reading this chapter?</p></li>
+<li><p>How differently would you interact with them after reading about effective team building?</p></li>
+</ol></li>
+</ol>
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p><a href="https://www.forbes.com/sites/forbesnonprofitcouncil/2021/08/16/how-to-strike-a-balance-between-accountability-and-empathy-in-the-workplace/?sh=1d617bd6de18" class="uri">https://www.forbes.com/sites/forbesnonprofitcouncil/2021/08/16/how-to-strike-a-balance-between-accountability-and-empathy-in-the-workplace/?sh=1d617bd6de18</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/mvd-textbook\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/00Locus_of_Control.html" class="pagination-link" aria-label="Locus of Control">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Locus of Control</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/99Ethics.html" class="pagination-link" aria-label="Final Chapter. Ethics in Statistics and Data Science">
+        <span class="nav-page-text">Final Chapter. Ethics in Statistics and Data Science</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>The Consulting Text was written by Mahtash Esfandiari, Vivian Lew and Dave Zes.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/STATS140XP/mvd-textbook/edit/main/chapters/00Accountability.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/STATS140XP/mvd-textbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
