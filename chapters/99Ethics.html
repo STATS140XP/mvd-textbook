@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mahtash Esfandiari, Vivian Lew and Dave Zes">
 
-<title>ethics – Statistics 140/141 Consulting Text</title>
+<title>4&nbsp; Final Chapter. Ethics in Statistics and Data Science – Statistics 140/141 Consulting Text</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,11 +25,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../chapters/00ActiveListening.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -39,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a9a3d9e6092494c7d9ccd71b7d737a7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-968d3e63a93d5987d0e6d73d568971dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -98,13 +101,9 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Statistics 140/141 Consulting Text">
-<meta property="og:description" content="Homepage for Stats 140/141 textbook">
-<meta property="og:image" content="https://mvd-textbook.github.io/chapters/media/image5.png">
-<meta property="og:site_name" content="Statistics 140/141 Consulting Text">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -113,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02Prelude.html">Chapters</a></li><li class="breadcrumb-item"><a href="../chapters/99Ethics.html">Ethics</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/99Ethics.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Final Chapter. Ethics in Statistics and Data Science</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,14 +124,12 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Statistics 140/141 Consulting Text</a> 
-        <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
-    <a href="https://bruinlearn.ucla.edu/courses/232665" title="BruinLearn" class="quarto-navigation-tool px-1" aria-label="BruinLearn"><i class="bi bi-person-fill"></i></a>
-    <a href="mailto:vlew@stat.ucla.edu" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/STATS140XP/mvd-textbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -143,52 +140,30 @@ window.Quarto = {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Start Here</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Greetings</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Chapters</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/02Prelude.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prelude</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prelude</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/00ActiveListening.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Active Listening</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Active Listening</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/99Ethics.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Ethics</span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Final Chapter. Ethics in Statistics and Data Science</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -199,29 +174,42 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#final-chapter.-ethics-in-statistics-and-data-science" id="toc-final-chapter.-ethics-in-statistics-and-data-science" class="nav-link active" data-scroll-target="#final-chapter.-ethics-in-statistics-and-data-science"><span class="header-section-number">1</span> Final Chapter. Ethics in Statistics and Data Science</a></li>
-  <li><a href="#principle-a-professional-integrity-and-accountability" id="toc-principle-a-professional-integrity-and-accountability" class="nav-link" data-scroll-target="#principle-a-professional-integrity-and-accountability"><span class="header-section-number">2</span> PRINCIPLE A: Professional Integrity and Accountability</a></li>
-  <li><a href="#principle-b-integrity-of-data-and-methods" id="toc-principle-b-integrity-of-data-and-methods" class="nav-link" data-scroll-target="#principle-b-integrity-of-data-and-methods"><span class="header-section-number">3</span> PRINCIPLE B: Integrity of Data and Methods</a></li>
-  <li><a href="#principle-c-responsibilities-to-stakeholders-mahtash" id="toc-principle-c-responsibilities-to-stakeholders-mahtash" class="nav-link" data-scroll-target="#principle-c-responsibilities-to-stakeholders-mahtash"><span class="header-section-number">4</span> PRINCIPLE C: Responsibilities to Stakeholders (Mahtash)</a></li>
-  <li><a href="#principle-d-responsibilities-to-research-subjects" id="toc-principle-d-responsibilities-to-research-subjects" class="nav-link" data-scroll-target="#principle-d-responsibilities-to-research-subjects"><span class="header-section-number">5</span> PRINCIPLE D: Responsibilities to Research Subjects,</a></li>
-  <li><a href="#principle-e-responsibilities-to-members-of-multidisciplinary-teams" id="toc-principle-e-responsibilities-to-members-of-multidisciplinary-teams" class="nav-link" data-scroll-target="#principle-e-responsibilities-to-members-of-multidisciplinary-teams"><span class="header-section-number">6</span> PRINCIPLE E: Responsibilities to Members of Multidisciplinary Teams</a></li>
-  <li><a href="#principle-f-responsibilities-to-fellow-statistical-practitioners-and" id="toc-principle-f-responsibilities-to-fellow-statistical-practitioners-and" class="nav-link" data-scroll-target="#principle-f-responsibilities-to-fellow-statistical-practitioners-and"><span class="header-section-number">7</span> PRINCIPLE F: Responsibilities to Fellow Statistical Practitioners and</a></li>
-  <li><a href="#principle-g-responsibilities-of-leaders-supervisors-and-mentors-in" id="toc-principle-g-responsibilities-of-leaders-supervisors-and-mentors-in" class="nav-link" data-scroll-target="#principle-g-responsibilities-of-leaders-supervisors-and-mentors-in"><span class="header-section-number">8</span> PRINCIPLE G: Responsibilities of Leaders, Supervisors, and Mentors in</a></li>
-  <li><a href="#principle-h-responsibilities-regarding-potential-misconductboth" id="toc-principle-h-responsibilities-regarding-potential-misconductboth" class="nav-link" data-scroll-target="#principle-h-responsibilities-regarding-potential-misconductboth"><span class="header-section-number">9</span> PRINCIPLE H: Responsibilities Regarding Potential Misconduct(BOTH)</a>
+  <li><a href="#principle-a-professional-integrity-and-accountability" id="toc-principle-a-professional-integrity-and-accountability" class="nav-link active" data-scroll-target="#principle-a-professional-integrity-and-accountability"><span class="header-section-number">5</span> PRINCIPLE A: Professional Integrity and Accountability</a></li>
+  <li><a href="#principle-b-integrity-of-data-and-methods" id="toc-principle-b-integrity-of-data-and-methods" class="nav-link" data-scroll-target="#principle-b-integrity-of-data-and-methods"><span class="header-section-number">6</span> PRINCIPLE B: Integrity of Data and Methods</a></li>
+  <li><a href="#principle-c-responsibilities-to-stakeholders-mahtash" id="toc-principle-c-responsibilities-to-stakeholders-mahtash" class="nav-link" data-scroll-target="#principle-c-responsibilities-to-stakeholders-mahtash"><span class="header-section-number">7</span> PRINCIPLE C: Responsibilities to Stakeholders (Mahtash)</a></li>
+  <li><a href="#principle-d-responsibilities-to-research-subjects" id="toc-principle-d-responsibilities-to-research-subjects" class="nav-link" data-scroll-target="#principle-d-responsibilities-to-research-subjects"><span class="header-section-number">8</span> PRINCIPLE D: Responsibilities to Research Subjects,</a></li>
+  <li><a href="#principle-e-responsibilities-to-members-of-multidisciplinary-teams" id="toc-principle-e-responsibilities-to-members-of-multidisciplinary-teams" class="nav-link" data-scroll-target="#principle-e-responsibilities-to-members-of-multidisciplinary-teams"><span class="header-section-number">9</span> PRINCIPLE E: Responsibilities to Members of Multidisciplinary Teams</a></li>
+  <li><a href="#principle-f-responsibilities-to-fellow-statistical-practitioners-and" id="toc-principle-f-responsibilities-to-fellow-statistical-practitioners-and" class="nav-link" data-scroll-target="#principle-f-responsibilities-to-fellow-statistical-practitioners-and"><span class="header-section-number">10</span> PRINCIPLE F: Responsibilities to Fellow Statistical Practitioners and</a></li>
+  <li><a href="#principle-g-responsibilities-of-leaders-supervisors-and-mentors-in" id="toc-principle-g-responsibilities-of-leaders-supervisors-and-mentors-in" class="nav-link" data-scroll-target="#principle-g-responsibilities-of-leaders-supervisors-and-mentors-in"><span class="header-section-number">11</span> PRINCIPLE G: Responsibilities of Leaders, Supervisors, and Mentors in</a></li>
+  <li><a href="#principle-h-responsibilities-regarding-potential-misconductboth" id="toc-principle-h-responsibilities-regarding-potential-misconductboth" class="nav-link" data-scroll-target="#principle-h-responsibilities-regarding-potential-misconductboth"><span class="header-section-number">12</span> PRINCIPLE H: Responsibilities Regarding Potential Misconduct(BOTH)</a>
   <ul>
-  <li><a href="#end-of-chapter-exercises" id="toc-end-of-chapter-exercises" class="nav-link" data-scroll-target="#end-of-chapter-exercises"><span class="header-section-number">9.1</span> End of Chapter Exercises</a></li>
+  <li><a href="#end-of-chapter-exercises" id="toc-end-of-chapter-exercises" class="nav-link" data-scroll-target="#end-of-chapter-exercises"><span class="header-section-number">12.1</span> End of Chapter Exercises</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/STATS140XP/mvd-textbook/edit/main/chapters/99Ethics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/STATS140XP/mvd-textbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/02Prelude.html">Chapters</a></li><li class="breadcrumb-item"><a href="../chapters/99Ethics.html">Ethics</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Final Chapter. Ethics in Statistics and Data Science</span></h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="final-chapter.-ethics-in-statistics-and-data-science" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Final Chapter. Ethics in Statistics and Data Science</h1>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p><strong>1.1 Elaboration and example of ASA Ethical Guidelines for Individuals and Organizations Engaged in the Practice of Statistics Prepared by the Committee on Professional Ethics of the American Statistical Association Approved by ASA Board of Directors February 1, 2022</strong></p>
 <p><strong>Purpose of the Guidelines</strong></p>
 <p>The American Statistical Association’s Ethical Guidelines for Statistical Practice are intended to help statistical practitioners make decisions ethically. In these guidelines, “statistical practice” includes activities such as …</p>
@@ -233,13 +221,12 @@ window.Quarto = {
 <li><p>Interpretation, and</p></li>
 <li><p>Model development.</p></li>
 </ol>
-</section>
-<section id="principle-a-professional-integrity-and-accountability" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> PRINCIPLE A: Professional Integrity and Accountability</h1>
+<section id="principle-a-professional-integrity-and-accountability" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> PRINCIPLE A: Professional Integrity and Accountability</h1>
 <p>Professional integrity and accountability require taking responsibility for one’s work. Ethical statistical practice supports valid and prudent decision-making with appropriate methodology. The ethical statistical practitioner represents their capabilities and activities honestly and treats others with respect.</p>
 <p>The ethical statistical practitioner:</p>
 <p><strong>1.Takes responsibility for evaluating potential tasks, assessing whether they have (or can attain) sufficient competence to execute each task and that the work and timeline are feasible. Does not solicit or deliver work for which they are not qualified or that they would not be willing to have peer reviewed.</strong></p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -254,7 +241,7 @@ window.Quarto = {
 </div>
 </div>
 <p><strong>2. Uses methodology and data that are valid, relevant, and appropriate, without favoritism or prejudice, and in a manner intended to produce valid, interpretable, and reproducible results.</strong></p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -321,7 +308,7 @@ window.Quarto = {
 <p>In order to resolve this problem we first spoke to the members individually and tell their story. This needed 15-30 minutes per person, then we brought the entire group together to speak and listen to each other. The conclusion we reached was not one of disrespect or exclusion but instead some were more advanced in their techniques and were too excited about modeling. The others were not well trained enough to follow along and felt excluded.</p>
 <p>We came to the conclusion that it would be best to divide the team into two separate groups and have each group work on a project tailored to their own interest. Both groups wound up being quite successful with equally sound results having used different datasets.</p>
 <p>The conclusion reached was that in order to promote dignity and inclusion, it is best to invest time in listening to individuals and then to the entire group before making a decision as to what to do.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -418,7 +405,7 @@ window.Quarto = {
 <p>Case five. A statistician who also teaches at a business school is hired to predict the annual salary in a major entrepreneurial foundation from years of education, years with the company, gender, ethnicity, and prior experience on the job. He uses the data in teaching his entrepreneurship course in the business school. The company writes a complaint to the dean of the business school.</p>
 <p>Case six. A statistical consultant is given a large data set of 5000 patients with diabetic type II. He is asked to predict the factors that are related to diabetic type II. The consulting physician tells him the more factors he examines, the more informative the findings will be. He first uses logistic regression and finds hypertension, and smoking to be significant predictors and ethnicity not to be a significant predictor. However, when he uses chi-square he finds all three predictors to be significant. He conducts chi-square three times to examine the relationship between diabetic type II with smoking, hypertension, and ethnic background. He recommends using chi-square analysis.</p>
 <p>Example 3) For homework we have them write reflection papers on ethical guidelines that have been jeopardized. An example: The following assignment was given to students after the lecture and discussion in data science. They are asked to watch YouTube one, which is an example of breaching the ethics of data science and discuss which ethical guidelines of ASA were broken. In the second part they are asked to watch a video on how scientists can breach the guidelines of ASA by creating fake data.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -454,8 +441,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="principle-b-integrity-of-data-and-methods" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> PRINCIPLE B: Integrity of Data and Methods</h1>
+<section id="principle-b-integrity-of-data-and-methods" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> PRINCIPLE B: Integrity of Data and Methods</h1>
 <p>(Vivian)</p>
 <p>Communicates data sources and fitness for use, including data generation and collection processes and known biases. Discloses and manages any conflicts of interest relating to the data sources. Communicates data processing and transformation procedures, including missing data handling.</p>
 <ol type="1">
@@ -490,8 +477,8 @@ window.Quarto = {
 <p>At the end of the study it was shown that strong students (top 25%) did equally well whether they were taught by theory or case-based instruction. While students that had challenges (bottom 25%), did a lot better with case-based instruction. It is like analyses of cases helped them decipher, and analyze the theoretical principles behind motivation and multiculturalism while learning how to apply it in reality.</p>
 <p>In a similar study we showed that case-based instruction helps to close the gap between the performance of statistics and social science majors in applied statistics class.</p>
 </section>
-<section id="principle-c-responsibilities-to-stakeholders-mahtash" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> PRINCIPLE C: Responsibilities to Stakeholders (Mahtash)</h1>
+<section id="principle-c-responsibilities-to-stakeholders-mahtash" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> PRINCIPLE C: Responsibilities to Stakeholders (Mahtash)</h1>
 <ol type="1">
 <li><strong>Seeks to establish what stakeholders hope to obtain from any specific project. Strives to obtain sufficient subject-matter knowledge to conduct meaningful and relevant statistical practice.</strong></li>
 </ol>
@@ -628,8 +615,8 @@ window.Quarto = {
 <p>We have frequently used this situation and similar ones to train the graduate student researchers working in the consulting center about not being obliged or forced by clients to go above and beyond the agreements that were made in the written contract.</p>
 </blockquote>
 </section>
-<section id="principle-d-responsibilities-to-research-subjects" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> PRINCIPLE D: Responsibilities to Research Subjects,</h1>
+<section id="principle-d-responsibilities-to-research-subjects" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> PRINCIPLE D: Responsibilities to Research Subjects,</h1>
 <p>Data Subjects, or Those Directly Affected by Statistical Practices (Vivian)</p>
 <ol type="1">
 <li><strong>Keeps informed about and adheres to applicable rules, approvals, and guidelines for the protection and welfare of human and animal subjects. Knows when work requires ethical review and oversight.</strong></li>
@@ -709,8 +696,8 @@ window.Quarto = {
 <li><p><strong>Does not conduct statistical practice that could reasonably be interpreted by subjects as sanctioning a violation of their rights. Seeks to use statistical practices to promote the just and impartial treatment of all individuals.</strong></p></li>
 </ol>
 </section>
-<section id="principle-e-responsibilities-to-members-of-multidisciplinary-teams" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> PRINCIPLE E: Responsibilities to Members of Multidisciplinary Teams</h1>
+<section id="principle-e-responsibilities-to-members-of-multidisciplinary-teams" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> PRINCIPLE E: Responsibilities to Members of Multidisciplinary Teams</h1>
 <p>(BOTH)</p>
 <ol type="1">
 <li><strong>Recognizes and respects that other professions may have different ethical standards and obligations. Dissonance in ethics may still arise, even if all members feel they are working toward the same goal. It is essential to have a respectful exchange of views.</strong></li>
@@ -734,8 +721,8 @@ window.Quarto = {
 <p><strong>.Example three.</strong> Some projects may require preparation of a dashboard</p>
 </blockquote>
 </section>
-<section id="principle-f-responsibilities-to-fellow-statistical-practitioners-and" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> PRINCIPLE F: Responsibilities to Fellow Statistical Practitioners and</h1>
+<section id="principle-f-responsibilities-to-fellow-statistical-practitioners-and" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> PRINCIPLE F: Responsibilities to Fellow Statistical Practitioners and</h1>
 <p>the Profession (BOTH) - New</p>
 <ol type="1">
 <li><strong>Recognizes that statistical practitioners may have different expertise and experiences, which may lead to divergent judgments about statistical practices and results. Constructive discourse with mutual respect focuses on scientific principles and methodology and not personal attributes.</strong></li>
@@ -808,8 +795,8 @@ window.Quarto = {
 <p>My evaluation of student performance has shown that the students tend to be well prepared in our prior class for data cleaning, coding, data visualization, and data manipulation. However, some of the students find it challenging to connect their theoretical knowledge of statistics with the outputs that they create to answer the client’s question. For example, suppose a study involves both random and fixed predictors. Once the team is advised and finds out what statistical method they need to use, they can find the relevant codes on YouTube videos posted online or from ChatGPT. But, once they create the output, students must be able to explain to the client how the different parts of the output answers the question of interest to the client. They need to understand that with this kind of design they are trying to minimize error by taking random factors into account. So, there would be two sources of error including the regular residual and the error due to the random factor. That is why in this course, I try to remind the students of the underlying theory that they learned in prior classes or teach the theory behind the methodology used in case it has not been covered in prior classes.</p>
 <p>I have heard from multiple people who play major roles in hiring data scientists in major organizations such as EY (Ernst and Young) and Google that their major challenge with the new hires is that they are strong in coding and have enthusiasm about learning different software such as Python. However, they are not well trained with respect to explaining the findings of their analysis to the client within context and in simple terms. In order to overcome this problem, in the consulting course, I place a lot of emphasis on making sure that the students developing a deep understanding of why they are using a certain statistical method to answer the client’s question and also have them practice statistical literacy by designing the homeworks and the in-class assessment in which they can only have one cheat sheet around the skills explained above.</p>
 </section>
-<section id="principle-g-responsibilities-of-leaders-supervisors-and-mentors-in" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> PRINCIPLE G: Responsibilities of Leaders, Supervisors, and Mentors in</h1>
+<section id="principle-g-responsibilities-of-leaders-supervisors-and-mentors-in" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> PRINCIPLE G: Responsibilities of Leaders, Supervisors, and Mentors in</h1>
 <p>Statistical Practice(BOTH)</p>
 <ol type="1">
 <li><strong>Ensure appropriate statistical practice that is consistent with these guidelines. Protect the statistical practitioners who comply with these guidelines and advocate for a culture that supports ethical statistical practice.</strong></li>
@@ -1121,8 +1108,8 @@ etc
 <li><p>In the third stage we were able to collect more extensive data and the client was very happy with the results found. We were told that the results will be used in some kind of review with UCLA as a major participant..</p></li>
 </ol>
 </section>
-<section id="principle-h-responsibilities-regarding-potential-misconductboth" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> PRINCIPLE H: Responsibilities Regarding Potential Misconduct(BOTH)</h1>
+<section id="principle-h-responsibilities-regarding-potential-misconductboth" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> PRINCIPLE H: Responsibilities Regarding Potential Misconduct(BOTH)</h1>
 <ol type="1">
 <li><p><strong>Knows the definitions of and procedures relating to misconduct in their institutional setting. Seeks to clarify facts and intent before alleging misconduct by others. Recognizes that differences of opinion and honest error do not constitute unethical behavior.</strong></p></li>
 <li><p><strong>Avoids condoning or appearing to condone statistical, scientific, or professional misconduct. Encourages other practitioners to avoid misconduct or the appearance of misconduct.</strong></p></li>
@@ -1138,8 +1125,8 @@ etc
 <li><p><strong>Following an investigation of misconduct, supports the efforts of all parties involved to resume their careers in as normal a manner as possible, consistent with the outcome of the investigation.</strong></p></li>
 <li><p><strong>Avoids and acts to discourage retaliation against or damage to the employability of those who responsibly call attention to possible misconduct.</strong></p></li>
 </ol>
-<section id="end-of-chapter-exercises" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="end-of-chapter-exercises"><span class="header-section-number">9.1</span> End of Chapter Exercises</h2>
+<section id="end-of-chapter-exercises" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="end-of-chapter-exercises"><span class="header-section-number">12.1</span> End of Chapter Exercises</h2>
 <p><strong>Part I Let us examine the following guidelines from American Statistical Association and analyze them</strong></p>
 <p>The fact that a procedure is automated does not ensure its correctness or appropriateness; it is</p>
 <p>also necessary to understand the theory, data, and methods used in each statistical study. This</p>
@@ -1196,7 +1183,7 @@ etc
 <p>need to concentrate in order to do well. The second group is told that the test is not difficult and</p>
 <p>they should all be able to do well.</p>
 <p><strong>Case three</strong>. A workshop has been designed to increase the average sale of software by the employees that have been with the company for less than a year. Of the two hundred sellers that have worked for the company for a year, 100 volunteer to participate in the workshop. The company reports the following results and claims that the workshop has been successful in increasing average sale.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1320,16 +1307,16 @@ etc
 
 </section>
 </section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
 <ol>
 <li id="fn1"><p>https://www.cdc.gov/tuskegee/timeline.htm<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>https://www.taylorfrancis.com/books/mono/10.4324/9780203771587/statistical-power-analysis-behavioral-sciences-jacob-cohen<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Early Life Course Pathways of Adult Depression and Chronic Pain. Bridget J. Goosby. Journal of Health and Social Behavior published online 20 February 2013 DOI: 10.1177/0022146512475089<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section></div></main> <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1730,7 +1717,29 @@ etc
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/00ActiveListening.html" class="pagination-link" aria-label="Active Listening">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Active Listening</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>The Consulting Text was written by Mahtash Esfandiari, Vivian Lew and Dave Zes.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/STATS140XP/mvd-textbook/edit/main/chapters/99Ethics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/STATS140XP/mvd-textbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
 
 
 
