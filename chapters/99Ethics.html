@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -300,7 +320,7 @@ window.Quarto = {
 <li><p>Using a combination of the above; namely random assignment plus covariates is another solution</p></li>
 </ul>
 <p><strong>3. Does not knowingly conduct statistical practices that exploit vulnerable populations or create or perpetuate unfair outcomes.</strong></p>
-<p>The tragic tale of the Tuskegee Syphilis Study serves as an illustration<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. From 1932 to 1972, the U.S. Public Health Service conducted a study on the progression of untreated syphilis in African American men in Macon County, Alabama. The participants were not informed of their diagnosis, not given informed consent, and were not provided with effective treatment even after penicillin was recognized as the standard of care for syphilis. The statistical data gathered from this unethical experiment was used in medical literature for many years, highlighting a significant abuse of trust and misuse of research ethics.</p>
+<p>The tragic tale of the Tuskegee Syphilis Study serves as an illustration<span class="citation" data-cites="cdc_tuskegee_timeline_2024">(<a href="#ref-cdc_tuskegee_timeline_2024" role="doc-biblioref">Centers for Disease Control and Prevention 2024</a>)</span>. From 1932 to 1972, the U.S. Public Health Service conducted a study on the progression of untreated syphilis in African American men in Macon County, Alabama. The participants were not informed of their diagnosis, not given informed consent, and were not provided with effective treatment even after penicillin was recognized as the standard of care for syphilis. The statistical data gathered from this unethical experiment was used in medical literature for many years, highlighting a significant abuse of trust and misuse of research ethics.</p>
 <p><strong>4. Opposes efforts to predetermine or influence the results of statistical practices and resists pressure to selectively interpret data.</strong></p>
 <p>Lack of understanding between practical and statistical significance is frequently a source of pressure from the client with respect to interpretation of the findings.</p>
 <p><strong>Example.</strong> No matter what statistical method is used, if the sample size is large enough, the standard error will decrease resulting in high t or F values and p-values less than 0.05, indicating statistical significance. Whereas, with large enough sample sizes, p-values less than 0.05 are highly likely to happen with low effect size, example lack of practical difference between the mean of the experimental and control group along with low power, or negligible R-squared in regression analysis, or very low accuracy in machine learning models such as logistic or ordinal regression.</p>
@@ -768,7 +788,7 @@ window.Quarto = {
 <li><p>Discussed the importance of using non-parametric methods for analysis of data resulting from small sample size that do not meet the relevant assumptions of parametric methods.</p></li>
 <li><p>Divided the audience to teams of two to three and encouraged them to practice the concepts and mathematical underpinnings of the statistical methods, to discuss results, running them on SPSS, interpreting their findings, and using alpha beta software to estimate power and sample size.</p></li>
 </ol>
-<p>One of the major topics that came up is how one decides on the “effect size”. We discussed Cohen’s guidelines for small, medium, and large effect sizes for different statistical methods.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> We also discussed using the guidelines in the theory and prior studies. The suggestions offered by some of the faculty who had more experience were useful in this domain.</p>
+<p>One of the major topics that came up is how one decides on the “effect size”. We discussed Cohen’s guidelines for small, medium, and large effect sizes for different statistical methods.<span class="citation" data-cites="cohen2013statistical">(<a href="#ref-cohen2013statistical" role="doc-biblioref">Cohen 2013</a>)</span> We also discussed using the guidelines in the theory and prior studies. The suggestions offered by some of the faculty who had more experience were useful in this domain.</p>
 <p>After this workshop, I realized that having a constructive discourse with the client was very useful in helping me design the workshop. I learned that they: 1) dealt with small sample sizes, 2) did not use complicated statistical analysis, 3) needed to learn basic statistical concepts related to power analysis and the most typical methods they used in the analysis of their data, 4) repeated measures was an integral part of their work, 5) needed to learn about non-parametric statistics, 5) needed to practice conducting the relevant analyses and interpreting them as a team, and 6) the senior faculty had offered good suggestions in terms of typical effect sizes in different types of study.</p>
 <p>Example two (Esfandiari). In a study on program evaluation, I was asked to create a survey for attitude toward conflict resolution for middle school students in a school that involved gang activity. Based on the theory of conflict resolution, one of the wrong strategies to approach conflict resolution is to pretend as if nothing happened with the right approach being approaching the person that you have a conflict with and trying to resolve it through constructive communication and developing a plan to prevent it from happening in the future.</p>
 <p>So, one of the items in the scale was</p>
@@ -1036,7 +1056,7 @@ etc
 <ol type="1">
 <li>A schematic or road map like the following example which shows the relationship between the outcome of interest as well as the predictors. This has proved to be very helpful in helping the team see the big picture and create a foundation for EDA and the next steps in the final report.</li>
 </ol>
-<p>In the following example, (Esfandiari), we are using a schematic from an article<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> to show a categorical outcome with four levels including no depression or chronic pain. The other three levels include depression, chronic pain or both. There are four hypotheses that also clarify the predictors are of interest:</p>
+<p>In the following example, (Esfandiari), we are using a schematic from an article<span class="citation" data-cites="goosby2013early">(<a href="#ref-goosby2013early" role="doc-biblioref">Goosby 2013</a>)</span> to show a categorical outcome with four levels including no depression or chronic pain. The other three levels include depression, chronic pain or both. There are four hypotheses that also clarify the predictors are of interest:</p>
 <ol type="1">
 <li><p>Is low childhood socio-economic status related to depression, pain or both in adulthood.</p></li>
 <li><p>Is maternal depression related to the depression, pain or both in adulthood.</p></li>
@@ -1339,15 +1359,18 @@ etc
 <h2 class="anchored" data-anchor-id="references">References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-cdc_tuskegee_timeline_2024" class="csl-entry" role="listitem">
+Centers for Disease Control and Prevention. 2024. <span>“The Untreated Syphilis Study at Tuskegee Timeline.”</span> 2024. <a href="https://www.cdc.gov/tuskegee/about/timeline.html">https://www.cdc.gov/tuskegee/about/timeline.html</a>.
+</div>
+<div id="ref-cohen2013statistical" class="csl-entry" role="listitem">
+Cohen, Jacob. 2013. <em>Statistical Power Analysis for the Behavioral Sciences</em>. routledge.
+</div>
+<div id="ref-goosby2013early" class="csl-entry" role="listitem">
+Goosby, Bridget J. 2013. <span>“Early Life Course Pathways of Adult Depression and Chronic Pain.”</span> <em>Journal of Health and Social Behavior</em> 54 (1): 75–91.
+</div>
+</div>
 </section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>https://www.cdc.gov/tuskegee/timeline.htm<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>https://www.taylorfrancis.com/books/mono/10.4324/9780203771587/statistical-power-analysis-behavioral-sciences-jacob-cohen<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Early Life Course Pathways of Adult Depression and Chronic Pain. Bridget J. Goosby. Journal of Health and Social Behavior published online 20 February 2013 DOI: 10.1177/0022146512475089<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
